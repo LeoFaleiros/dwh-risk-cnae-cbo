@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: mart_cat_cnae_cbo_mes
+    description: >
+      Monthly work accident counts (CAT) by CNAE class, CBO occupation, and CID-10 cause.
+      Enriched with dimension descriptions. Primary analysis table for the POC.
+    columns:
+      - name: cnae_classe
+        description: 5-digit CNAE class code.
+      - name: cbo_codigo
+        description: 6-digit CBO occupation code.
+      - name: cid_10
+        description: ICD-10 code in dotted format (e.g. "B34.2") from CAT source.
+      - name: total_acidentes
+        description: Count of CAT records in this group.
+      - name: total_obitos
+        description: Count of records where indica_obito = Sim.
+
+  - name: mart_risco_teorico_vs_observado
+    description: >
+      NR-04 regulatory risk level vs observed accident frequency (CAT) per CNAE class.
+      Includes accident rate per 1,000 RAIS bonds where employment data is available.
+    columns:
+      - name: cnae_classe
+        description: 5-digit CNAE class code.
+      - name: grau_risco
+        description: NR-04 regulatory risk level (1-4).
+      - name: total_vinculos
+        description: Sum of active bonds from RAIS for this CNAE class.
+      - name: total_acidentes
+        description: Sum of CAT accident records for this CNAE class.
+      - name: taxa_acidentes_por_mil
+        description: Accidents per 1,000 active bonds (null where RAIS data is absent).
+      - name: rank_por_acidentes
+        description: Rank by total_acidentes descending.

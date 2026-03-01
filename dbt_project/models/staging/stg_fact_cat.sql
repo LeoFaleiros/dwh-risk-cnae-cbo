@@ -15,7 +15,9 @@ select
     -- Municipality: first 6 digits of "NNNNNN-Nome-UF"
     left(trim(munic_empregador), 6)                     as municipio_id_6,
     lower(trim(tipo_acidente))                          as tipo_acidente,
-    trim(cid_10)                                        as cid_10,
+    -- CID-10 in CAT is "B34.2 Infecc p/Coronavirus Ne" — extract code only
+    -- Note: SIM stores CID without dot ("B342"); join with stg_dim_cid uses CAT format
+    split_part(trim(cid_10), ' ', 1)                    as cid_10,
     (indica_obito ilike 'Sim')                         as obito,
     trim(uf_empregador)                                 as uf_empregador,
     trim(_source_file)                                  as source_file

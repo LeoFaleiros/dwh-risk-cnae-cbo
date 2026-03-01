@@ -65,6 +65,17 @@ models:
       - name: total_obitos
         description: Count of deaths in this group.
 
+  - name: stg_dim_cid
+    description: >
+      CID-10 codes and descriptions derived from CAT data.
+      Format: dotted code (e.g. "B34.2"). SIM stores codes without dots ("B342")
+      — cross-source join requires normalization and is not in scope here.
+    columns:
+      - name: cid_codigo
+        description: CID-10 code in dotted format.
+      - name: cid_descricao
+        description: Short description from the INSS CAT source.
+
   - name: stg_fact_cat
     description: CAT work accident communications from INSS portal (SP 2022).
     columns:
@@ -74,5 +85,7 @@ models:
         description: 5-digit CNAE class, zero-padded from the 4-digit source code.
       - name: municipio_id_6
         description: 6-digit IBGE municipality code extracted from raw text field.
+      - name: cid_10
+        description: CID-10 code only, extracted from "CODE Description" raw field.
       - name: obito
         description: True if indica_obito = 'Sim'.
