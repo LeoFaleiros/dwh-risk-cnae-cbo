@@ -1,0 +1,686 @@
+﻿cnae_classe,cnae_descricao,cnae_secao,grau_risco,grau_risco_descricao,total_vinculos,total_acidentes,total_obitos,taxa_acidentes_por_mil,rank_por_acidentes
+42219,Obras para geração e distribuição de energia elétrica e para telecomunicações,Construção,4,Critico,41249,920,8,22.3,42
+42111,Construção de rodovias e ferrovias,Construção,4,Critico,40504,755,1,18.64,55
+25390,"Serviços de usinagem, solda, tratamento e revestimento em metais",Indústrias De Transformação,4,Critico,29070,695,1,23.91,59
+23303,"Fabricação de artefatos de concreto, cimento, fibrocimento, gesso e materiais semelhantes",Indústrias De Transformação,4,Critico,26835,662,2,24.67,61
+24512,Fundição de ferro e aço,Indústrias De Transformação,4,Critico,10053,547,2,54.41,73
+42928,Montagem de instalações industriais e de estruturas metálicas,Construção,4,Critico,40970,533,2,13.01,76
+25322,Produção de artefatos estampados de metal; metalurgia do pó,Indústrias De Transformação,4,Critico,12354,402,0,32.54,98
+08100,"Extração de pedra, areia e argila",Indústrias Extrativas,4,Critico,12888,359,6,27.86,112
+25110,Fabricação de estruturas metálicas,Indústrias De Transformação,4,Critico,9712,331,0,34.08,121
+24521,Fundição de metais não ferrosos e suas ligas,Indústrias De Transformação,4,Critico,6267,269,1,42.92,148
+25926,Fabricação de produtos de trefilados de metal,Indústrias De Transformação,4,Critico,14455,264,0,18.26,150
+43916,Obras de fundações,Construção,4,Critico,9078,218,1,24.01,177
+24415,Metalurgia do alumínio e suas ligas,Indústrias De Transformação,4,Critico,12975,217,5,16.72,178
+42227,"Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas",Construção,4,Critico,7842,182,0,23.21,204
+23494,Fabricação de produtos cerâmicos não refratários não especificados anteriormente,Indústrias De Transformação,4,Critico,7577,159,0,20.98,221
+24245,"Produção de relaminados, trefilados e perfilados de aço",Indústrias De Transformação,4,Critico,5880,153,0,26.02,227
+24237,Produção de laminados longos de aço,Indústrias De Transformação,4,Critico,5856,97,0,16.56,293
+24318,Produção de tubos de aço com costura,Indústrias De Transformação,4,Critico,3483,93,0,26.7,299
+24431,Metalurgia do cobre,Indústrias De Transformação,4,Critico,3251,89,0,27.38,304
+25314,Produção de forjados de aço e de metais não ferrosos e suas ligas,Indústrias De Transformação,4,Critico,2401,87,1,36.23,307
+24491,Metalurgia dos metais não ferrosos e suas ligas não especificados anteriormente,Indústrias De Transformação,4,Critico,2694,52,0,19.3,366
+25501,"Fabricação de equipamento bélico pesado, armas de fogo e munições",Indústrias De Transformação,4,Critico,3329,50,0,15.02,372
+23419,Fabricação de produtos cerâmicos refratários,Indústrias De Transformação,4,Critico,2871,49,0,17.07,375
+24393,Produção de outros tubos de ferro e aço,Indústrias De Transformação,4,Critico,1159,41,0,35.38,399
+24121,Produção de ferroligas,Indústrias De Transformação,4,Critico,817,41,0,50.18,399
+43126,Perfurações e sondagens,Construção,4,Critico,1910,40,0,20.94,405
+20924,Fabricação de explosivos,Indústrias De Transformação,4,Critico,1124,39,0,34.7,408
+43118,Demolição e preparação de canteiros de obras,Construção,4,Critico,2522,38,0,15.07,410
+42120,Construção de obras de arte especiais,Construção,4,Critico,4041,32,0,7.92,430
+42910,"Obras portuárias, marítimas e fluviais",Construção,4,Critico,1862,27,0,14.5,452
+23206,Fabricação de cimento,Indústrias De Transformação,4,Critico,1949,22,0,11.29,466
+24229,Produção de laminados planos de aço,Indústrias De Transformação,4,Critico,3096,22,0,7.11,466
+08991,Extração de minerais não metálicos não especificados anteriormente,Indústrias Extrativas,4,Critico,1159,22,0,18.98,466
+23923,Fabricação de cal e gesso,Indústrias De Transformação,4,Critico,557,17,3,30.52,490
+09904,"Atividades de apoio à extração de minerais, exceto petróleo e gás natural",Indústrias Extrativas,4,Critico,128,14,0,109.38,500
+08916,"Extração de minerais para fabricação de adubos, fertilizantes e outros produtos químicos",Indústrias Extrativas,4,Critico,258,12,0,46.51,514
+02209,Produção florestal - florestas nativas,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",4,Critico,1035,12,0,11.59,514
+42235,"Construção de redes de transportes por dutos, exceto para água e esgoto",Construção,4,Critico,1851,10,0,5.4,531
+06000,Extração de petróleo e gás natural,Indústrias Extrativas,4,Critico,61,8,0,131.15,538
+24211,Produção de semiacabados de aço,Indústrias De Transformação,4,Critico,96,8,0,83.33,538
+09106,Atividades de apoio à extração de petróleo e gás natural,Indústrias Extrativas,4,Critico,466,4,0,8.58,575
+24423,Metalurgia dos metais preciosos,Indústrias De Transformação,4,Critico,264,4,0,15.15,575
+07294,Extração de minerais metálicos não ferrosos não especificados anteriormente,Indústrias Extrativas,4,Critico,90,1,0,11.11,607
+07219,Extração de minério de alumínio,Indústrias Extrativas,4,Critico,79,1,0,12.66,607
+08932,Extração de gemas (pedras preciosas e semipreciosas),Indústrias Extrativas,4,Critico,23,0,0,,616
+07251,Extração de minerais radioativos,Indústrias Extrativas,4,Critico,6,0,0,,616
+07243,Extração de minério de metais preciosos,Indústrias Extrativas,4,Critico,109,0,0,,616
+07235,Extração de minério de manganês,Indústrias Extrativas,4,Critico,12,0,0,,616
+07227,Extração de minério de estanho,Indústrias Extrativas,4,Critico,0,0,0,,616
+07103,Extração de minério de ferro,Indústrias Extrativas,4,Critico,138,0,0,,616
+05003,Extração de carvão mineral,Indústrias Extrativas,4,Critico,8,0,0,,616
+24113,Produção de ferro-gusa,Indústrias De Transformação,4,Critico,7,0,0,,616
+08924,Extração e refino de sal marinho e sal-gema,Indústrias Extrativas,4,Critico,57,0,0,,616
+86101,Atividades de atendimento hospitalar,Saúde Humana E Serviços Sociais,3,Alto,475683,19543,22,41.08,1
+49302,Transporte rodoviário de carga,"Transporte, Armazenagem E Correio",3,Alto,358204,5411,81,15.11,4
+86305,Atividades de atenção ambulatorial executadas por médicos e odontólogos,Saúde Humana E Serviços Sociais,3,Alto,168403,4305,3,25.56,5
+81214,Limpeza em prédios e em domicílios,Atividades Administrativas E Serviços Complementares,3,Alto,241643,2871,6,11.88,8
+41204,Construção de edifícios,Construção,3,Alto,193366,2666,8,13.79,9
+86402,Atividades de serviços de complementação diagnóstica e terapêutica,Saúde Humana E Serviços Sociais,3,Alto,80625,2492,0,30.91,11
+29492,Fabricação de peças e acessórios para veículos automotores não especificados anteriormente,Indústrias De Transformação,3,Alto,99480,2165,11,21.76,13
+38114,Coleta de resíduos não perigosos,"Água, Esgoto, Atividades De Gestão De Resíduos E Descontaminação",3,Alto,47884,2002,4,41.81,14
+22293,Fabricação de artefatos de material plástico não especificados anteriormente,Indústrias De Transformação,3,Alto,81306,1787,1,21.98,16
+10716,Fabricação de açúcar em bruto,Indústrias De Transformação,3,Alto,115398,1779,5,15.42,17
+22226,Fabricação de embalagens de material plástico,Indústrias De Transformação,3,Alto,54306,1434,2,26.41,21
+25993,Fabricação de produtos de metal não especificados anteriormente,Indústrias De Transformação,3,Alto,43868,1389,2,31.66,23
+43991,Serviços especializados para construção não especificados anteriormente,Construção,3,Alto,78833,1317,8,16.71,27
+28330,"Fabricação de máquinas e equipamentos para a agricultura e pecuária, exceto para irrigação",Indústrias De Transformação,3,Alto,34106,1285,7,37.68,29
+43215,Instalações elétricas,Construção,3,Alto,65173,1176,6,18.04,31
+31012,Fabricação de móveis com predominância de madeira,Indústrias De Transformação,3,Alto,41572,1155,1,27.78,32
+80111,Atividades de vigilância e segurança privada,Atividades Administrativas E Serviços Complementares,3,Alto,160794,1073,3,6.67,34
+10911,Fabricação de produtos de panificação,Indústrias De Transformação,3,Alto,60461,950,3,15.71,39
+29301,"Fabricação de cabines, carrocerias e reboques para veículos automotores",Indústrias De Transformação,3,Alto,15432,940,0,60.91,40
+10121,"Abate de suínos, aves e outros pequenos animais",Indústrias De Transformação,3,Alto,27801,902,2,32.44,43
+49213,"Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal e em região metropolitana","Transporte, Armazenagem E Correio",3,Alto,121565,841,8,6.92,45
+10139,Fabricação de produtos de carne,Indústrias De Transformação,3,Alto,27222,837,3,30.75,46
+43304,Obras de acabamento,Construção,3,Alto,62422,796,8,12.75,47
+10112,"Abate de reses, exceto suínos",Indústrias De Transformação,3,Alto,17642,776,4,43.99,50
+10996,Fabricação de produtos alimentícios não especificados anteriormente,Indústrias De Transformação,3,Alto,38234,775,1,20.27,51
+49124,Transporte metroferroviário de passageiros,"Transporte, Armazenagem E Correio",3,Alto,19864,771,4,38.81,52
+81290,Atividades de limpeza não especificadas anteriormente,Atividades Administrativas E Serviços Complementares,3,Alto,39955,761,4,19.05,54
+19314,Fabricação de álcool,Indústrias De Transformação,3,Alto,39295,752,4,19.14,56
+33147,Manutenção e reparação de máquinas e equipamentos da indústria mecânica,Indústrias De Transformação,3,Alto,36838,718,6,19.49,57
+45200,Manutenção e reparação de veículos automotores,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,57740,703,2,12.18,58
+23427,Fabricação de produtos cerâmicos não refratários para uso estrutural na construção,Indústrias De Transformação,3,Alto,27512,658,9,23.92,63
+28291,Fabricação de máquinas e equipamentos de uso geral não especificados anteriormente,Indústrias De Transformação,3,Alto,29910,645,3,21.56,65
+46877,Comércio atacadista de resíduos e sucatas,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,23511,641,5,27.26,66
+29107,"Fabricação de automóveis, camionetas e utilitários",Indústrias De Transformação,3,Alto,32407,578,0,17.84,69
+22196,Fabricação de artefatos de borracha não especificados anteriormente,Indústrias De Transformação,3,Alto,26782,569,2,21.25,70
+52117,Armazenamento,"Transporte, Armazenagem E Correio",3,Alto,44370,566,3,12.76,71
+28691,Fabricação de máquinas e equipamentos para uso industrial específico não especificados anteriormente,Indústrias De Transformação,3,Alto,21790,537,0,24.64,74
+47318,Comércio varejista de combustíveis para veículos automotores,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,79121,535,6,6.76,75
+47229,Comércio varejista de carnes e pescados - açougues e peixarias,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,34194,524,0,15.32,77
+01318,Cultivo de laranja,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,50051,496,2,9.91,81
+32507,Fabricação de instrumentos e materiais para uso médico e odontológico e de artigos ópticos,Indústrias De Transformação,3,Alto,31832,474,0,14.89,82
+01130,Cultivo de cana-de-açúcar,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,50957,463,4,9.09,84
+42995,Obras de engenharia civil não especificadas anteriormente,Construção,3,Alto,27622,456,0,16.51,85
+43223,"Instalações hidráulicas, de sistemas de ventilação e
+refrigeração",Construção,3,Alto,43136,448,1,10.39,87
+21211,Fabricação de medicamentos para uso humano,Indústrias De Transformação,3,Alto,49188,448,1,9.11,87
+36006,"Captação, tratamento e distribuição de água","Água, Esgoto, Atividades De Gestão De Resíduos E Descontaminação",3,Alto,28184,442,2,15.68,89
+25128,Fabricação de esquadrias de metal,Indústrias De Transformação,3,Alto,17267,441,3,25.54,90
+29417,Fabricação de peças e acessórios para o sistema motor de veículos automotores,Indústrias De Transformação,3,Alto,24735,438,0,17.71,91
+10660,Fabricação de alimentos para animais,Indústrias De Transformação,3,Alto,17468,435,0,24.9,92
+13596,Fabricação de outros produtos têxteis não especificados anteriormente,Indústrias De Transformação,3,Alto,20444,413,0,20.2,95
+52125,Carga e descarga,"Transporte, Armazenagem E Correio",3,Alto,19275,395,2,20.49,102
+52214,"Concessionárias de rodovias, pontes, túneis e serviços relacionados","Transporte, Armazenagem E Correio",3,Alto,15528,381,3,24.54,104
+20991,Fabricação de produtos químicos não especificados anteriormente,Indústrias De Transformação,3,Alto,20737,379,0,18.28,105
+52311,Gestão de portos e terminais,"Transporte, Armazenagem E Correio",3,Alto,13618,370,3,27.17,109
+22111,Fabricação de pneumáticos e de câmaras-de-ar,Indústrias De Transformação,3,Alto,13896,370,0,26.63,109
+16234,Fabricação de artefatos de tanoaria e de embalagens de madeira,Indústrias De Transformação,3,Alto,7187,351,0,48.84,114
+10937,"Fabricação de produtos derivados do cacau, de chocolates e confeitos",Indústrias De Transformação,3,Alto,16969,344,1,20.27,116
+43291,Obras de instalações em construções não especificadas anteriormente,Construção,3,Alto,24300,342,6,14.07,118
+46630,Comércio atacadista de máquinas e equipamentos para uso industrial; partes e peças,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,22280,322,0,14.45,123
+10945,Fabricação de massas alimentícias,Indústrias De Transformação,3,Alto,11916,311,0,26.1,124
+31021,Fabricação de móveis com predominância de metal,Indústrias De Transformação,3,Alto,10881,307,0,28.21,125
+01610,Atividades de apoio à agricultura,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,42146,306,1,7.26,126
+20711,"Fabricação de tintas, vernizes, esmaltes e lacas",Indústrias De Transformação,3,Alto,13409,302,1,22.52,127
+42138,"Obras de urbanização - ruas, praças e calçadas",Construção,3,Alto,18450,301,3,16.31,128
+80129,Atividades de transporte de valores,Atividades Administrativas E Serviços Complementares,3,Alto,14827,300,5,20.23,129
+25420,"Fabricação de artigos de serralheria, exceto esquadrias",Indústrias De Transformação,3,Alto,12745,296,3,23.22,131
+52508,Atividades relacionadas à organização do transporte de carga,"Transporte, Armazenagem E Correio",3,Alto,29137,284,0,9.75,134
+23991,Fabricação de produtos de minerais não metálicos não especificados anteriormente,Indústrias De Transformação,3,Alto,12340,283,0,22.93,135
+22218,Fabricação de laminados planos e tubulares de material plástico,Indústrias De Transformação,3,Alto,9160,283,0,30.9,135
+43134,Obras de terraplenagem,Construção,3,Alto,17987,282,0,15.68,137
+27333,"Fabricação de fios, cabos e condutores elétricos isolados",Indústrias De Transformação,3,Alto,12269,278,0,22.66,140
+46869,Comércio atacadista de papel e papelão em bruto e de embalagens,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,13939,277,3,19.87,141
+13235,Tecelagem de fios de fibras artificiais e sintéticas,Indústrias De Transformação,3,Alto,9332,276,3,29.58,142
+29441,Fabricação de peças e acessórios para o sistema de direção e suspensão de veículos automotores,Indústrias De Transformação,3,Alto,8837,272,0,30.78,144
+46851,"Comércio atacadista de produtos siderúrgicos e metalúrgicos, exceto para construção",Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,9930,272,3,27.39,144
+23117,Fabricação de vidro plano e de segurança,Indústrias De Transformação,3,Alto,9223,261,0,28.3,151
+28623,"Fabricação de máquinas e equipamentos para as indústrias de alimentos, bebidas e fumo",Indústrias De Transformação,3,Alto,9181,261,0,28.43,151
+25438,Fabricação de ferramentas,Indústrias De Transformação,3,Alto,10427,260,2,24.94,153
+27317,Fabricação de aparelhos e equipamentos para distribuição e controle de energia elétrica,Indústrias De Transformação,3,Alto,11788,258,0,21.89,154
+28224,"Fabricação de máquinas, equipamentos e aparelhos para transporte e elevação de cargas e pessoas",Indústrias De Transformação,3,Alto,9424,258,0,27.38,154
+52231,Estacionamento de veículos,"Transporte, Armazenagem E Correio",3,Alto,32064,255,4,7.95,156
+38327,Recuperação de materiais plásticos,"Água, Esgoto, Atividades De Gestão De Resíduos E Descontaminação",3,Alto,4667,249,2,53.35,157
+52401,Atividades auxiliares dos transportes aéreos,"Transporte, Armazenagem E Correio",3,Alto,18077,246,5,13.61,159
+33210,Instalação de máquinas e equipamentos industriais,Indústrias De Transformação,3,Alto,12470,244,2,19.57,161
+20134,Fabricação de adubos e fertilizantes,Indústrias De Transformação,3,Alto,10658,242,0,22.71,163
+29204,Fabricação de caminhões e ônibus,Indústrias De Transformação,3,Alto,18029,237,1,13.15,164
+28151,Fabricação de equipamentos de transmissão para fins industriais,Indústrias De Transformação,3,Alto,7852,237,1,30.18,164
+18130,Impressão de materiais para outros usos,Indústrias De Transformação,3,Alto,17083,235,0,13.76,167
+15319,Fabricação de calçados de couro,Indústrias De Transformação,3,Alto,17560,233,0,13.27,168
+32990,Fabricação de produtos diversos não especificados anteriormente,Indústrias De Transformação,3,Alto,13003,229,0,17.61,169
+46893,Comércio atacadista especializado de outros produtos intermediários não especificados anteriormente,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,19828,229,0,11.55,169
+13405,"Acabamentos em fios, tecidos e artefatos têxteis",Indústrias De Transformação,3,Alto,8990,227,2,25.25,171
+35140,Distribuição de energia elétrica,Eletricidade E Gás,3,Alto,13901,221,0,15.9,173
+13545,"Fabricação de tecidos especiais, inclusive artefatos",Indústrias De Transformação,3,Alto,8196,221,0,26.96,173
+80200,Atividades de monitoramento de sistemas de segurança,Atividades Administrativas E Serviços Complementares,3,Alto,35161,220,0,6.26,176
+28127,"Fabricação de equipamentos hidráulicos e pneumáticos, exceto válvulas",Indústrias De Transformação,3,Alto,8109,211,0,26.02,180
+01555,Criação de aves,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,24947,207,0,8.3,182
+38211,Tratamento e disposição de resíduos não perigosos,"Água, Esgoto, Atividades De Gestão De Resíduos E Descontaminação",3,Alto,3717,207,0,55.69,182
+25934,Fabricação de artigos de metal para uso doméstico e pessoal,Indústrias De Transformação,3,Alto,7282,206,0,28.29,184
+27902,Fabricação de equipamentos e aparelhos elétricos não especificados anteriormente,Indústrias De Transformação,3,Alto,14715,202,0,13.73,186
+02101,Produção florestal - florestas plantadas,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,14933,198,5,13.26,188
+81222,Imunização e controle de pragas urbanas,Atividades Administrativas E Serviços Complementares,3,Alto,11043,198,0,17.93,188
+27104,"Fabricação de geradores, transformadores e motores elétricos",Indústrias De Transformação,3,Alto,12024,193,0,16.05,191
+16102,Desdobramento de madeira,Indústrias De Transformação,3,Alto,5306,192,2,36.19,194
+28402,Fabricação de máquinas-ferramenta,Indústrias De Transformação,3,Alto,8671,191,0,22.03,195
+49299,"Transporte rodoviário coletivo de passageiros, sob regime de fretamento, e outros transportes rodoviários não especificados anteriormente","Transporte, Armazenagem E Correio",3,Alto,28991,187,2,6.45,199
+32400,Fabricação de brinquedos e jogos recreativos,Indústrias De Transformação,3,Alto,8571,184,0,21.47,201
+10520,Fabricação de laticínios,Indústrias De Transformação,3,Alto,11899,183,0,15.38,202
+17214,Fabricação de papel,Indústrias De Transformação,3,Alto,12064,178,1,14.75,205
+13219,Tecelagem de fios de algodão,Indústrias De Transformação,3,Alto,7034,177,0,25.16,207
+25136,Fabricação de obras de caldeiraria pesada,Indústrias De Transformação,3,Alto,4531,176,0,38.84,208
+28232,Fabricação de máquinas e aparelhos de refrigeração e ventilação para uso industrial e comercial,Indústrias De Transformação,3,Alto,7341,175,0,23.84,209
+46699,"Comércio atacadista de máquinas, aparelhos e equipamentos não especificados anteriormente; partes e peças",Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,17040,175,0,10.27,209
+46796,Comércio atacadista especializado de materiais de construção não especificados anteriormente e de materiais de construção em geral,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,15791,173,0,10.96,212
+16293,"Fabricação de artefatos de madeira, palha, cortiça, vime e material trançado não especificados anteriormente, exceto
+móveis",Indústrias De Transformação,3,Alto,5960,173,0,29.03,212
+51111,Transporte aéreo de passageiros regular,"Transporte, Armazenagem E Correio",3,Alto,25106,173,0,6.89,212
+23192,Fabricação de artigos de vidro,Indústrias De Transformação,3,Alto,7430,173,0,23.28,212
+46729,Comércio atacadista de ferragens e ferramentas,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,11264,171,0,15.18,216
+47849,Comércio varejista de gás liqüefeito de petróleo (GLP),Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,10506,165,0,15.71,217
+33295,Instalação de equipamentos não especificados anteriormente,Indústrias De Transformação,3,Alto,6871,165,0,24.01,217
+25918,Fabricação de embalagens metálicas,Indústrias De Transformação,3,Alto,8333,163,0,19.56,219
+23915,Aparelhamento e outros trabalhos em pedras,Indústrias De Transformação,3,Alto,7826,159,0,20.32,221
+10333,"Fabricação de sucos de frutas, hortaliças e legumes",Indústrias De Transformação,3,Alto,9866,157,4,15.91,223
+38394,Recuperação de materiais não especificados anteriormente,"Água, Esgoto, Atividades De Gestão De Resíduos E Descontaminação",3,Alto,3957,156,3,39.42,225
+11135,"Fabricação de malte, cervejas e chopes",Indústrias De Transformação,3,Alto,14942,152,0,10.17,229
+13511,Fabricação de artefatos têxteis para uso doméstico,Indústrias De Transformação,3,Alto,13329,150,1,11.25,231
+29433,Fabricação de peças e acessórios para o sistema de freios de veículos automotores,Indústrias De Transformação,3,Alto,7796,150,2,19.24,231
+29450,"Fabricação de material elétrico e eletrônico para veículos automotores, exceto baterias",Indústrias De Transformação,3,Alto,13591,148,3,10.89,233
+15408,"Fabricação de partes para calçados, de qualquer material",Indústrias De Transformação,3,Alto,4142,147,0,35.49,234
+20622,Fabricação de produtos de limpeza e polimento,Indústrias De Transformação,3,Alto,8248,147,0,17.82,234
+46613,"Comércio atacadista de máquinas, aparelhos e equipamentos para uso agropecuário; partes e peças",Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,8654,146,2,16.87,237
+46826,Comércio atacadista de gás liquefeito de petróleo (GLP),Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,5350,139,0,25.98,240
+27511,"Fabricação de fogões, refrigeradores e máquinas de lavar e secar para uso doméstico",Indústrias De Transformação,3,Alto,8681,137,0,15.78,242
+20932,Fabricação de aditivos de uso industrial,Indústrias De Transformação,3,Alto,8369,137,0,16.37,242
+33139,Manutenção e reparação de máquinas e equipamentos elétricos,Indústrias De Transformação,3,Alto,6686,135,0,20.19,246
+28542,"Fabricação de máquinas e equipamentos para terraplenagem, pavimentação e construção, exceto tratores",Indústrias De Transformação,3,Alto,3939,135,0,34.27,246
+11224,Fabricação de refrigerantes e de outras bebidas não alcoólicas,Indústrias De Transformação,3,Alto,8283,132,0,15.94,250
+33198,Manutenção e reparação de equipamentos e produtos não especificados anteriormente,Indústrias De Transformação,3,Alto,5086,132,0,25.95,250
+10929,Fabricação de biscoitos e bolachas,Indústrias De Transformação,3,Alto,13025,131,1,10.06,252
+20614,Fabricação de sabões e detergentes sintéticos,Indústrias De Transformação,3,Alto,10940,129,0,11.79,257
+10511,Preparação do leite,Indústrias De Transformação,3,Alto,3005,128,0,42.6,259
+13111,Preparação e fiação de fibras de algodão,Indústrias De Transformação,3,Alto,3222,128,0,39.73,259
+25217,"Fabricação de tanques, reservatórios metálicos e caldeiras para aquecimento central",Indústrias De Transformação,3,Alto,3339,128,0,38.33,259
+28135,"Fabricação de válvulas, registros e dispositivos semelhantes",Indústrias De Transformação,3,Alto,8566,127,0,14.83,262
+28216,Fabricação de aparelhos e equipamentos para instalações térmicas,Indústrias De Transformação,3,Alto,3165,127,0,40.13,262
+52290,Atividades auxiliares dos transportes terrestres não especificadas anteriormente,"Transporte, Armazenagem E Correio",3,Alto,6625,123,0,18.57,266
+38220,Tratamento e disposição de resíduos perigosos,"Água, Esgoto, Atividades De Gestão De Resíduos E Descontaminação",3,Alto,2185,122,0,55.84,267
+29425,Fabricação de peças e acessórios para os sistemas de marcha e transmissão de veículos automotores,Indústrias De Transformação,3,Alto,3837,121,0,31.54,268
+10694,Moagem e fabricação de produtos de origem vegetal não especificados anteriormente,Indústrias De Transformação,3,Alto,4912,114,0,23.21,270
+18113,"Impressão de jornais, livros, revistas e outras publicações periódicas",Indústrias De Transformação,3,Alto,6774,111,0,16.39,272
+32922,Fabricação de equipamentos e acessórios para segurança e proteção pessoal e profissional,Indústrias De Transformação,3,Alto,6517,110,0,16.88,273
+20291,Fabricação de produtos químicos orgânicos não especificados anteriormente,Indústrias De Transformação,3,Alto,10252,109,0,10.63,274
+22234,Fabricação de tubos e acessórios de material plástico para uso na construção,Indústrias De Transformação,3,Alto,4562,108,2,23.67,276
+15335,Fabricação de calçados de material sintético,Indústrias De Transformação,3,Alto,6993,105,0,15.02,278
+10201,Preservação do pescado e fabricação de produtos do pescado,Indústrias De Transformação,3,Alto,3533,105,0,29.72,278
+26515,"Fabricação de aparelhos e equipamentos de medida, teste e
+controle",Indústrias De Transformação,3,Alto,9823,104,0,10.59,280
+13308,Fabricação de tecidos de malha,Indústrias De Transformação,3,Alto,7517,102,1,13.57,283
+28534,"Fabricação de tratores, exceto agrícolas",Indústrias De Transformação,3,Alto,5872,101,0,17.2,285
+10953,"Fabricação de especiarias, molhos, temperos e condimentos",Indústrias De Transformação,3,Alto,5810,100,0,17.21,286
+46711,Comércio atacadista de madeira e produtos derivados,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,3217,99,0,30.77,287
+15106,Curtimento e outras preparações de couro,Indústrias De Transformação,3,Alto,5978,99,0,16.56,287
+10538,Fabricação de sorvetes e outros gelados comestíveis,Indústrias De Transformação,3,Alto,6281,98,0,15.6,290
+49221,"Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal, interestadual e internacional","Transporte, Armazenagem E Correio",3,Alto,15263,98,2,6.42,290
+01512,Criação de bovinos,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,43264,96,1,2.22,295
+75001,Atividades veterinárias,"Atividades Profissionais, Científicas E Técnicas",3,Alto,9985,95,0,9.51,296
+27406,Fabricação de lâmpadas e outros equipamentos de iluminação,Indústrias De Transformação,3,Alto,5973,95,0,15.9,296
+28526,"Fabricação de outras máquinas e equipamentos para uso na extração mineral, exceto na extração de petróleo",Indústrias De Transformação,3,Alto,2539,90,0,35.45,302
+28313,Fabricação de tratores agrícolas,Indústrias De Transformação,3,Alto,2736,90,0,32.89,302
+20193,Fabricação de produtos químicos inorgânicos não especificados anteriormente,Indústrias De Transformação,3,Alto,4609,89,0,19.31,304
+21220,Fabricação de medicamentos para uso veterinário,Indústrias De Transformação,3,Alto,7493,87,0,11.61,307
+10325,Fabricação de conservas de legumes e outros vegetais,Indústrias De Transformação,3,Alto,2701,86,0,31.84,310
+10317,Fabricação de conservas de frutas,Indústrias De Transformação,3,Alto,4396,86,0,19.56,310
+10414,"Fabricação de óleos vegetais em bruto, exceto óleo de milho",Indústrias De Transformação,3,Alto,3433,85,0,24.76,312
+26329,Fabricação de aparelhos telefônicos e de outros equipamentos de comunicação,Indústrias De Transformação,3,Alto,5150,82,0,15.92,314
+23125,Fabricação de embalagens de vidro,Indústrias De Transformação,3,Alto,4921,82,0,16.66,314
+46818,"Comércio atacadista de combustíveis sólidos, líquidos e gasosos, exceto gás natural e GLP",Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,7522,79,0,10.5,317
+27597,Fabricação de aparelhos eletrodomésticos não especificados anteriormente,Indústrias De Transformação,3,Alto,8020,78,0,9.73,319
+38122,Coleta de resíduos perigosos,"Água, Esgoto, Atividades De Gestão De Resíduos E Descontaminação",3,Alto,2701,77,0,28.51,320
+26108,Fabricação de componentes eletrônicos,Indústrias De Transformação,3,Alto,9509,77,0,8.1,320
+86216,Serviços móveis de atendimento a urgências,Saúde Humana E Serviços Sociais,3,Alto,5158,76,0,14.73,323
+16226,Fabricação de estruturas de madeira e de artigos de carpintaria para construção,Indústrias De Transformação,3,Alto,2535,76,0,29.98,323
+28615,"Fabricação de máquinas para a indústria metalúrgica, exceto máquinas-ferramenta",Indústrias De Transformação,3,Alto,2280,76,0,33.33,323
+37011,Gestão de redes de esgoto,"Água, Esgoto, Atividades De Gestão De Resíduos E Descontaminação",3,Alto,3103,76,0,24.49,323
+30415,Fabricação de aeronaves,Indústrias De Transformação,3,Alto,14245,71,0,4.98,328
+22129,Reforma de pneumáticos usados,Indústrias De Transformação,3,Alto,3617,70,0,19.35,329
+25225,"Fabricação de caldeiras geradoras de vapor, exceto para aquecimento central e para veículos",Indústrias De Transformação,3,Alto,2233,69,0,30.9,330
+20401,Fabricação de fibras artificiais e sintéticas,Indústrias De Transformação,3,Alto,1829,66,0,36.09,337
+15394,Fabricação de calçados de materiais não especificados anteriormente,Indústrias De Transformação,3,Alto,3318,65,0,19.59,339
+13529,Fabricação de artefatos de tapeçaria,Indústrias De Transformação,3,Alto,3843,63,0,16.39,341
+37029,"Atividades relacionadas a esgoto, exceto a gestão de redes","Água, Esgoto, Atividades De Gestão De Resíduos E Descontaminação",3,Alto,2074,63,0,30.38,341
+27325,Fabricação de material elétrico para instalações em circuito de consumo,Indústrias De Transformação,3,Alto,3500,63,0,18.0,341
+19225,"Fabricação de produtos derivados do petróleo, exceto produtos do refino",Indústrias De Transformação,3,Alto,4009,61,0,15.22,345
+95118,Reparação e manutenção de computadores e de equipamentos periféricos,Outras Atividades De Serviços,3,Alto,9922,61,0,6.15,345
+26604,Fabricação de aparelhos eletromédicos e eletroterapêuticos e equipamentos de irradiação,Indústrias De Transformação,3,Alto,3965,59,0,14.88,347
+13138,Fiação de fibras artificiais e sintéticas,Indústrias De Transformação,3,Alto,4924,59,0,11.98,347
+18121,Impressão de material de segurança,Indústrias De Transformação,3,Alto,2877,59,0,20.51,347
+46834,"Comércio atacadista de defensivos agrícolas, adubos, fertilizantes e corretivos do solo",Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,10323,57,0,5.52,351
+28143,Fabricação de compressores,Indústrias De Transformação,3,Alto,3658,57,0,15.58,351
+20517,Fabricação de defensivos agrícolas,Indústrias De Transformação,3,Alto,7573,56,0,7.39,354
+38319,Recuperação de materiais metálicos,"Água, Esgoto, Atividades De Gestão De Resíduos E Descontaminação",3,Alto,2245,56,0,24.94,354
+20312,Fabricação de resinas termoplásticas,Indústrias De Transformação,3,Alto,4339,55,0,12.68,357
+46656,Comércio atacadista de máquinas e equipamentos para uso comercial; partes e peças,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,4049,55,0,13.58,357
+18211,Serviços de pré-impressão,Indústrias De Transformação,3,Alto,5413,55,0,10.16,357
+35123,Transmissão de energia elétrica,Eletricidade E Gás,3,Alto,5250,54,1,10.29,361
+46516,"Comércio atacadista de computadores, periféricos e suprimentos de informática",Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,11467,54,0,4.71,361
+11216,Fabricação de águas envasadas,Indústrias De Transformação,3,Alto,4074,54,0,13.25,361
+18229,Serviços de acabamentos gráficos,Indústrias De Transformação,3,Alto,4863,53,0,10.9,365
+02306,Atividades de apoio à produção florestal,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,4188,52,0,12.42,366
+46842,"Comércio atacadista de produtos químicos e petroquímicos, exceto agroquímicos",Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,7756,52,0,6.7,366
+29506,Recondicionamento e recuperação de motores para veículos automotores,Indústrias De Transformação,3,Alto,3004,51,0,16.98,371
+13146,Fabricação de linhas para costurar e bordar,Indústrias De Transformação,3,Alto,2568,50,1,19.47,372
+16218,"Fabricação de madeira laminada e de chapas de madeira compensada, prensada e aglomerada",Indústrias De Transformação,3,Alto,5221,50,0,9.58,372
+28119,"Fabricação de motores e turbinas, exceto para aviões e veículos rodoviários",Indústrias De Transformação,3,Alto,3888,49,0,12.6,375
+11119,Fabricação de aguardentes e outras bebidas destiladas,Indústrias De Transformação,3,Alto,3517,49,0,13.93,375
+28666,Fabricação de máquinas e equipamentos para a indústria do plástico,Indústrias De Transformação,3,Alto,1477,49,0,33.18,375
+01211,Horticultura,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,13327,49,0,3.68,375
+32302,Fabricação de artefatos para pesca e esporte,Indústrias De Transformação,3,Alto,2149,48,0,22.34,380
+20916,Fabricação de adesivos e selantes,Indústrias De Transformação,3,Alto,3188,48,0,15.06,380
+17109,Fabricação de celulose e outras pastas para a fabricação de papel,Indústrias De Transformação,3,Alto,6237,48,0,7.7,380
+32914,"Fabricação de escovas, pincéis e vassouras",Indústrias De Transformação,3,Alto,2027,47,0,23.19,385
+30920,Fabricação de bicicletas e triciclos não motorizados,Indústrias De Transformação,3,Alto,3037,46,0,15.15,386
+58298,"Edição integrada à impressão de cadastros, listas e outros produtos gráficos",Informação E Comunicação,3,Alto,4453,45,3,10.11,388
+49248,Transporte escolar,"Transporte, Armazenagem E Correio",3,Alto,9471,45,0,4.75,388
+33112,"Manutenção e reparação de tanques, reservatórios metálicos e caldeiras, exceto para veículos",Indústrias De Transformação,3,Alto,3240,45,0,13.89,388
+49116,Transporte ferroviário de carga,"Transporte, Armazenagem E Correio",3,Alto,5660,45,0,7.95,388
+01628,Atividades de apoio à pecuária,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,3542,44,0,12.42,392
+01334,"Cultivo de frutas de lavoura permanente, exceto laranja e uva","Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,13762,43,0,3.12,394
+95215,Reparação e manutenção de equipamentos eletroeletrônicos de uso pessoal e doméstico,Outras Atividades De Serviços,3,Alto,5360,42,0,7.84,395
+46648,"Comércio atacadista de máquinas, aparelhos e equipamentos para uso odonto-médico-hospitalar; partes e peças",Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,6301,42,1,6.67,395
+35115,Geração de energia elétrica,Eletricidade E Gás,3,Alto,3783,41,0,10.84,399
+50301,Navegação de apoio,"Transporte, Armazenagem E Correio",3,Alto,981,41,0,41.79,399
+32205,Fabricação de instrumentos musicais,Indústrias De Transformação,3,Alto,1173,40,0,34.1,405
+28321,Fabricação de equipamentos para irrigação agrícola,Indústrias De Transformação,3,Alto,2064,39,0,18.9,408
+10422,"Fabricação de óleos vegetais refinados, exceto óleo de milho",Indústrias De Transformação,3,Alto,3596,38,0,10.57,410
+01636,Atividades de pós-colheita,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,1747,38,0,21.75,410
+26221,Fabricação de periféricos para equipamentos de informática,Indústrias De Transformação,3,Alto,9973,37,0,3.71,414
+26400,"Fabricação de aparelhos de recepção, reprodução, gravação e amplificação de áudio e vídeo",Indústrias De Transformação,3,Alto,2312,36,0,15.57,417
+10961,Fabricação de alimentos e pratos prontos,Indústrias De Transformação,3,Alto,3630,34,0,9.37,420
+46621,"Comércio atacadista de máquinas, equipamentos para terraplenagem, mineração e construção; partes e peças",Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,2402,34,2,14.15,420
+46737,Comércio atacadista de material elétrico,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,6234,34,0,5.45,420
+46745,Comércio atacadista de cimento,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,1588,34,0,21.41,420
+58212,Edição integrada à impressão de livros,Informação E Comunicação,3,Alto,4175,33,0,7.9,424
+17222,Fabricação de cartolina e papel-cartão,Indústrias De Transformação,3,Alto,1418,33,0,23.27,424
+10651,Fabricação de amidos e féculas de vegetais e de óleos de milho,Indústrias De Transformação,3,Alto,1855,33,0,17.79,424
+51129,Transporte aéreo de passageiros não regular,"Transporte, Armazenagem E Correio",3,Alto,1307,33,0,25.25,424
+21106,Fabricação de produtos farmoquímicos,Indústrias De Transformação,3,Alto,2202,33,0,14.99,424
+27228,Fabricação de baterias e acumuladores para veículos automotores,Indústrias De Transformação,3,Alto,2708,32,0,11.82,430
+30911,Fabricação de motocicletas,Indústrias De Transformação,3,Alto,2175,32,0,14.71,430
+10627,Moagem de trigo e fabricação de derivados,Indústrias De Transformação,3,Alto,2716,32,0,11.78,430
+13120,"Preparação e fiação de fibras têxteis naturais, exceto algodão",Indústrias De Transformação,3,Alto,793,31,0,39.09,434
+28259,Fabricação de máquinas e equipamentos para saneamento básico e ambiental,Indústrias De Transformação,3,Alto,1928,31,0,16.08,434
+20142,Fabricação de gases industriais,Indústrias De Transformação,3,Alto,2247,31,4,13.8,434
+33163,Manutenção e reparação de aeronaves,Indústrias De Transformação,3,Alto,5848,31,0,5.3,434
+28241,Fabricação de aparelhos e equipamentos de ar condicionado,Indústrias De Transformação,3,Alto,1202,30,0,24.96,439
+30326,Fabricação de peças e acessórios para veículos ferroviários,Indústrias De Transformação,3,Alto,678,30,0,44.25,439
+46524,Comércio atacadista de componentes eletrônicos e equipamentos de telefonia e comunicação,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,7940,30,0,3.78,439
+26311,Fabricação de equipamentos transmissores de comunicação,Indústrias De Transformação,3,Alto,2694,29,0,10.76,443
+10431,Fabricação de margarina e outras gorduras vegetais e de óleos não comestíveis de animais,Indústrias De Transformação,3,Alto,1013,29,0,28.63,443
+32124,Fabricação de bijuterias e artefatos semelhantes,Indústrias De Transformação,3,Alto,4960,29,0,5.85,443
+28658,"Fabricação de máquinas e equipamentos para as indústrias de celulose, papel e papelão e artefatos",Indústrias De Transformação,3,Alto,1354,29,0,21.42,443
+47326,Comércio varejista de lubrificantes,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,3271,28,0,8.56,449
+52320,Atividades de agenciamento marítimo,"Transporte, Armazenagem E Correio",3,Alto,6518,27,0,4.14,452
+30121,Construção de embarcações para esporte e lazer,Indústrias De Transformação,3,Alto,454,27,0,59.47,452
+35301,"Produção e distribuição de vapor, água quente e ar
+condicionado",Eletricidade E Gás,3,Alto,493,26,0,52.74,456
+10813,Torrefação e moagem de café,Indústrias De Transformação,3,Alto,2846,26,0,9.14,456
+33121,Manutenção e reparação de equipamentos eletrônicos e ópticos,Indústrias De Transformação,3,Alto,5223,26,0,4.98,456
+95126,Reparação e manutenção de equipamentos de comunicação,Outras Atividades De Serviços,3,Alto,3782,25,0,6.61,460
+27210,"Fabricação de pilhas, baterias e acumuladores elétricos, exceto para veículos automotores",Indústrias De Transformação,3,Alto,1038,24,0,23.12,462
+11127,Fabricação de vinho,Indústrias De Transformação,3,Alto,756,23,0,30.42,463
+20720,Fabricação de tintas de impressão,Indústrias De Transformação,3,Alto,1905,23,0,12.07,463
+95291,Reparação e manutenção de objetos e equipamentos pessoais e domésticos não especificados anteriormente,Outras Atividades De Serviços,3,Alto,6914,23,0,3.33,463
+28640,"Fabricação de máquinas e equipamentos para as indústrias do vestuário, do couro e de calçados",Indústrias De Transformação,3,Alto,763,22,0,28.83,466
+28518,Fabricação de máquinas e equipamentos para a prospecção e extração de petróleo,Indústrias De Transformação,3,Alto,1272,22,0,17.3,466
+20738,"Fabricação de impermeabilizantes, solventes e produtos afins",Indústrias De Transformação,3,Alto,2176,22,0,10.11,466
+32116,Lapidação de gemas e fabricação de artefatos de ourivesaria e joalheria,Indústrias De Transformação,3,Alto,4802,22,0,4.58,466
+26213,Fabricação de equipamentos de informática,Indústrias De Transformação,3,Alto,4507,21,0,4.66,475
+31039,"Fabricação de móveis de outros materiais, exceto madeira e metal",Indústrias De Transformação,3,Alto,1181,20,0,16.93,476
+30423,"Fabricação de turbinas, motores e outros componentes e peças para aeronaves",Indústrias De Transformação,3,Alto,2616,19,0,7.26,478
+20321,Fabricação de resinas termofixas,Indústrias De Transformação,3,Alto,1634,19,0,11.63,478
+58115,Edição de livros,Informação E Comunicação,3,Alto,9095,19,0,2.09,478
+13537,Fabricação de artefatos de cordoaria,Indústrias De Transformação,3,Alto,1223,18,0,14.72,485
+30997,Fabricação de equipamentos de transporte não especificados anteriormente,Indústrias De Transformação,3,Alto,1271,18,0,14.16,485
+12204,Fabricação de produtos do fumo,Indústrias De Transformação,3,Alto,854,18,0,21.08,485
+39005,Descontaminação e outros serviços de gestão de resíduos,"Água, Esgoto, Atividades De Gestão De Resíduos E Descontaminação",3,Alto,546,18,0,32.97,485
+01342,Cultivo de café,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,12769,18,0,1.41,485
+03221,Aquicultura em água doce,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,1374,17,0,12.37,490
+10619,Beneficiamento de arroz e fabricação de produtos do arroz,Indústrias De Transformação,3,Alto,2096,17,0,8.11,490
+33171,Manutenção e reparação de embarcações,Indústrias De Transformação,3,Alto,1478,16,0,10.83,495
+52222,Terminais rodoviários e ferroviários,"Transporte, Armazenagem E Correio",3,Alto,2168,16,0,7.38,495
+30113,Construção de embarcações e estruturas flutuantes,Indústrias De Transformação,3,Alto,561,15,0,26.74,498
+19217,Fabricação de produtos do refino de petróleo,Indústrias De Transformação,3,Alto,5135,14,0,2.73,500
+01521,Criação de outros animais de grande porte,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,3492,14,2,4.01,500
+45439,Manutenção e reparação de motocicletas,Comércio; Reparação De Veículos Automotores E Motocicletas,3,Alto,1300,13,0,10.0,507
+01415,Produção de sementes certificadas,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,3565,13,0,3.65,507
+25411,Fabricação de artigos de cutelaria,Indústrias De Transformação,3,Alto,552,13,0,23.55,507
+51200,Transporte aéreo de carga,"Transporte, Armazenagem E Correio",3,Alto,1095,13,0,11.87,507
+10821,Fabricação de produtos à base de café,Indústrias De Transformação,3,Alto,480,13,0,27.08,507
+10724,Fabricação de açúcar refinado,Indústrias De Transformação,3,Alto,820,12,0,14.63,514
+30318,"Fabricação de locomotivas, vagões e outros materiais rodantes",Indústrias De Transformação,3,Alto,1316,12,0,9.12,514
+01156,Cultivo de soja,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,5775,12,0,2.08,514
+20525,Fabricação de desinfestantes domissanitários,Indústrias De Transformação,3,Alto,780,11,0,14.1,523
+15327,Fabricação de tênis de qualquer material,Indústrias De Transformação,3,Alto,822,11,0,13.38,523
+86224,"Serviços de remoção de pacientes, exceto os serviços móveis de atendimento a urgências",Saúde Humana E Serviços Sociais,3,Alto,840,11,0,13.1,523
+01598,Criação de animais não especificados anteriormente,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,2133,10,0,4.69,531
+13227,"Tecelagem de fios de fibras têxteis naturais, exceto algodão",Indústrias De Transformação,3,Alto,252,9,0,35.71,535
+49400,Transporte dutoviário,"Transporte, Armazenagem E Correio",3,Alto,779,8,0,10.27,538
+01113,Cultivo de cereais,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,9980,8,0,0.8,538
+10635,Fabricação de farinha de mandioca e derivados,Indústrias De Transformação,3,Alto,690,7,0,10.14,547
+80307,Atividades de investigação particular,Atividades Administrativas E Serviços Complementares,3,Alto,148,7,0,47.3,547
+35204,Produção de gás; processamento de gás natural; distribuição de combustíveis gasosos por redes urbanas,Eletricidade E Gás,3,Alto,1619,7,0,4.32,547
+49230,Transporte rodoviário de táxi,"Transporte, Armazenagem E Correio",3,Alto,2159,7,0,3.24,547
+33155,Manutenção e reparação de veículos ferroviários,Indústrias De Transformação,3,Alto,656,7,0,10.67,547
+01393,Cultivo de plantas de lavoura permanente não especificadas anteriormente,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,2616,7,0,2.68,547
+20223,"Fabricação de intermediários para plastificantes, resinas e fibras",Indústrias De Transformação,3,Alto,611,7,0,11.46,547
+10643,"Fabricação de farinha de milho e derivados, exceto óleos de milho",Indústrias De Transformação,3,Alto,800,6,0,7.5,558
+20339,Fabricação de elastômeros,Indústrias De Transformação,3,Alto,473,6,0,12.68,558
+28631,Fabricação de máquinas e equipamentos para a indústria têxtil,Indústrias De Transformação,3,Alto,622,6,0,9.65,558
+01423,"Produção de mudas e outras formas de propagação vegetal, certificadas","Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,2861,6,0,2.1,558
+01164,"Cultivo de oleaginosas de lavoura temporária, exceto soja","Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,2291,6,0,2.62,558
+20118,Fabricação de cloro e álcalis,Indústrias De Transformação,3,Alto,483,6,0,12.42,558
+58221,Edição integrada à impressão de jornais,Informação E Comunicação,3,Alto,2581,6,0,2.32,558
+01199,Cultivo de plantas de lavoura temporária não especificadas anteriormente,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,11050,5,0,0.45,569
+50211,Transporte por navegação interior de carga,"Transporte, Armazenagem E Correio",3,Alto,243,5,0,20.58,569
+58191,"Edição de cadastros, listas e outros produtos gráficos",Informação E Comunicação,3,Alto,571,5,0,8.76,569
+58239,Edição integrada à impressão de revistas,Informação E Comunicação,3,Alto,667,5,0,7.5,569
+20941,Fabricação de catalisadores,Indústrias De Transformação,3,Alto,222,3,0,13.51,580
+58131,Edição de revistas,Informação E Comunicação,3,Alto,1914,3,0,1.57,580
+35131,Comércio atacadista de energia elétrica,Eletricidade E Gás,3,Alto,1761,3,0,1.7,580
+03124,Pesca em água doce,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,106,3,0,28.3,580
+01229,Cultivo de flores e plantas ornamentais,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,12533,3,0,0.24,580
+20126,Fabricação de intermediários para fertilizantes,Indústrias De Transformação,3,Alto,1235,2,0,1.62,594
+26701,"Fabricação de equipamentos e instrumentos ópticos, fotográficos e cinematográficos",Indústrias De Transformação,3,Alto,400,2,0,5.0,594
+52397,Atividades auxiliares dos transportes aquaviários não especificadas anteriormente,"Transporte, Armazenagem E Correio",3,Alto,463,2,0,4.32,594
+43193,Serviços de preparação do terreno não especificados anteriormente,Construção,3,Alto,196,2,0,10.2,594
+01547,Criação de suínos,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,2818,2,0,0.71,594
+01326,Cultivo de uva,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,804,1,0,1.24,607
+01539,Criação de caprinos e ovinos,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,478,1,0,2.09,607
+58123,Edição de jornais,Informação E Comunicação,3,Alto,1187,1,0,0.84,607
+26523,Fabricação de cronômetros e relógios,Indústrias De Transformação,3,Alto,164,0,0,,616
+50122,Transporte marítimo de longo curso,"Transporte, Armazenagem E Correio",3,Alto,40,0,0,,616
+01148,Cultivo de fumo,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,3,0,0,,616
+12107,Processamento industrial do fumo,Indústrias De Transformação,3,Alto,0,0,0,,616
+03213,Aquicultura em água salgada e salobra,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,52,0,0,,616
+03116,Pesca em água salgada,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,255,0,0,,616
+18300,Reprodução de materiais gravados em qualquer suporte,Indústrias De Transformação,3,Alto,358,0,0,,616
+19101,Coquerias,Indústrias De Transformação,3,Alto,0,0,0,,616
+01709,Caça e serviços relacionados,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,4,0,0,,616
+19322,"Fabricação de biocombustíveis, exceto álcool",Indústrias De Transformação,3,Alto,250,0,0,,616
+01121,Cultivo de algodão herbáceo e de outras fibras de lavoura temporária,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,692,0,0,,616
+50114,Transporte marítimo de cabotagem,"Transporte, Armazenagem E Correio",3,Alto,415,0,0,,616
+30504,Fabricação de veículos militares de combate,Indústrias De Transformação,3,Alto,4,0,0,,616
+20215,Fabricação de produtos petroquímicos básicos,Indústrias De Transformação,3,Alto,1038,0,0,,616
+21238,Fabricação de preparações farmacêuticas,Indústrias De Transformação,3,Alto,246,0,0,,616
+01351,Cultivo de cacau,"Agricultura, Pecuária, Produção Florestal, Pesca E Aquicultura",3,Alto,12,0,0,,616
+49507,"Trens turísticos, teleféricos e similares","Transporte, Armazenagem E Correio",3,Alto,70,0,0,,616
+26809,"Fabricação de mídias virgens, magnéticas e ópticas",Indústrias De Transformação,3,Alto,1,0,0,,616
+51307,Transporte espacial,"Transporte, Armazenagem E Correio",3,Alto,4,0,0,,616
+50998,Transportes aquaviários não especificados anteriormente,"Transporte, Armazenagem E Correio",3,Alto,61,0,0,,616
+50912,Transporte por navegação de travessia,"Transporte, Armazenagem E Correio",3,Alto,152,0,0,,616
+50220,Transporte por navegação interior de passageiros em linhas regulares,"Transporte, Armazenagem E Correio",3,Alto,32,0,0,,616
+47113,"Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados e supermercados",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,431337,7045,12,16.33,2
+56112,Restaurantes e outros estabelecimentos de serviços de alimentação e bebidas,Alojamento E Alimentação,2,Medio,416426,4299,19,10.32,6
+47440,"Comércio varejista de ferragens, madeira e materiais de construção",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,183230,2518,17,13.74,10
+56201,"Serviços de catering, bufê e outros serviços de comida preparada",Alojamento E Alimentação,2,Medio,127149,2368,5,18.62,12
+45307,Comércio de peças e acessórios para veículos automotores,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,134915,1650,3,12.23,18
+82997,Atividades de serviços prestados principalmente às empresas não especificadas anteriormente,Atividades Administrativas E Serviços Complementares,2,Medio,152787,1488,15,9.74,20
+53105,Atividades de Correio,"Transporte, Armazenagem E Correio",2,Medio,30654,1388,0,45.28,24
+81117,"Serviços combinados para apoio a edifícios, exceto condomínios prediais",Atividades Administrativas E Serviços Complementares,2,Medio,180650,1357,9,7.51,25
+47717,Comércio varejista de produtos farmacêuticos para uso humano e veterinário,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,132641,1021,2,7.7,35
+82202,Atividades de teleatendimento,Atividades Administrativas E Serviços Complementares,2,Medio,211816,992,1,4.68,36
+81125,Condomínios prediais,Atividades Administrativas E Serviços Complementares,2,Medio,156314,972,3,6.22,37
+85112,Educação infantil - creche,Educação,2,Medio,96719,960,0,9.93,38
+85139,Ensino fundamental,Educação,2,Medio,112857,864,0,7.66,44
+47121,"Comércio varejista de mercadorias em geral, com
+predominância de produtos alimentícios - minimercados,
+mercearias e armazéns",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,98635,777,1,7.88,49
+47211,"Comércio varejista de produtos de padaria, laticínio, doces, balas e semelhantes",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,92612,673,1,7.27,60
+85325,Educação superior - graduação e pós-graduação,Educação,2,Medio,81912,660,0,8.06,62
+46397,Comércio atacadista de produtos alimentícios em geral,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,46388,653,1,14.08,64
+85996,Atividades de ensino não especificadas anteriormente,Educação,2,Medio,83862,632,3,7.54,67
+55108,Hotéis e similares,Alojamento E Alimentação,2,Medio,66217,631,0,9.53,68
+14126,"Confecção de peças do vestuário, exceto roupas íntimas",Indústrias De Transformação,2,Medio,99709,558,3,5.6,72
+82199,"Fotocópias, preparação de documentos e outros serviços especializados de apoio administrativo",Atividades Administrativas E Serviços Complementares,2,Medio,56584,507,4,8.96,79
+45111,Comércio a varejo e por atacado de veículos automotores,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,58562,452,0,7.72,86
+53202,Atividades de malote e de entrega,"Transporte, Armazenagem E Correio",2,Medio,14219,429,3,30.17,93
+61108,Telecomunicações por fio,Informação E Comunicação,2,Medio,39032,423,0,10.84,94
+20631,"Fabricação de cosméticos, produtos de perfumaria e de higiene pessoal",Indústrias De Transformação,2,Medio,24506,401,0,16.36,100
+47296,Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente; produtos do fumo,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,52676,389,0,7.38,103
+46915,"Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,22817,378,3,16.57,106
+93123,"Clubes sociais, esportivos e similares","Artes, Cultura, Esporte E Recreação",2,Medio,30276,374,0,12.35,107
+46338,Comércio atacadista de hortifrutigranjeiros,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,31346,374,4,11.93,107
+17338,Fabricação de chapas e de embalagens de papelão ondulado,Indústrias De Transformação,2,Medio,16428,367,0,22.34,111
+85121,Educação infantil - pré-escola,Educação,2,Medio,63381,352,0,5.55,113
+46443,Comércio atacadista de produtos farmacêuticos para uso humano e veterinário,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,24508,334,1,13.63,119
+47130,"Comércio varejista de mercadorias em geral, sem predominância de produtos alimentícios",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,50955,328,0,6.44,122
+86500,"Atividades de profissionais da área de saúde, exceto médicos e odontólogos",Saúde Humana E Serviços Sociais,2,Medio,21136,286,0,13.53,133
+46371,Comércio atacadista especializado em produtos alimentícios não especificados anteriormente,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,20039,279,0,13.92,138
+46354,Comércio atacadista de bebidas,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,26011,279,0,10.73,138
+61906,Outras atividades de telecomunicações,Informação E Comunicação,2,Medio,19523,274,1,14.03,143
+85503,Atividades de apoio à educação,Educação,2,Medio,9192,271,0,29.48,146
+47245,Comércio varejista de hortifrutigranjeiros,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,26854,271,0,10.09,146
+85317,Educação superior - graduação,Educação,2,Medio,63562,248,0,3.9,158
+46494,Comércio atacadista de equipamentos e artigos de uso pessoal e doméstico não especificados anteriormente,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,32504,245,0,7.54,160
+47431,Comércio varejista de vidros,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,11318,236,2,20.85,166
+46931,"Comércio atacadista de mercadorias em geral, sem predominância de alimentos ou de insumos agropecuários",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,28815,215,0,7.46,179
+85201,Ensino médio,Educação,2,Medio,36895,210,0,5.69,181
+17311,Fabricação de embalagens de papel,Indústrias De Transformação,2,Medio,9379,203,3,21.64,185
+71201,Testes e análises técnicas,"Atividades Profissionais, Científicas E Técnicas",2,Medio,16917,201,0,11.88,187
+60217,Atividades de televisão aberta,Informação E Comunicação,2,Medio,14037,196,0,13.96,190
+46346,"Comércio atacadista de carnes, produtos da carne e pescado",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,11183,193,1,17.26,191
+46460,"Comércio atacadista de cosméticos, produtos de perfumaria e de higiene pessoal",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,30702,190,0,6.19,196
+96017,"Lavanderias, tinturarias e toalheiros",Outras Atividades De Serviços,2,Medio,16998,189,0,11.12,197
+85414,Educação profissional de nível técnico,Educação,2,Medio,27332,188,3,6.88,198
+14215,Fabricação de meias,Indústrias De Transformação,2,Medio,9427,186,0,19.73,200
+17427,Fabricação de produtos de papel para usos doméstico e higiênico-sanitário,Indústrias De Transformação,2,Medio,9307,183,0,19.66,202
+82300,"Atividades de organização de eventos, exceto culturais e esportivos",Atividades Administrativas E Serviços Complementares,2,Medio,18914,160,0,8.46,220
+62091,"Suporte técnico, manutenção e outros serviços em tecnologia da informação",Informação E Comunicação,2,Medio,46179,157,0,3.4,223
+45412,"Comércio por atacado e a varejo de motocicletas, peças e acessórios",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,15755,153,3,9.71,227
+47415,Comércio varejista de tintas e materiais para pintura,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,13281,147,0,11.07,234
+96033,Atividades funerárias e serviços relacionados,Outras Atividades De Serviços,2,Medio,9455,137,2,14.49,242
+93131,Atividades de condicionamento físico,"Artes, Cultura, Esporte E Recreação",2,Medio,29588,133,2,4.5,249
+61205,Telecomunicações sem fio,Informação E Comunicação,2,Medio,16411,131,0,7.98,252
+47237,Comércio varejista de bebidas,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,14332,131,0,9.14,252
+46231,"Comércio atacadista de animais vivos, alimentos para animais e matérias-primas agrícolas, exceto café e soja",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,14264,130,2,9.11,255
+46311,Comércio atacadista de leite e laticínios,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,7755,129,0,16.63,257
+96025,Cabeleireiros e outras atividades de tratamento de beleza,Outras Atividades De Serviços,2,Medio,24929,125,0,5.01,264
+17419,"Fabricação de produtos de papel, cartolina, papel-cartão e papelão ondulado para uso comercial e de escritório",Indústrias De Transformação,2,Medio,7397,119,3,16.09,269
+82911,Atividades de cobrança e informações cadastrais,Atividades Administrativas E Serviços Complementares,2,Medio,42830,113,0,2.64,271
+46451,"Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, ortopédico e odontológico",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,21415,107,0,5.0,277
+82920,Envasamento e empacotamento sob contrato,Atividades Administrativas E Serviços Complementares,2,Medio,8968,103,0,11.49,281
+17494,"Fabricação de produtos de pastas celulósicas, papel, cartolina, papel-cartão e papelão ondulado não especificados anteriormente",Indústrias De Transformação,2,Medio,5567,102,2,18.32,283
+96092,Atividades de serviços pessoais não especificadas anteriormente,Outras Atividades De Serviços,2,Medio,15253,99,0,6.49,287
+17320,Fabricação de embalagens de cartolina e papel-cartão,Indústrias De Transformação,2,Medio,6682,98,0,14.67,290
+31047,Fabricação de colchões,Indústrias De Transformação,2,Medio,5029,95,0,18.89,296
+93298,"Atividades de recreação e lazer não especificadas
+anteriormente","Artes, Cultura, Esporte E Recreação",2,Medio,7908,85,4,10.75,312
+74200,Atividades fotográficas e similares,"Atividades Profissionais, Científicas E Técnicas",2,Medio,3950,82,0,20.76,314
+14134,Confecção de roupas profissionais,Indústrias De Transformação,2,Medio,5935,77,0,12.97,320
+14118,Confecção de roupas íntimas,Indústrias De Transformação,2,Medio,10726,73,0,6.81,327
+46478,"Comércio atacadista de artigos de escritório e de papelaria; livros, jornais e outras publicações",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,8375,69,0,8.24,330
+63119,"Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na Internet",Informação E Comunicação,2,Medio,30035,68,0,2.26,332
+62040,Consultoria em tecnologia da informação,Informação E Comunicação,2,Medio,44972,68,0,1.51,332
+46427,Comércio atacadista de artigos do vestuário e acessórios,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,14461,67,0,4.63,335
+93212,Parques de diversão e parques temáticos,"Artes, Cultura, Esporte E Recreação",2,Medio,3938,67,0,17.01,335
+72100,Pesquisa e desenvolvimento experimental em ciências físicas e naturais,"Atividades Profissionais, Científicas E Técnicas",2,Medio,16630,66,0,3.97,337
+63194,"Portais, provedores de conteúdo e outros serviços de informação na Internet",Informação E Comunicação,2,Medio,23159,65,0,2.81,339
+62015,Desenvolvimento de programas de computador sob encomenda,Informação E Comunicação,2,Medio,75244,59,0,0.78,347
+46419,"Comércio atacadista de tecidos, artefatos de tecidos e de armarinho",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,6781,52,0,7.67,366
+46320,"Comércio atacadista de cereais e leguminosas beneficiados, farinhas, amidos e féculas",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,4795,52,0,10.84,366
+62031,Desenvolvimento e licenciamento de programas de computador não customizáveis,Informação E Comunicação,2,Medio,33448,48,0,1.44,380
+47857,Comércio varejista de artigos usados,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,3286,44,0,13.39,392
+62023,Desenvolvimento e licenciamento de programas de computador customizáveis,Informação E Comunicação,2,Medio,42886,42,0,0.98,395
+85333,Educação superior - pós-graduação e extensão,Educação,2,Medio,8272,42,1,5.08,395
+55906,Outros tipos de alojamento não especificados anteriormente,Alojamento E Alimentação,2,Medio,3628,40,0,11.03,405
+63992,Outras atividades de prestação de serviços de informação não especificadas anteriormente,Informação E Comunicação,2,Medio,4772,35,0,7.33,418
+46192,Representantes comerciais e agentes do comércio de mercadorias em geral não especializado,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,4692,35,3,7.46,418
+15211,"Fabricação de artigos para viagem, bolsas e semelhantes de qualquer material",Indústrias De Transformação,2,Medio,3035,33,0,10.87,424
+46222,Comércio atacadista de soja,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,1057,29,0,27.44,443
+93191,Atividades esportivas não especificadas anteriormente,"Artes, Cultura, Esporte E Recreação",2,Medio,4036,28,0,6.94,449
+85937,Ensino de idiomas,Educação,2,Medio,15919,28,0,1.76,449
+46176,"Representantes comerciais e agentes do comércio de produtos alimentícios, bebidas e fumo",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,2172,27,0,12.43,452
+46362,Comércio atacadista de produtos do fumo,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,1830,25,0,13.66,460
+85911,Ensino de esportes,Educação,2,Medio,3685,22,0,5.97,466
+56121,Serviços ambulantes de alimentação,Alojamento E Alimentação,2,Medio,2825,20,0,7.08,476
+46923,"Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,3024,19,0,6.28,478
+85929,Ensino de arte e cultura,Educação,2,Medio,4132,16,0,3.87,495
+46117,Representantes comerciais e agentes do comércio de matérias-primas agrícolas e animais vivos,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,861,14,0,16.26,500
+90019,"Artes cênicas, espetáculos e atividades complementares","Artes, Cultura, Esporte E Recreação",2,Medio,2463,14,0,5.68,500
+59146,Atividades de exibição cinematográfica,Informação E Comunicação,2,Medio,5037,14,0,2.78,500
+72207,Pesquisa e desenvolvimento experimental em ciências sociais e humanas,"Atividades Profissionais, Científicas E Técnicas",2,Medio,1365,13,0,9.52,507
+91031,"Atividades de jardins botânicos, zoológicos, parques nacionais, reservas ecológicas e áreas de proteção ambiental","Artes, Cultura, Esporte E Recreação",2,Medio,1025,13,0,12.68,507
+14142,"Fabricação de acessórios do vestuário, exceto para segurança e proteção",Indústrias De Transformação,2,Medio,2412,12,0,4.98,514
+59111,"Atividades de produção cinematográfica, de vídeos e de programas de televisão",Informação E Comunicação,2,Medio,4243,12,0,2.83,514
+46184,Representantes comerciais e agentes do comércio especializado em produtos não especificados anteriormente,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,2852,12,1,4.21,514
+60101,Atividades de rádio,Informação E Comunicação,2,Medio,4406,11,0,2.5,523
+15297,Fabricação de artefatos de couro não especificados anteriormente,Indústrias De Transformação,2,Medio,2147,11,0,5.12,523
+61418,Operadoras de televisão por assinatura por cabo,Informação E Comunicação,2,Medio,339,11,0,32.45,523
+46133,"Representantes comerciais e agentes do comércio de madeira, material de construção e ferragens",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,990,10,0,10.1,531
+46435,Comércio atacadista de calçados e artigos de viagem,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,2907,9,0,3.1,535
+46214,Comércio atacadista de café em grão,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,1058,8,0,7.56,538
+85422,Educação profissional de nível tecnológico,Educação,2,Medio,5058,7,0,1.38,547
+91015,Atividades de bibliotecas e arquivos,"Artes, Cultura, Esporte E Recreação",2,Medio,227,6,0,26.43,558
+59138,"Distribuição cinematográfica, de vídeo e de programas de televisão",Informação E Comunicação,2,Medio,760,6,0,7.89,558
+60225,Programadoras e atividades relacionadas à televisão por assinatura,Informação E Comunicação,2,Medio,915,6,0,6.56,558
+46141,"Representantes comerciais e agentes do comércio de máquinas, equipamentos, embarcações e aeronaves",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,898,5,0,5.57,569
+45129,Representantes comerciais e agentes do comércio de veículos automotores,Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,539,4,0,7.42,575
+90027,Criação artística,"Artes, Cultura, Esporte E Recreação",2,Medio,151,4,0,26.49,575
+61302,Telecomunicações por satélite,Informação E Comunicação,2,Medio,455,4,0,8.79,575
+14223,"Fabricação de artigos do vestuário, produzidos em malharias e tricotagens, exceto meias",Indústrias De Transformação,2,Medio,749,2,0,2.67,594
+59120,"Atividades de pós-produção cinematográfica, de vídeos e de programas de televisão",Informação E Comunicação,2,Medio,667,2,0,3.0,594
+91023,"Atividades de museus e de exploração, restauração artística
+e conservação de lugares e prédios históricos e atrações
+similares","Artes, Cultura, Esporte E Recreação",2,Medio,725,1,0,1.38,607
+61434,Operadoras de televisão por assinatura por satélite,Informação E Comunicação,2,Medio,94,1,0,10.64,607
+46150,"Representantes comerciais e agentes do comércio de eletrodomésticos, móveis e artigos de uso doméstico",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,616,0,0,,616
+46125,"Representantes comerciais e agentes do comércio de combustíveis, minerais, produtos siderúrgicos e químicos",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,617,0,0,,616
+45421,"Representantes comerciais e agentes do comércio de motocicletas, peças e acessórios",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,32,0,0,,616
+47903,,,2,Medio,0,0,0,,616
+97005,Serviços domésticos,Serviços Domésticos,2,Medio,197,0,0,,616
+63917,Agências de notícias,Informação E Comunicação,2,Medio,433,0,0,,616
+61426,Operadoras de televisão por assinatura por micro-ondas,Informação E Comunicação,2,Medio,0,0,0,,616
+59201,Atividades de gravação de som e de edição de música,Informação E Comunicação,2,Medio,377,0,0,,616
+46168,"Representantes comerciais e agentes do comércio de têxteis, vestuário, calçados e artigos de viagem",Comércio; Reparação De Veículos Automotores E Motocicletas,2,Medio,759,0,0,,616
+84116,Administração pública em geral,"Administração Pública, Defesa E Seguridade Social",1,Leve,1366316,6008,17,4.4,3
+78205,Locação de mão de obra temporária,Atividades Administrativas E Serviços Complementares,1,Leve,278251,3974,1,14.28,7
+86909,Atividades de atenção à saúde humana não especificadas anteriormente,Saúde Humana E Serviços Sociais,1,Leve,37410,1916,0,51.22,15
+86607,Atividades de apoio à gestão de saúde,Saúde Humana E Serviços Sociais,1,Leve,35350,1617,0,45.74,19
+64221,"Bancos múltiplos, com carteira comercial","Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,166604,1390,4,8.34,22
+82113,Serviços combinados de escritório e apoio administrativo,Atividades Administrativas E Serviços Complementares,1,Leve,199057,1331,0,6.69,26
+47890,Comércio varejista de outros produtos novos não especificados anteriormente,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,144428,1291,14,8.94,28
+71120,Serviços de engenharia,"Atividades Profissionais, Científicas E Técnicas",1,Leve,81474,1177,1,14.45,30
+94308,Atividades de associações de defesa de direitos sociais,Outras Atividades De Serviços,1,Leve,113142,1092,3,9.65,33
+88006,Serviços de assistência social sem alojamento,Saúde Humana E Serviços Sociais,1,Leve,66740,928,0,13.9,41
+65502,Planos de saúde,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,53671,791,0,14.74,48
+47814,Comércio varejista de artigos do vestuário e acessórios,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,171223,765,0,4.47,53
+47539,Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,44668,509,0,11.4,78
+78302,Fornecimento e gestão de recursos humanos para terceiros,Atividades Administrativas E Serviços Complementares,1,Leve,45504,499,0,10.97,80
+94995,Atividades associativas não especificadas anteriormente,Outras Atividades De Serviços,1,Leve,25907,470,0,18.14,83
+41107,Incorporação de empreendimentos imobiliários,Construção,1,Leve,32877,412,0,12.53,96
+47547,"Comércio varejista especializado de móveis, colchoaria e artigos de iluminação",Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,51701,403,0,7.79,97
+77390,Aluguel de máquinas e equipamentos não especificados anteriormente,Atividades Administrativas E Serviços Complementares,1,Leve,21521,402,3,18.68,98
+87115,"Atividades de assistência a idosos, deficientes físicos, imunodeprimidos e convalescentes prestadas em residências coletivas e particulares",Saúde Humana E Serviços Sociais,1,Leve,32520,397,0,12.21,101
+69206,"Atividades de contabilidade, consultoria e auditoria contábil e tributária","Atividades Profissionais, Científicas E Técnicas",1,Leve,102374,345,3,3.37,115
+77322,Aluguel de máquinas e equipamentos para construção sem operador,Atividades Administrativas E Serviços Complementares,1,Leve,21263,343,4,16.13,117
+73190,Atividades de publicidade não especificadas anteriormente,"Atividades Profissionais, Científicas E Técnicas",1,Leve,44035,332,0,7.54,120
+47598,Comércio varejista de artigos de uso doméstico não especificados anteriormente,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,32205,300,3,9.32,129
+74901,"Atividades profissionais, científicas e técnicas não especificadas anteriormente","Atividades Profissionais, Científicas E Técnicas",1,Leve,64758,291,0,4.49,132
+94910,Atividades de organizações religiosas,Outras Atividades De Serviços,1,Leve,28544,267,0,9.35,149
+47822,Comércio varejista de calçados e artigos de viagem,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,47840,243,0,5.08,162
+47725,"Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal",Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,40183,223,0,5.55,172
+47512,Comércio varejista especializado de equipamentos e suprimentos de informática,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,46967,221,0,4.71,173
+81303,Atividades paisagísticas,Atividades Administrativas E Serviços Complementares,1,Leve,13984,193,2,13.8,191
+47423,Comércio varejista de material elétrico,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,20331,178,4,8.76,205
+47636,Comércio varejista de artigos recreativos e esportivos,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,28049,175,0,6.24,209
+87204,"Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência
+química",Saúde Humana E Serviços Sociais,1,Leve,5246,154,0,29.36,226
+87301,Atividades de assistência social prestadas em residências coletivas e particulares,Saúde Humana E Serviços Sociais,1,Leve,10469,152,0,14.52,229
+70204,Atividades de consultoria em gestão empresarial,"Atividades Profissionais, Científicas E Técnicas",1,Leve,74805,142,1,1.9,238
+77110,Locação de automóveis sem condutor,Atividades Administrativas E Serviços Complementares,1,Leve,22653,140,0,6.18,239
+64620,Holdings de instituições não financeiras,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,29635,138,0,4.66,241
+78108,Seleção e agenciamento de mão de obra,Atividades Administrativas E Serviços Complementares,1,Leve,21745,136,0,6.25,245
+47610,"Comércio varejista de livros, jornais, revistas e papelaria",Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,32481,134,0,4.13,248
+84124,"Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais","Administração Pública, Defesa E Seguridade Social",1,Leve,7262,130,0,17.9,255
+68226,Gestão e administração da propriedade imobiliária,Atividades Imobiliárias,1,Leve,18565,124,0,6.68,265
+47555,"Comércio varejista especializado de tecidos e artigos de cama, mesa e banho",Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,20668,109,0,5.27,274
+47521,Comércio varejista especializado de equipamentos de telefonia e comunicação,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,22378,103,0,4.6,281
+68102,Atividades imobiliárias de imóveis próprios,Atividades Imobiliárias,1,Leve,16167,97,0,6.0,293
+68218,"Intermediação na compra, venda e aluguel de imóveis",Atividades Imobiliárias,1,Leve,26096,93,0,3.56,299
+47741,Comércio varejista de artigos de óptica,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,23821,91,0,3.82,301
+94201,Atividades de organizações sindicais,Outras Atividades De Serviços,1,Leve,24738,89,2,3.6,304
+94120,Atividades de organizações associativas profissionais,Outras Atividades De Serviços,1,Leve,13281,87,0,6.55,307
+69117,"Atividades jurídicas, exceto cartórios","Atividades Profissionais, Científicas E Técnicas",1,Leve,37672,79,0,2.1,317
+47571,"Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação",Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,10358,68,2,6.56,332
+65120,Seguros não vida,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,22193,62,0,2.79,344
+87123,Atividades de fornecimento de infraestrutura de apoio e assistência a paciente no domicílio,Saúde Humana E Serviços Sociais,1,Leve,8006,57,0,7.12,351
+94936,"Atividades de organizações associativas ligadas à cultura
+e à arte",Outras Atividades De Serviços,1,Leve,5051,56,0,11.09,354
+66193,Atividades auxiliares dos serviços financeiros não especificadas anteriormente,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,27558,55,2,2.0,357
+71197,Atividades técnicas relacionadas à arquitetura e engenharia,"Atividades Profissionais, Científicas E Técnicas",1,Leve,10895,54,0,4.96,361
+66223,"Corretores e agentes de seguros, de planos de previdência complementar e de saúde","Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,32229,48,0,1.49,380
+47733,Comércio varejista de artigos médicos e ortopédicos,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,5936,46,0,7.75,386
+65111,Seguros de vida,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,9065,41,0,4.52,399
+84132,Regulação das atividades econômicas,"Administração Pública, Defesa E Seguridade Social",1,Leve,2508,41,0,16.35,399
+47831,Comércio varejista de jóias e relógios,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,11606,38,0,3.27,410
+77195,"Locação de meios de transporte, exceto automóveis, sem condutor",Atividades Administrativas E Serviços Complementares,1,Leve,1922,37,6,19.25,414
+79112,Agências de viagens,Atividades Administrativas E Serviços Complementares,1,Leve,18292,37,0,2.02,414
+64999,Outras atividades de serviços financeiros não especificadas anteriormente,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,3789,31,0,8.18,434
+77292,Aluguel de objetos pessoais e domésticos não especificados anteriormente,Atividades Administrativas E Serviços Complementares,1,Leve,3083,30,0,9.73,439
+77331,Aluguel de máquinas e equipamentos para escritório,Atividades Administrativas E Serviços Complementares,1,Leve,5026,29,0,5.77,443
+94111,Atividades de organizações associativas patronais e empresariais,Outras Atividades De Serviços,1,Leve,8291,26,0,3.14,456
+74102,Design e decoração de interiores,"Atividades Profissionais, Científicas E Técnicas",1,Leve,1693,22,0,12.99,466
+64212,Bancos comerciais,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,1571,19,0,12.09,478
+77403,Gestão de ativos intangíveis não financeiros,Atividades Administrativas E Serviços Complementares,1,Leve,6997,19,0,2.72,478
+93115,Gestão de instalações de esportes,"Artes, Cultura, Esporte E Recreação",1,Leve,1730,19,0,10.98,478
+64239,Caixas econômicas,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,19055,17,0,0.89,490
+64930,Administração de consórcios para aquisição de bens e direitos,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,7760,17,0,2.19,490
+73114,Agências de publicidade,"Atividades Profissionais, Científicas E Técnicas",1,Leve,18669,15,0,0.8,498
+73203,Pesquisas de mercado e de opinião pública,"Atividades Profissionais, Científicas E Técnicas",1,Leve,5367,14,0,2.61,500
+73122,"Agenciamento de espaços para publicidade, exceto em veículos de comunicação","Atividades Profissionais, Científicas E Técnicas",1,Leve,2859,12,0,4.2,514
+64247,Crédito cooperativo,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,11263,11,0,0.98,523
+47563,Comércio varejista especializado de instrumentos musicais e acessórios,Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,1288,11,0,8.54,523
+77314,Aluguel de máquinas e equipamentos agrícolas sem operador,Atividades Administrativas E Serviços Complementares,1,Leve,1317,10,0,7.59,531
+71111,Serviços de arquitetura,"Atividades Profissionais, Científicas E Técnicas",1,Leve,2887,9,0,3.12,535
+66134,Administração de cartões de crédito,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,10099,8,0,0.79,538
+64638,"Outras sociedades de participação, exceto holdings","Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,7392,8,0,1.08,538
+66126,"Atividades de intermediários em transações de títulos, valores mobiliários e mercadorias","Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,17353,8,0,0.46,538
+65201,Seguros-saúde,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,2256,8,0,3.55,538
+66215,Avaliação de riscos e perdas,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,1021,7,0,6.86,547
+66291,"Atividades auxiliares dos seguros, da previdência complementar e dos planos de saúde não especificadas anteriormente","Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,3406,7,0,2.06,547
+77233,"Aluguel de objetos do vestuário, jóias e acessórios",Atividades Administrativas E Serviços Complementares,1,Leve,2665,7,0,2.63,547
+66304,"Atividades de administração de fundos por contrato ou
+comissão","Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,5474,6,0,1.1,558
+84302,Seguridade social obrigatória,"Administração Pública, Defesa E Seguridade Social",1,Leve,5324,5,0,0.94,569
+64379,Sociedades de crédito ao microempreendedor,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,125,3,0,24.0,580
+66118,Administração de bolsas e mercados de balcão organizados,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,2446,3,0,1.23,580
+84230,Justiça,"Administração Pública, Defesa E Seguridade Social",1,Leve,58264,3,2,0.05,580
+84248,Segurança e ordem pública,"Administração Pública, Defesa E Seguridade Social",1,Leve,86995,3,0,0.03,580
+77217,Aluguel de equipamentos recreativos e esportivos,Atividades Administrativas E Serviços Complementares,1,Leve,1379,3,0,2.18,580
+65413,Previdência complementar fechada,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,1516,3,0,1.98,580
+64310,"Bancos múltiplos, sem carteira comercial","Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,3093,3,0,0.97,580
+64361,"Sociedades de crédito, financiamento e investimento - financeiras","Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,5077,3,0,0.59,580
+64611,Holdings de instituições financeiras,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,1009,3,0,2.97,580
+64344,Agências de fomento,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,156,2,0,12.82,594
+64409,Arrendamento mercantil,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,229,2,0,8.73,594
+47628,"Comércio varejista de discos, CDs, DVDs e fitas",Comércio; Reparação De Veículos Automotores E Motocicletas,1,Leve,522,2,0,3.83,594
+65308,Resseguros,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,253,2,0,7.91,594
+64913,Sociedades de fomento mercantil - factoring,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,1497,2,0,1.34,594
+65421,Previdência complementar aberta,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,1821,2,0,1.1,594
+99008,Organismos internacionais e outras instituições extraterritoriais,Organismos Internacionais E Outras Instituições Extraterritoriais,1,Leve,559,1,0,1.79,607
+79902,Serviços de reservas e outros serviços de turismo não especificados anteriormente,Atividades Administrativas E Serviços Complementares,1,Leve,1529,1,0,0.65,607
+92003,Atividades de exploração de jogos de azar e apostas,"Artes, Cultura, Esporte E Recreação",1,Leve,14,0,0,,616
+64328,Bancos de investimento,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,722,0,0,,616
+64336,Bancos de desenvolvimento,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,54,0,0,,616
+90035,"Gestão de espaços para artes cênicas, espetáculos e outras atividades artísticas","Artes, Cultura, Esporte E Recreação",1,Leve,196,0,0,,616
+64352,Crédito imobiliário,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,29,0,0,,616
+94928,Atividades de organizações políticas,Outras Atividades De Serviços,1,Leve,507,0,0,,616
+64387,Bancos de câmbio e outras instituições de intermediação não monetária,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,754,0,0,,616
+64506,Sociedades de capitalização,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,489,0,0,,616
+64701,Fundos de investimento,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,0,0,0,,616
+64921,Securitização de créditos,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,1302,0,0,,616
+84256,Defesa Civil,"Administração Pública, Defesa E Seguridade Social",1,Leve,0,0,0,,616
+69125,Cartórios,"Atividades Profissionais, Científicas E Técnicas",1,Leve,22858,0,0,,616
+70107,,,1,Leve,0,0,0,,616
+84221,Defesa,"Administração Pública, Defesa E Seguridade Social",1,Leve,15517,0,0,,616
+84213,Relações exteriores,"Administração Pública, Defesa E Seguridade Social",1,Leve,13,0,0,,616
+77225,"Aluguel de fitas de vídeo, DVDs e similares",Atividades Administrativas E Serviços Complementares,1,Leve,67,0,0,,616
+79121,Operadores turísticos,Atividades Administrativas E Serviços Complementares,1,Leve,1263,0,0,,616
+64107,Banco Central,"Atividades Financeiras, De Seguros E Serviços Relacionados",1,Leve,640,0,0,,616
