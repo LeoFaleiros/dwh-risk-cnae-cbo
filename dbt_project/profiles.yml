@@ -1,0 +1,12 @@
+dwh_risk:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('POSTGRES_HOST', 'localhost') }}"
+      port: "{{ env_var('POSTGRES_PORT', '5435') | int }}"
+      user: "{{ env_var('POSTGRES_USER', 'dwh') }}"
+      password: "{{ env_var('POSTGRES_PASSWORD', 'dwh') }}"
+      dbname: "{{ env_var('POSTGRES_DB', 'dwh_risk') }}"
+      schema: stg
+      threads: 2

@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: dim_cnae
+      - name: dim_cbo
+      - name: dim_municipio
+      - name: dim_grau_risco
+      - name: rais_vinculos
+      - name: fact_sim
+      - name: cat_microdados
