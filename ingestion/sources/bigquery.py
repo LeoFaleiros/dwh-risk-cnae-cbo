@@ -48,3 +48,26 @@ def fetch_dim_municipio() -> pd.DataFrame:
             nome_regiao
         FROM `basedosdados.br_bd_diretorios_brasil.municipio`
     """)
+
+
+def fetch_rais_vinculos() -> pd.DataFrame:
+    uf = config.ingest_uf
+    ano_ini = config.ingest_ano_inicio
+    ano_fim = config.ingest_ano_fim
+
+    return _query(f"""
+        SELECT
+            ano,
+            sigla_uf,
+            id_municipio,
+            cnae_2_subclasse,
+            cbo_2002,
+            COUNT(*) AS quantidade_vinculos
+        FROM `basedosdados.br_me_rais.microdados_vinculos`
+        WHERE sigla_uf = '{uf}'
+          AND ano BETWEEN {ano_ini} AND {ano_fim}
+          AND vinculo_ativo_3112 = '1'
+          AND cnae_2_subclasse IS NOT NULL
+          AND cbo_2002 IS NOT NULL
+        GROUP BY 1, 2, 3, 4, 5
+    """)
