@@ -15,6 +15,7 @@ from ingestion.ops.load_history import (
 )
 from ingestion.sources.bigquery import fetch_dim_cnae, fetch_dim_cbo, fetch_dim_municipio, fetch_rais_vinculos, fetch_sim_obitos
 from ingestion.sources.csv_loader import fetch_dim_grau_risco
+from ingestion.sources.inss_cat import fetch_cat_microdados
 
 logging.basicConfig(
     level=logging.INFO,
@@ -62,6 +63,11 @@ def main(force: bool = False) -> None:
             "fact_sim",
             fetch_sim_obitos,
             f"bq:sim.{config.ingest_uf}.{config.ingest_ano_inicio}-{config.ingest_ano_fim}",
+        ),
+        (
+            "cat_microdados",
+            fetch_cat_microdados,
+            f"csv:cat.{config.ingest_uf}.{config.ingest_ano_inicio}-{config.ingest_ano_fim}",
         ),
     ]
 
