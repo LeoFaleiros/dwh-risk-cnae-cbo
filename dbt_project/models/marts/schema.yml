@@ -28,6 +28,29 @@ models:
         description: NR-04 regulatory risk level (1-4).
       - name: total_vinculos
         description: Sum of active bonds from RAIS for this CNAE class.
+
+  - name: mart_top_cbo_por_cnae
+    description: >
+      Top 10 occupations (CBO) per CNAE class ranked by total active employment bonds (RAIS).
+      Answers: which occupations dominate each sector, and does that align with regulatory risk?
+      One row per (cnae_classe, rank_cbo). Max 10 rows per class.
+    columns:
+      - name: cnae_classe
+        description: 5-digit CNAE class code.
+      - name: rank_cbo
+        description: Rank of this CBO within the CNAE class (1 = largest occupation).
+        tests:
+          - not_null
+      - name: cbo_codigo
+        description: 6-digit CBO occupation code.
+        tests:
+          - not_null
+      - name: total_vinculos
+        description: Sum of active bonds for this CNAE x CBO combination.
+      - name: pct_vinculos_na_classe
+        description: Share of this CBO within the total employment of the CNAE class (%).
+      - name: grau_risco
+        description: NR-04 regulatory risk level for this CNAE class.
       - name: total_acidentes
         description: Sum of CAT accident records for this CNAE class.
       - name: taxa_acidentes_por_mil

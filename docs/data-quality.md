@@ -141,3 +141,66 @@ replace(cid_codigo, '.', '')    -- dim_cid: B34.2 -> B342
 
 Fora do escopo atual. Quando implementado, considerar usar a `dim_cid` oficial
 (item 3 acima) como fonte única de referência para os dois fatos.
+
+---
+
+## 6. NULLs em `mart_cat_cnae_cbo_mes`
+
+Resumo por coluna (SP 2022, 87.600 linhas):
+
+| Coluna | NULLs | % | Causa |
+|--------|-------|---|-------|
+| `cnae_classe` | 453 | 0.5% | CNAEs 1.0 depreciados (ver item 7) |
+| `cnae_descricao` | 453 | 0.5% | idem |
+| `cbo_codigo` | 9.859 | 11.3% | `{ñ class}` + `000000` → NULL (esperado) |
+| `cbo_descricao` | 9.883 | 11.3% | idem + 4 CBOs não presentes na dim |
+| `cid_10` | 4.033 | 4.6% | `{ñ class}` → NULL (esperado) |
+| `cid_descricao` | 4.033 | 4.6% | idem |
+
+Todos os NULLs são esperados ou explicados por problemas da fonte. Nenhum indica
+falha no pipeline.
+
+---
+
+## 7. Códigos CNAE 1.0 depreciados no CAT
+
+O INSS CAT aceita comunicações com o código CNAE do empregador na versão vigente
+à época do acidente. Para acidentes de anos anteriores, parte dos registros pode
+conter códigos CNAE 1.0 (pré-2006) que não existem na estrutura CNAE 2.x atual.
+
+Exemplos encontrados (SP 2022): `6411`, `5244`, `5050`, `7040`, ... (124 classes).
+Total afetado: 453 registros (0.5%).
+
+Esses registros aparecem no `mart_cat_cnae_cbo_mes` com `cnae_classe = NULL`.
+**Não são erros de pipeline** — são dados historicamente válidos sem equivalente
+exato na tabela de dimensão atual.
+
+Se necessário, um mapa de equivalência CNAE 1.0 → 2.x pode ser adicionado como
+dimensão auxiliar futuramente.
+
+---
+
+## 8. Qualidade das descrições CID-10
+
+As descrições em `stg_dim_cid` são derivadas do próprio campo `cid_10` dos
+registros CAT, no formato `"B34.2 Infecc p/Coronavirus Ne"`. Características:
+
+- **Truncadas**: o INSS limita a descrição a 39 caracteres.
+- **Não padronizadas**: a mesma doença pode aparecer com abreviações diferentes
+  entre registros (ex.: "Infecc" vs "Infec").
+- **Cobertura parcial**: só cobre diagnósticos presentes no CAT, não a tabela
+  CID-10 completa.
+
+Fonte recomendada para resolução: DATASUS CIDABr (ver item 3).
+
+
+O SIM armazena CID sem ponto (`B342`); o CAT usa formato com ponto (`B34.2`). Um
+join direto entre `stg_fact_sim` e `stg_dim_cid` exigiria normalização:
+
+```sql
+replace(cid_10_causa, '.', '')  -- SIM: B342 -> B342 (já sem ponto)
+replace(cid_codigo, '.', '')    -- dim_cid: B34.2 -> B342
+```
+
+Fora do escopo atual. Quando implementado, considerar usar a `dim_cid` oficial
+(item 3 acima) como fonte única de referência para os dois fatos.
