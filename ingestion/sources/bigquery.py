@@ -50,6 +50,30 @@ def fetch_dim_municipio() -> pd.DataFrame:
     """)
 
 
+def fetch_sim_obitos() -> pd.DataFrame:
+    uf = config.ingest_uf
+    ano_ini = config.ingest_ano_inicio
+    ano_fim = config.ingest_ano_fim
+
+    # CBO column in SIM is 'ocupacao', not 'cbo_2002'
+    # Use id_municipio_residencia for residence-based risk attribution
+    return _query(f"""
+        SELECT
+            ano,
+            sigla_uf,
+            id_municipio_residencia  AS id_municipio,
+            ocupacao                 AS cbo_2002,
+            causa_basica             AS cid_10_causa,
+            acidente_trabalho,
+            COUNT(*)                 AS total_obitos
+        FROM `basedosdados.br_ms_sim.microdados`
+        WHERE sigla_uf = '{uf}'
+          AND ano BETWEEN {ano_ini} AND {ano_fim}
+          AND ocupacao IS NOT NULL
+        GROUP BY 1, 2, 3, 4, 5, 6
+    """)
+
+
 def fetch_rais_vinculos() -> pd.DataFrame:
     uf = config.ingest_uf
     ano_ini = config.ingest_ano_inicio

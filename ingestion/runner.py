@@ -13,7 +13,7 @@ from ingestion.ops.load_history import (
     register_finish,
     register_start,
 )
-from ingestion.sources.bigquery import fetch_dim_cnae, fetch_dim_cbo, fetch_dim_municipio, fetch_rais_vinculos
+from ingestion.sources.bigquery import fetch_dim_cnae, fetch_dim_cbo, fetch_dim_municipio, fetch_rais_vinculos, fetch_sim_obitos
 from ingestion.sources.csv_loader import fetch_dim_grau_risco
 
 logging.basicConfig(
@@ -57,6 +57,11 @@ def main(force: bool = False) -> None:
             "rais_vinculos",
             fetch_rais_vinculos,
             f"bq:rais.{config.ingest_uf}.{config.ingest_ano_inicio}-{config.ingest_ano_fim}",
+        ),
+        (
+            "fact_sim",
+            fetch_sim_obitos,
+            f"bq:sim.{config.ingest_uf}.{config.ingest_ano_inicio}-{config.ingest_ano_fim}",
         ),
     ]
 
