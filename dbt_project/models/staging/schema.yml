@@ -5,17 +5,27 @@ models:
     description: CNAE 2.x hierarchy from basedosdados, standardized.
     columns:
       - name: cnae_subclasse
-        description: 7-digit subclass code (e.g. "0111301").
+        description: 7-digit subclass code (e.g. "0111301"). Primary key.
+        tests:
+          - unique
+          - not_null
       - name: cnae_classe
         description: 5-digit class code.
+        tests:
+          - not_null
       - name: cnae_secao
         description: Single-letter section code.
+        tests:
+          - not_null
 
   - name: stg_dim_cbo
     description: CBO 2002 occupations from basedosdados, standardized.
     columns:
       - name: cbo_codigo
-        description: 6-digit occupation code.
+        description: 6-digit occupation code. Primary key.
+        tests:
+          - unique
+          - not_null
       - name: cbo_grande_grupo_codigo
         description: Major group code.
       - name: cbo_ativa
@@ -25,45 +35,82 @@ models:
     description: IBGE municipalities, standardized identifiers.
     columns:
       - name: municipio_id
-        description: 7-digit IBGE code (join key with RAIS and SIM).
+        description: 7-digit IBGE code (join key with RAIS and SIM). Primary key.
+        tests:
+          - unique
+          - not_null
       - name: municipio_id_6
         description: 6-digit IBGE code (without check digit).
+        tests:
+          - not_null
       - name: sigla_uf
         description: 2-letter UF code, uppercased.
+        tests:
+          - not_null
 
   - name: stg_dim_grau_risco
     description: Occupational risk level per CNAE class per NR-04 Annex I.
     columns:
       - name: cnae_classe
-        description: 5-digit CNAE class code.
+        description: 5-digit CNAE class code. Primary key.
+        tests:
+          - unique
+          - not_null
       - name: grau_risco
         description: Risk level 1-4.
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4]
       - name: grau_risco_descricao
         description: "Human-readable label: Leve, Medio, Alto, Critico."
+        tests:
+          - not_null
 
   - name: stg_fact_rais
     description: RAIS active employment bonds aggregated by CNAE x CBO x municipality x year.
     columns:
       - name: cnae_subclasse
         description: 7-digit CNAE subclass code — joins with stg_dim_cnae.cnae_subclasse.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_dim_cnae')
+              field: cnae_subclasse
+              config:
+                severity: warn
       - name: cnae_classe
         description: 5-digit class code (left 5 of subclasse) — joins with stg_dim_grau_risco.
+        tests:
+          - not_null
       - name: cbo_codigo
         description: 6-digit CBO occupation code.
+        tests:
+          - not_null
       - name: quantidade_vinculos
         description: Count of active bonds as of Dec 31 (vinculo_ativo_3112 = 1).
+        tests:
+          - not_null
 
   - name: stg_fact_sim
     description: SIM mortality records with occupation code.
     columns:
       - name: cbo_codigo
         description: 6-digit CBO occupation code.
+        tests:
+          - not_null
+      - name: sigla_uf
+        description: 2-letter UF code.
+        tests:
+          - not_null
       - name: cid_10_causa
         description: ICD-10 underlying cause of death.
       - name: acidente_trabalho
         description: Work accident flag from SIM source.
       - name: total_obitos
         description: Count of deaths in this group.
+        tests:
+          - not_null
 
   - name: stg_dim_cid
     description: >
@@ -73,6 +120,9 @@ models:
     columns:
       - name: cid_codigo
         description: CID-10 code in dotted format.
+        tests:
+          - unique
+          - not_null
       - name: cid_descricao
         description: Short description from the INSS CAT source.
 
@@ -81,10 +131,16 @@ models:
     columns:
       - name: cbo_codigo
         description: 6-digit CBO code extracted from raw text field.
-      - name: cnae_classe
-        description: 5-digit CNAE class, zero-padded from the 4-digit source code.
+        tests:
+          - not_null
+      - name: cnae_cod_4
+        description: 4-digit CNAE class code (zero-padded) — joins via left(cnae_classe, 4).
+        tests:
+          - not_null
       - name: municipio_id_6
         description: 6-digit IBGE municipality code extracted from raw text field.
+        tests:
+          - not_null
       - name: cid_10
         description: CID-10 code only, extracted from "CODE Description" raw field.
       - name: obito
