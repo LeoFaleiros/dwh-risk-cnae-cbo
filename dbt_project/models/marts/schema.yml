@@ -57,3 +57,41 @@ models:
         description: Accidents per 1,000 active bonds (null where RAIS data is absent).
       - name: rank_por_acidentes
         description: Rank by total_acidentes descending.
+
+  - name: mart_perfil_risco_cnae
+    description: >
+      Risk profile per CNAE: top 10 CBOs by accident volume x top 5 CIDs within each CBO.
+      A WHERE on cnae_classe returns the full risk profile of a sector — which occupations
+      accumulate the most accidents, with which diagnoses, and the employment exposure (RAIS).
+      Max 50 rows per CNAE (10 CBOs x 5 CIDs). Records without CBO or CID are excluded.
+    columns:
+      - name: cnae_classe
+        description: 5-digit CNAE class code.
+      - name: grau_risco
+        description: NR-04 regulatory risk level (1-4).
+      - name: rank_cbo
+        description: Rank of this CBO within the CNAE class by accident count (1 = most accidents).
+        tests:
+          - not_null
+      - name: cbo_codigo
+        description: 6-digit CBO occupation code.
+        tests:
+          - not_null
+      - name: vinculos_cbo
+        description: Total active RAIS bonds for this CNAE x CBO combination.
+      - name: acidentes_cbo
+        description: Total CAT accidents for this CNAE x CBO combination (all CIDs).
+      - name: taxa_acidentes_por_mil
+        description: Accidents per 1,000 active bonds (null where RAIS data is absent).
+      - name: rank_cid
+        description: Rank of this CID within the CNAE x CBO group by accident count (1 = most frequent).
+        tests:
+          - not_null
+      - name: cid_10
+        description: ICD-10 code in dotted format (e.g. "B34.2").
+        tests:
+          - not_null
+      - name: acidentes_cid
+        description: CAT accidents for this CNAE x CBO x CID combination.
+      - name: pct_acidentes_no_cbo
+        description: Share of this CID within the CBO's total accidents (%).

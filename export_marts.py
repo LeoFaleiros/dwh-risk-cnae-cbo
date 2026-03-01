@@ -8,6 +8,7 @@ Gera:
     output/mart_risco_teorico_vs_observado.csv
     output/mart_cat_cnae_cbo_mes.csv
     output/mart_top_cbo_por_cnae.csv
+    output/mart_perfil_risco_cnae.csv
 """
 
 import os
@@ -21,6 +22,7 @@ MARTS = [
     "mart_risco_teorico_vs_observado",
     "mart_cat_cnae_cbo_mes",
     "mart_top_cbo_por_cnae",
+    "mart_perfil_risco_cnae",
 ]
 
 
