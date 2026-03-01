@@ -11,3 +11,4 @@ from {{ source('raw', 'cat_microdados') }}
 where cid_10 is not null
   and trim(cid_10) != ''
   and position(' ' in trim(cid_10)) > 0
+  and left(trim(cid_10), 1) != '{'  -- exclude '{\u00f1 class}' (source placeholder for unclassified)

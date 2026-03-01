@@ -127,12 +127,16 @@ models:
         description: Short description from the INSS CAT source.
 
   - name: stg_fact_cat
-    description: CAT work accident communications from INSS portal (SP 2022).
+    description: |
+      CAT work accident communications from INSS portal.
+      Known data quality issue: raw fields cbo and cid_10 contain the value
+      '{ñ class}' (approx. 5% of records) meaning 'not classified' in the source.
+      These are mapped to NULL in this model. See docs/data-quality.md.
     columns:
       - name: cbo_codigo
-        description: 6-digit CBO code extracted from raw text field.
-        tests:
-          - not_null
+        description: |
+          6-digit CBO code. NULL when source value is '{ñ class}' (unclassified)
+          or '000000' (placeholder for missing occupation).
       - name: cnae_cod_4
         description: 4-digit CNAE class code (zero-padded) — joins via left(cnae_classe, 4).
         tests:
@@ -142,6 +146,8 @@ models:
         tests:
           - not_null
       - name: cid_10
-        description: CID-10 code only, extracted from "CODE Description" raw field.
+        description: |
+          CID-10 code only, extracted from 'CODE Description' raw field.
+          NULL when source value is '{ñ class}' (unclassified diagnosis).
       - name: obito
         description: True if indica_obito = 'Sim'.

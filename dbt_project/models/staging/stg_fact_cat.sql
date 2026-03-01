@@ -8,8 +8,14 @@
 select
     split_part(data_competencia, '/', 1)::integer       as ano,
     split_part(data_competencia, '/', 2)::integer       as mes,
-    -- CBO: first 6 chars before the dash
-    left(trim(cbo), 6)                                  as cbo_codigo,
+    -- CBO: first 6 chars before the dash-separated description.
+    -- Raw value '{\u00f1 class}' means 'not classified' in the source — mapped to NULL.
+    -- Code '000000' is a placeholder used for missing occupation — also NULL.
+    case
+        when left(trim(cbo), 1) = '{'       then null
+        when left(trim(cbo), 6) = '000000'  then null
+        else left(trim(cbo), 6)
+    end                                                 as cbo_codigo,
     -- CNAE: raw field is a 4-digit integer without check digit (e.g. 8630)
     -- dim_grau_risco and dim_cnae store 5-digit codes with check digit (e.g. 86305)
     -- join downstream using left(cnae_classe, 4) = cnae_cod_4
@@ -17,14 +23,17 @@ select
     -- Municipality: first 6 digits of "NNNNNN-Nome-UF"
     left(trim(munic_empregador), 6)                     as municipio_id_6,
     lower(trim(tipo_acidente))                          as tipo_acidente,
-    -- CID-10 in CAT is "B34.2 Infecc p/Coronavirus Ne" — extract code only
-    -- Note: SIM stores CID without dot ("B342"); join with stg_dim_cid uses CAT format
-    split_part(trim(cid_10), ' ', 1)                    as cid_10,
+    -- CID-10 in CAT is "B34.2 Infecc p/Coronavirus Ne" — extract code only.
+    -- Raw value '{\u00f1 class}' means 'not classified' in the source — mapped to NULL.
+    -- Note: SIM stores CID without dot ("B342"); join with stg_dim_cid uses CAT format.
+    case
+        when left(trim(cid_10), 1) = '{' then null
+        else split_part(trim(cid_10), ' ', 1)
+    end                                                 as cid_10,
     (indica_obito ilike 'Sim')                         as obito,
     trim(uf_empregador)                                 as uf_empregador,
     trim(_source_file)                                  as source_file
 
 from {{ source('raw', 'cat_microdados') }}
-where cbo is not null
-  and cnae_empregador_cod is not null
+where cnae_empregador_cod is not null
   and data_competencia is not null
