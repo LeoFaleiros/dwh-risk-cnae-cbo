@@ -19,7 +19,6 @@ env/
 # Dados locais e de trabalho
 data/
 output/
-docs/
 sprints/
 
 # Credenciais GCP
