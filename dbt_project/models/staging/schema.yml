@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: stg_dim_cnae
+    description: CNAE 2.x hierarchy from basedosdados, standardized.
+    columns:
+      - name: cnae_subclasse
+        description: 7-digit subclass code (e.g. "0111301").
+      - name: cnae_classe
+        description: 5-digit class code.
+      - name: cnae_secao
+        description: Single-letter section code.
+
+  - name: stg_dim_cbo
+    description: CBO 2002 occupations from basedosdados, standardized.
+    columns:
+      - name: cbo_codigo
+        description: 6-digit occupation code.
+      - name: cbo_grande_grupo_codigo
+        description: Major group code.
+      - name: cbo_ativa
+        description: Flag — 1 if the occupation is still active.
+
+  - name: stg_dim_municipio
+    description: IBGE municipalities, standardized identifiers.
+    columns:
+      - name: municipio_id
+        description: 7-digit IBGE code (join key with RAIS and SIM).
+      - name: municipio_id_6
+        description: 6-digit IBGE code (without check digit).
+      - name: sigla_uf
+        description: 2-letter UF code, uppercased.
+
+  - name: stg_dim_grau_risco
+    description: Occupational risk level per CNAE class per NR-04 Annex I.
+    columns:
+      - name: cnae_classe
+        description: 5-digit CNAE class code.
+      - name: grau_risco
+        description: Risk level 1-4.
+      - name: grau_risco_descricao
+        description: "Human-readable label: Leve, Medio, Alto, Critico."
