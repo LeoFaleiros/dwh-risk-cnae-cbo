@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-dwh_risk}
+      POSTGRES_USER: ${POSTGRES_USER:-dwh}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-dwh}
+    ports:
+      - "5435:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init_schemas.sql:/docker-entrypoint-initdb.d/init_schemas.sql
+
+volumes:
+  pgdata:
