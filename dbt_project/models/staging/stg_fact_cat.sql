@@ -10,8 +10,10 @@ select
     split_part(data_competencia, '/', 2)::integer       as mes,
     -- CBO: first 6 chars before the dash
     left(trim(cbo), 6)                                  as cbo_codigo,
-    -- CNAE class: zero-pad to 5 digits
-    lpad(trim(cnae_empregador_cod), 5, '0')             as cnae_classe,
+    -- CNAE: raw field is a 4-digit integer without check digit (e.g. 8630)
+    -- dim_grau_risco and dim_cnae store 5-digit codes with check digit (e.g. 86305)
+    -- join downstream using left(cnae_classe, 4) = cnae_cod_4
+    lpad(trim(cnae_empregador_cod), 4, '0')             as cnae_cod_4,
     -- Municipality: first 6 digits of "NNNNNN-Nome-UF"
     left(trim(munic_empregador), 6)                     as municipio_id_6,
     lower(trim(tipo_acidente))                          as tipo_acidente,

@@ -1,9 +1,9 @@
--- NR-04 regulatory risk level vs observed accident frequency by CNAE class
--- Highlights CNAEs where regulatory risk may be under- or over-estimated
-
+-- stg_dim_cnae has one row per subclass (7-digit); use DISTINCT at class level (5-digit)
+-- CAT carries a 4-digit code (no check digit) -> join via left(cnae_classe, 4)
 with cnae_classe as (
     select distinct
         cnae_classe,
+        left(cnae_classe, 4)    as cnae_cod_4,
         cnae_descricao_classe,
         cnae_descricao_secao
     from {{ ref('stg_dim_cnae') }}
@@ -11,7 +11,7 @@ with cnae_classe as (
 
 acidentes_por_cnae as (
     select
-        cnae_classe,
+        cnae_cod_4,
         count(*)                                            as total_acidentes,
         sum(case when obito then 1 else 0 end)              as total_obitos
     from {{ ref('stg_fact_cat') }}
@@ -45,9 +45,9 @@ select
 
 from {{ ref('stg_dim_grau_risco') }} as gr
 left join cnae_classe as cnae
-    on gr.cnae_classe = cnae.cnae_classe
+    on left(gr.cnae_classe, 4) = cnae.cnae_cod_4
 left join acidentes_por_cnae as a
-    on gr.cnae_classe = a.cnae_classe
+    on left(gr.cnae_classe, 4) = a.cnae_cod_4
 left join vinculos_por_cnae as v
     on gr.cnae_classe = v.cnae_classe
 
