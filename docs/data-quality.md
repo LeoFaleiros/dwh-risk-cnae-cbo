@@ -85,28 +85,38 @@ fonte para ocupação não informada).
 
 ## 3. Fonte oficial de CID-10
 
-### Situação atual
+### Implementação atual
 
-As descrições de diagnóstico em `stg_dim_cid` são derivadas do próprio texto do
-campo `cid_10` no CAT. O formato bruto é `"B34.2 Infecc p/Coronavirus Ne"` —
-descrições abreviadas, truncadas e em português informal.
+`stg_dim_cid` lê de `raw.dim_cid`, carregada via `ingestion/sources/cid_loader.py`
+a partir dos CSVs oficiais do DATASUS armazenados em `input/CID/`:
 
-### Problema
+| Arquivo                     | Conteúdo                           | Linhas  |
+|-----------------------------|------------------------------------|---------|
+| `CID-10-SUBCATEGORIAS.CSV`  | Códigos 4-char (A000 → A00.0)      | ~12 451 |
+| `CID-10-CATEGORIAS.CSV`     | Códigos 3-char (A00) – fallback    | ~1 782  |
 
-- Descrições inconsistentes entre registros do mesmo código.
-- Truncamento em campos longos.
-- Nenhuma cobertura para códigos que não aparecem no CAT (ex.: diagnósticos só
-  presentes no SIM).
+- Total na dimensão: **14 233 códigos**.
+- Codificação: `cp1252` (Windows Latin-1); separador `;`.
+- Conversão de formato: `A000` → `A00.0` (dot inserido antes do último char).
 
-### Fonte recomendada
+### Taxa de cobertura no CAT
 
-O DATASUS disponibiliza a tabela oficial CID-10 em:
-- **CIDABr** (Tabnet): https://datasus.saude.gov.br/transferencia-de-arquivos/
-  → Arquivos / CID-10 / Tab CID10
-- Formato: ZIP com DBF, contém código + descrição curta + descrição longa por capítulo.
+| Universo                        | Valor      |
+|---------------------------------|------------|
+| Registros CAT com `cid_10 != NULL` | 179 097  |
+| Com match em `stg_dim_cid`         | 179 057  |
+| **Match rate**                     | **99,98%** |
 
-Implementar como nova tarefa de ingestão (`dim_cid` via CSV/DBF official), substituindo
-`stg_dim_cid` atual que é derivada.
+Não casados (40 registros):
+- 32 registros com código malformado `"Em"` – descartados.
+- 8 registros com subcategorias `X59.2 / X59.4 / X59.8` – extensões nacionais
+  não presentes no arquivo DATASUS padrão.
+
+### Situação anterior (substituída)
+
+Antes, `stg_dim_cid` era derivada do próprio campo `cid_10` do CAT:
+`"B34.2 Infecc p/Coronavirus Ne"` — descrições truncadas (39-char INSS), informais
+e sem cobertura de códigos ausentes no CAT.
 
 ---
 
