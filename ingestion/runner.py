@@ -14,6 +14,7 @@ from ingestion.ops.load_history import (
     register_start,
 )
 from ingestion.sources.bigquery import fetch_dim_cnae, fetch_dim_cbo, fetch_dim_municipio, fetch_rais_vinculos, fetch_sim_obitos
+from ingestion.sources.cid_loader import fetch_dim_cid
 from ingestion.sources.csv_loader import fetch_dim_grau_risco
 from ingestion.sources.inss_cat import fetch_cat_microdados
 
@@ -54,6 +55,7 @@ def main(force: bool = False) -> None:
         ("dim_cbo",        fetch_dim_cbo,        "bq:br_bd_diretorios_brasil.cbo_2002"),
         ("dim_municipio",  fetch_dim_municipio,  "bq:br_bd_diretorios_brasil.municipio"),
         ("dim_grau_risco", fetch_dim_grau_risco, "csv:input/AnexoI_CNAE_GR_NR04_2023_COMPLETO.xlsx"),
+        ("dim_cid",        fetch_dim_cid,        "csv:input/CID/CID-10-SUBCATEGORIAS.CSV+CID-10-CATEGORIAS.CSV"),
         (
             "rais_vinculos",
             fetch_rais_vinculos,

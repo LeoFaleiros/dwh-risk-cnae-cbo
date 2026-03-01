@@ -10,4 +10,5 @@ sources:
       - name: dim_grau_risco
       - name: rais_vinculos
       - name: fact_sim
+      - name: dim_cid
       - name: cat_microdados
