@@ -62,7 +62,7 @@ obitos_cbo as (
         coalesce(faixa_etaria, 'Não informada') as faixa_etaria,
         sum(total_obitos)                       as total_obitos,
         sum(
-            case when acidente_trabalho = '1'
+            case when acidente_trabalho = 'Sim'
             then total_obitos else 0 end
         )                                       as obitos_acidente_trabalho
     from {{ ref('stg_fact_sim') }}
