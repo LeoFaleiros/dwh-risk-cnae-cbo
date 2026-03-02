@@ -58,7 +58,11 @@ def fetch_sim_obitos() -> pd.DataFrame:
     # CBO column in SIM is 'ocupacao', not 'cbo_2002'
     # Use id_municipio_residencia for residence-based risk attribution
     # sexo: '1'=Masculino, '2'=Feminino, '9'=Ignorado (DATASUS encoding)
-    # idade: DATASUS encoding — 4XX = years (e.g. 440 = 40 yrs), 5XX = 100+ yrs
+    # idade: already in years as float64 in the BigQuery dataset
+    # linha_ii: "other significant conditions" from the death certificate (Part II).
+    #   Format: '*I10X*E149' — multiple CID codes separated by '*', each prefixed with '*'.
+    #   This is the comorbidity field: diabetes, hypertension, cancer, etc.
+    #   Parsed/unnested in the mart layer, stored raw here.
     return _query(f"""
         SELECT
             ano,
@@ -69,12 +73,13 @@ def fetch_sim_obitos() -> pd.DataFrame:
             acidente_trabalho,
             sexo,
             idade,
+            linha_ii,
             COUNT(*)                 AS total_obitos
         FROM `basedosdados.br_ms_sim.microdados`
         WHERE sigla_uf = '{uf}'
           AND ano BETWEEN {ano_ini} AND {ano_fim}
           AND ocupacao IS NOT NULL
-        GROUP BY 1, 2, 3, 4, 5, 6, 7, 8
+        GROUP BY 1, 2, 3, 4, 5, 6, 7, 8, 9
     """)
 
 

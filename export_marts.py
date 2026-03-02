@@ -11,6 +11,7 @@ Gera:
     output/mart_perfil_risco_cnae.csv
     output/mart_severidade_cat_cnae.csv
     output/mart_mortalidade_por_cnae.csv
+    output/mart_comorbidades_por_cnae.csv
 """
 
 import os
@@ -27,6 +28,7 @@ MARTS = [
     "mart_perfil_risco_cnae",
     "mart_severidade_cat_cnae",
     "mart_mortalidade_por_cnae",
+    "mart_comorbidades_por_cnae",
 ]
 
 

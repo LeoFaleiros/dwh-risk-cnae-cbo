@@ -6,6 +6,10 @@
 -- cid_10_causa: SIM stores without dot (B342); add dot to match stg_dim_cid (B34.2).
 -- acidente_trabalho: pandas float conversion produces '1.0'/'2.0' alongside '1'/'2';
 --                    normalise to 'Sim'/'Não'/'Ignorado' via first character.
+-- linha_ii: "other significant conditions" (Part II of death certificate).
+--   Raw format: '*I10X*E149' — multiple CID codes joined with '*', '*X' DATASUS filler removed.
+--   Parsed/unnested per-code in mart_comorbidades_por_cnae.
+--   Stored here as cleaned string for downstream use.
 
 select
     ano::integer                        as ano,
@@ -41,7 +45,11 @@ select
         when idade::numeric between 45 and 54  then '45-54'
         when idade::numeric between 55 and 64  then '55-64'
         when idade::numeric between 65 and 130 then '65+'
-    end                                 as faixa_etaria
+    end                                 as faixa_etaria,
+    -- linha_ii: strip leading '*' and trailing 'X' filler; keep multiple codes as
+    -- '*'-separated string. Parsed per-code in mart_comorbidades_por_cnae.
+    -- NULL when empty or absent.
+    nullif(trim(linha_ii), '')          as linha_ii_raw
 
 from {{ source('raw', 'fact_sim') }}
 where cbo_2002  is not null
