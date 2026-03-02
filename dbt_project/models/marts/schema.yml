@@ -1,97 +1,345 @@
 version: 2
 
+# ==============================================================================
+# MARTS — ORIENTADOS A PRODUTO / COBERTURA
+# ==============================================================================
+# Cada mart corresponde a um grupo de coberturas do seguro de vida em grupo.
+#
+# Coberturas mapeadas:
+#   mart_risco_morte     → Morte Natural + Morte Acidental
+#   mart_risco_acidente  → IPA (Invalidez Permanente) + DIT proxy (via especie_beneficio)
+#   mart_risco_doenca    → IFPD (Invalidez Funcional) + Doenças Graves
+#
+# Coberturas com lacuna de dados:
+#   DIH (Diária de Internação Hospitalar) → precisa AIH/SIHSUS, não ingerido.
+#   DIT (Diária de Incapacidade) → CAT não tem campo de dias de afastamento.
+#
+# Marts exploratórios/diagnósticos (mantidos, mas não mapeados a cobertura):
+#   mart_cat_cnae_cbo_mes, mart_risco_teorico_vs_observado, mart_top_cbo_por_cnae,
+#   mart_perfil_risco_cnae, mart_severidade_cat_cnae, mart_mortalidade_por_cnae,
+#   mart_comorbidades_por_cnae, mart_causas_externas_por_cnae
+# ==============================================================================
+
 models:
-  - name: mart_cat_cnae_cbo_mes
+
+  # ============================================================================
+  # MARTS ORIENTADOS A COBERTURA
+  # ============================================================================
+
+  - name: mart_risco_morte
     description: >
-      Monthly work accident counts (CAT) by CNAE class, CBO occupation, and CID-10 cause.
-      Enriched with dimension descriptions. Primary analysis table for the POC.
+      COBERTURAS: Morte Natural + Morte Acidental.
+
+      Frequência e perfil de óbitos por CNAE × CBO, com granularidade de CID.
+      Fonte: SIM (Declarações de Óbito).
+      CNAE inferido por: CBO → CNAE dominante na RAIS (nacional). Ver limitação abaixo.
+
+      COLUNA CHAVE: categoria_morte
+        Categoriza o óbito para separar as coberturas:
+        'Natural – [capítulo]'   → coberto por Morte Natural (ex: 'Natural – IX: Cardiovascular')
+        'Acidental – Trabalho'   → coberto por ambas
+        'Acidental – Trânsito'   → coberto por Morte Acidental, excluído em Morte Natural por alguns produtos
+        'Suicídio'               → geralmente excluído de Morte Acidental em grupo
+        'Homicídio / Agressão'   → coberto por Morte Acidental; subscritor analisa
+        'Indeterminado'          → capaz de cobrir ambas — análise caso a caso
+
+      LIMITAÇÃO:
+        CNAE é inferido via CBO → RAIS nacional. Resultado correto para grupos
+        ocupacionais bem definidos, mas impreciso para CBOs que ocorrem em múltiplos setores.
+        Para CNAE direto do empregador, use mart_risco_acidente (fonte: CAT).
+
+      EXEMPLO DE USO:
+        SELECT cnae_classe, cnae_descricao, sum(total_obitos) AS total
+        FROM mart.mart_risco_morte
+        WHERE categoria_morte ILIKE '%Natural%'
+          AND cnae_classe = '41204'
+        GROUP BY 1,2 ORDER BY 3 DESC;
+
     columns:
       - name: cnae_classe
-        description: 5-digit CNAE class code.
+        description: Código CNAE de 5 dígitos — inferido via CBO → RAIS → CNAE dominante.
+      - name: cnae_descricao
+        description: Descrição da classe CNAE (ex. "Construção de edifícios").
       - name: cbo_codigo
-        description: 6-digit CBO occupation code.
-      - name: cid_10
-        description: ICD-10 code in dotted format (e.g. "B34.2") from CAT source.
-      - name: total_acidentes
-        description: Count of CAT records in this group.
+        description: Código CBO de 6 dígitos do falecido.
+      - name: cbo_descricao
+        description: Descrição da ocupação.
+      - name: categoria_morte
+        description: >
+          Classificação semântica para triagem de cobertura.
+          Valores: 'Natural – [cap]', 'Acidental – Trabalho', 'Acidental – Trânsito',
+          'Suicídio', 'Homicídio / Agressão', 'Indeterminado', 'Natural – Outras'.
+      - name: cid_10_causa
+        description: CID-10 da causa básica (norteado pelo algoritmo DATASUS/OMS).
+      - name: causa_descricao
+        description: Descrição do CID-10 (de stg_dim_cid, quando disponível).
+      - name: sexo
+        description: "'M' | 'F' | NULL"
+      - name: faixa_etaria
+        description: Faixa etária (ex. '30-39', '60+').
       - name: total_obitos
-        description: Count of records where indica_obito = Sim.
+        description: Total de óbitos neste grupo (CNAE × CBO × categoria × CID × sexo × faixa).
+
+  - name: mart_risco_acidente
+    description: >
+      COBERTURAS: IPA (Invalidez Permanente por Acidente) + DIT proxy (acidente típico).
+
+      Frequência, natureza e gravidade de acidentes de trabalho por CNAE × CBO.
+      Fonte: CAT (Comunicação de Acidente de Trabalho — INSS).
+
+      VANTAGEM vs SIM: CNAE vem DIRETAMENTE do empregador (campo cnae_empregador_cod).
+      Não há inferência via RAIS — acurácia superior para subscrição.
+
+      COLUNAS CHAVE PARA IPA:
+        natureza_lesao + parte_corpo:
+          Amputação / Dedo → incapacidade alta
+          Fratura + coluna  → risco de invalidez permanente
+          Contusão / mão    → incapacidade temporária
+
+      COLUNA pct_obito_no_acidente:
+        Proxy de severidade do acidente: (óbitos / total_acidentes) × 100.
+        Setores com pct_obito > 5% merecem loading especial em IPA.
+
+      LACUNA DIT:
+        CAT não tem campo de dias de afastamento.
+        Para DIT seria necessário SICAT (INSS) ou AIH, não ingeridos.
+
+      EXEMPLO DE USO (IPA — parte do corpo vs natureza):
+        SELECT cnae_classe, natureza_lesao, parte_corpo,
+               sum(total_acidentes) AS acidentes, sum(total_obitos_acidente) AS obitos
+        FROM mart.mart_risco_acidente
+        WHERE tipo_acidente = 'Típico'
+          AND cnae_classe = '41204'
+        GROUP BY 1,2,3 ORDER BY 4 DESC;
+
+    columns:
+      - name: cnae_classe
+        description: Código CNAE de 5 dígitos — DIRETO do empregador via CAT.
+      - name: cnae_descricao
+        description: Descrição da classe CNAE.
+      - name: cbo_codigo
+        description: Código CBO de 6 dígitos do acidentado.
+      - name: cbo_descricao
+        description: Descrição da ocupação.
+      - name: tipo_acidente
+        description: "'Típico' | 'Trajeto' | 'Doença Profissional' | NULL"
+      - name: natureza_lesao
+        description: Tipo anatômico da lesão (fratura, amputação, contusão, etc.)
+      - name: parte_corpo
+        description: Localização anatômica (mão, coluna, olho, etc.)
+      - name: agente_causador
+        description: O que causou o acidente (máquina, queda, esforço repetitivo, etc.)
+      - name: cid_10
+        description: CID-10 do diagnóstico do acidente (formato com ponto).
+      - name: sexo
+        description: "'M' | 'F' | NULL"
+      - name: faixa_etaria
+        description: Faixa etária calculada.
+      - name: total_acidentes
+        description: Total de CATs neste grupo.
+      - name: total_obitos_acidente
+        description: Total de CATs com indica_obito = Sim neste grupo.
+      - name: pct_obito_no_acidente
+        description: Percentual de acidentes que resultaram em óbito (severidade).
+
+  - name: mart_risco_doenca
+    description: >
+      COBERTURAS: IFPD (Invalidez Funcional Permanente por Doença) + Doenças Graves.
+
+      Frequência de condições clínicas em óbitos por CNAE × CBO, para TODAS as linhas
+      da Declaração de Óbito (cadeia causal + comorbidades).
+      Fonte: stg_sim_linhas ← stg_fact_sim ← raw.fact_sim (SIM/DATASUS).
+
+      INTENÇÃO DESTE MART:
+        Não filtrar capítulos. Todos os CIDs chegam ao subscritor.
+        O campo tipo_condicao orienta a triagem inicial — mas a decisão de incluir
+        ou excluir um CID de uma cobertura é do subscritor, não do pipeline.
+
+      COLUNA CHAVE: fonte_linha
+        'a' / 'b' / 'c' / 'd'  → Cadeia causal (Parte I da DO)
+                                   Significa que a condição CAUSOU ou contribuiu para causar a morte.
+        'ii'                    → Comorbidade (Parte II da DO)
+                                   A condição EXISTIA mas não está na cadeia causal.
+                                   Mais relevante para Doenças Graves e IFPD.
+
+      COLUNA CHAVE: tipo_condicao (herdada de stg_sim_linhas)
+        'Doença crônica/cardiovascular' → Doenças Graves clássicas (IAM, AVC, IRC)
+        'Neoplasia'                     → Câncer — cobertura Doenças Graves padrão
+        'Histórico clínico/situacional' → Capítulos Z (históricos) — indicador de risco
+        'Causa externa – transporte'    → Acidente — mais relevante para IPA
+        Outros: ver stg_sim_linhas.tipo_condicao
+
+      EXEMPLO — Doenças Graves elegíveis (Parte II, cap. II, IV, VI, IX):
+        SELECT cnae_classe, cid_normalizado, cid_categoria, tipo_condicao,
+               sum(total_obitos_com_condicao) AS total
+        FROM mart.mart_risco_doenca
+        WHERE fonte_linha = 'ii'
+          AND tipo_condicao IN ('Doença crônica/cardiovascular','Neoplasia',
+                                'Doença respiratória/infecciosa')
+          AND cnae_classe = '41204'
+        GROUP BY 1,2,3,4 ORDER BY 5 DESC;
+
+      EXEMPLO — Histórico clínico (cap. Z) como indicador de risco:
+        SELECT cid_normalizado, cid_categoria, sum(total_obitos_com_condicao)
+        FROM mart.mart_risco_doenca
+        WHERE fonte_linha = 'ii' AND capitulo_cid LIKE '%XXI%'
+        GROUP BY 1,2 ORDER BY 3 DESC;
+
+    columns:
+      - name: cnae_classe
+        description: Código CNAE de 5 dígitos — inferido via CBO → RAIS → CNAE dominante.
+      - name: cnae_descricao
+        description: Descrição da classe CNAE.
+      - name: cbo_codigo
+        description: Código CBO de 6 dígitos do falecido.
+      - name: cbo_descricao
+        description: Descrição da ocupação.
+      - name: fonte_linha
+        description: >
+          Linha da DO em que o CID aparece.
+          'a'/'b'/'c'/'d' = cadeia causal (Parte I).
+          'ii' = comorbidade, não causa (Parte II).
+      - name: fonte_linha_descricao
+        description: Rótulo legível (ex. 'Parte I – Linha A (causa imediata)').
+      - name: cid_normalizado
+        description: CID normalizado com ponto (ex. I21.0, C34.1).
+      - name: cid_categoria
+        description: Primeiros 3 chars do CID (categoria CID-10).
+      - name: capitulo_cid
+        description: Nome completo do capítulo CID-10 (ex. 'IX – Doenças do aparelho circulatório').
+      - name: tipo_condicao
+        description: Classificação semântica para triagem de cobertura (ver descrição do modelo).
+      - name: sexo
+        description: "'M' | 'F' | NULL"
+      - name: faixa_etaria
+        description: Faixa etária calculada.
+      - name: total_obitos_com_condicao
+        description: >
+          Total de óbitos em que este CID apareceu nesta fonte_linha,
+          para este CNAE × CBO × sexo × faixa_etaria.
+      - name: pct_na_fonte
+        description: >
+          Percentual deste CID dentro do total de óbitos com qualquer CID
+          nesta mesma fonte_linha + CNAE + CBO.
+      - name: rank_na_fonte
+        description: Rank do CID por frequência dentro da fonte_linha + CNAE + CBO (1 = mais frequente).
+
+  # ============================================================================
+  # MARTS EXPLORATÓRIOS / DIAGNÓSTICOS
+  # ============================================================================
+
+  - name: mart_cat_cnae_cbo_mes
+    description: >
+      EXPLORATÓRIO — Acidentes de trabalho (CAT) mensais por CNAE × CBO × CID.
+      Granularidade temporal (ano/mês). Útil para análise de sazonalidade.
+      Fonte: CAT. CNAE direto do empregador.
+    columns:
+      - name: cnae_classe
+        description: Código CNAE de 5 dígitos.
+      - name: cbo_codigo
+        description: Código CBO de 6 dígitos.
+      - name: cid_10
+        description: CID-10 em formato com ponto.
+      - name: total_acidentes
+        description: Contagem de CATs neste grupo.
+      - name: total_obitos
+        description: Contagem de CATs com óbito (indica_obito = Sim).
 
   - name: mart_risco_teorico_vs_observado
     description: >
-      NR-04 regulatory risk level vs observed accident frequency (CAT) per CNAE class.
-      Includes accident rate per 1,000 RAIS bonds where employment data is available.
+      EXPLORATÓRIO — Grau de Risco NR-04 (teórico) vs frequência de acidentes observada (CAT).
+      Inclui taxa de acidente por 1.000 vínculos RAIS quando disponível.
+      PERGUNTA: setores com grau_risco alto na NR-04 realmente têm mais acidentes?
     columns:
       - name: cnae_classe
-        description: 5-digit CNAE class code.
+        description: Código CNAE de 5 dígitos.
       - name: grau_risco
-        description: NR-04 regulatory risk level (1-4).
+        description: Grau de Risco NR-04 (1–4).
       - name: total_vinculos
-        description: Sum of active bonds from RAIS for this CNAE class.
+        description: Vínculos RAIS para esta classe CNAE.
 
   - name: mart_top_cbo_por_cnae
     description: >
-      Top 10 occupations (CBO) per CNAE class ranked by total active employment bonds (RAIS).
-      Answers: which occupations dominate each sector, and does that align with regulatory risk?
-      One row per (cnae_classe, rank_cbo). Max 10 rows per class.
+      EXPLORATÓRIO — Top 10 ocupações (CBO) por classe CNAE, rankeadas por vínculos RAIS.
+      Responde: quais são os profissionais dominantes em cada setor?
+      Máximo 10 linhas por classe.
     columns:
       - name: cnae_classe
-        description: 5-digit CNAE class code.
+        description: Código CNAE de 5 dígitos.
       - name: rank_cbo
-        description: Rank of this CBO within the CNAE class (1 = largest occupation).
-        tests:
-          - not_null
+        description: Posição no ranking (1 = maior ocupação da classe).
+        tests: [not_null]
       - name: cbo_codigo
-        description: 6-digit CBO occupation code.
-        tests:
-          - not_null
+        description: Código CBO de 6 dígitos.
+        tests: [not_null]
       - name: total_vinculos
-        description: Sum of active bonds for this CNAE x CBO combination.
+        description: Vínculos RAIS para este CNAE × CBO.
       - name: pct_vinculos_na_classe
-        description: Share of this CBO within the total employment of the CNAE class (%).
+        description: Participação percentual deste CBO no total de vínculos da classe.
       - name: grau_risco
-        description: NR-04 regulatory risk level for this CNAE class.
+        description: Grau NR-04 da classe.
       - name: total_acidentes
-        description: Sum of CAT accident records for this CNAE class.
+        description: CATs da classe (todos os CBOs).
       - name: taxa_acidentes_por_mil
-        description: Accidents per 1,000 active bonds (null where RAIS data is absent).
+        description: Acidentes por 1.000 vínculos. NULL se RAIS ausente.
       - name: rank_por_acidentes
-        description: Rank by total_acidentes descending.
+        description: Rank da classe por total_acidentes decrescente.
 
   - name: mart_perfil_risco_cnae
     description: >
-      Risk profile per CNAE: top 10 CBOs by accident volume x top 5 CIDs within each CBO.
-      A WHERE on cnae_classe returns the full risk profile of a sector — which occupations
-      accumulate the most accidents, with which diagnoses, and the employment exposure (RAIS).
-      Max 50 rows per CNAE (10 CBOs x 5 CIDs). Records without CBO or CID are excluded.
+      EXPLORATÓRIO — Perfil de risco por CNAE: top 10 CBOs × top 5 CIDs dentro de cada CBO.
+      Um WHERE em cnae_classe retorna o perfil completo do setor.
+      Máximo ~50 linhas por CNAE. Exclui registros sem CBO ou CID.
     columns:
       - name: cnae_classe
-        description: 5-digit CNAE class code.
+        description: Código CNAE de 5 dígitos.
       - name: grau_risco
-        description: NR-04 regulatory risk level (1-4).
+        description: Grau NR-04 (1–4).
       - name: rank_cbo
-        description: Rank of this CBO within the CNAE class by accident count (1 = most accidents).
-        tests:
-          - not_null
+        description: Rank do CBO por acidentes na classe (1 = mais acidentes).
+        tests: [not_null]
       - name: cbo_codigo
-        description: 6-digit CBO occupation code.
-        tests:
-          - not_null
+        description: Código CBO de 6 dígitos.
+        tests: [not_null]
       - name: vinculos_cbo
-        description: Total active RAIS bonds for this CNAE x CBO combination.
+        description: Vínculos RAIS para este CNAE × CBO.
       - name: acidentes_cbo
-        description: Total CAT accidents for this CNAE x CBO combination (all CIDs).
+        description: Total de CATs para este CNAE × CBO (todos os CIDs).
       - name: taxa_acidentes_por_mil
-        description: Accidents per 1,000 active bonds (null where RAIS data is absent).
+        description: Acidentes por 1.000 vínculos. NULL se RAIS ausente.
       - name: rank_cid
-        description: Rank of this CID within the CNAE x CBO group by accident count (1 = most frequent).
-        tests:
-          - not_null
+        description: Rank do CID dentro do grupo CNAE × CBO (1 = mais frequente).
+        tests: [not_null]
       - name: cid_10
-        description: ICD-10 code in dotted format (e.g. "B34.2").
-        tests:
-          - not_null
+        description: CID-10 em formato com ponto.
+        tests: [not_null]
       - name: acidentes_cid
-        description: CAT accidents for this CNAE x CBO x CID combination.
+        description: CATs para este CNAE × CBO × CID.
       - name: pct_acidentes_no_cbo
-        description: Share of this CID within the CBO's total accidents (%).
+        description: Participação percentual deste CID nos acidentes do CBO.
+
+  - name: mart_severidade_cat_cnae
+    description: >
+      EXPLORATÓRIO — Severidade dos acidentes por CNAE: natureza da lesão, parte do corpo
+      e taxa de óbito. Complementa mart_risco_acidente com foco em lesões típicas vs fatais.
+      Fonte: CAT.
+
+  - name: mart_mortalidade_por_cnae
+    description: >
+      EXPLORATÓRIO — Mortalidade ocupacional (SIM) por CNAE, com CNAE inferido via CBO → RAIS.
+      Inclui causa básica e perfil demográfico. Precursor do mart_risco_morte.
+      Para análise por cobertura, preferir mart_risco_morte.
+
+  - name: mart_comorbidades_por_cnae
+    description: >
+      EXPLORATÓRIO — Comorbidades (Parte II da DO / linha_ii) mais frequentes por CNAE.
+      Fonte: SIM. Método: unnesting de linha_ii.
+      Nota: este mart foi construído antes da criação de stg_sim_linhas.
+      Para análise completa incluindo Parte I, usar mart_risco_doenca.
+
+  - name: mart_causas_externas_por_cnae
+    description: >
+      EXPLORATÓRIO — Causas externas (Capítulo XX do CID-10) por CNAE.
+      Coberturas: acidente de trabalho, trânsito, queda, agressão.
+      Subconjunto de mart_risco_morte filtrado por causas externas.
+      Para análise integrada, usar mart_risco_morte com categoria_morte.

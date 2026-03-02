@@ -2,152 +2,251 @@ version: 2
 
 models:
   - name: stg_dim_cnae
-    description: CNAE 2.x hierarchy from basedosdados, standardized.
+    description: >
+      Hierarquia CNAE 2.x do basedosdados. 5 níveis: subclasse (7 dígitos) →
+      classe (5) → grupo (3) → divisão (2) → seção (letra).
+      Exemplo: 4120400 → 41204 → 412 → 41 → F
     columns:
       - name: cnae_subclasse
-        description: 7-digit subclass code (e.g. "0111301"). Primary key.
-        tests:
-          - unique
-          - not_null
+        description: Código de 7 dígitos. Nível mais granular. Chave primária.
+        tests: [unique, not_null]
       - name: cnae_classe
-        description: 5-digit class code.
-        tests:
-          - not_null
+        description: Código de 5 dígitos. Nível usado na RAIS e na NR-04.
+        tests: [not_null]
       - name: cnae_secao
-        description: Single-letter section code.
-        tests:
-          - not_null
+        description: Letra da seção (ex. 'F' = Construção).
+        tests: [not_null]
 
   - name: stg_dim_cbo
-    description: CBO 2002 occupations from basedosdados, standardized.
+    description: >
+      Classificação Brasileira de Ocupações 2002. Cobre todas as ocupações
+      registradas no MTE. Join key com CAT, RAIS e SIM.
     columns:
       - name: cbo_codigo
-        description: 6-digit occupation code. Primary key.
-        tests:
-          - unique
-          - not_null
+        description: Código de 6 dígitos. Chave primária.
+        tests: [unique, not_null]
+      - name: cbo_descricao
+        description: Nome da ocupação.
       - name: cbo_grande_grupo_codigo
-        description: Major group code.
+        description: Grande grupo (1 dígito) — nível mais agregado da CBO.
       - name: cbo_ativa
-        description: Flag — 1 if the occupation is still active.
+        description: Flag — 1 se a ocupação ainda é ativa na classificação.
 
   - name: stg_dim_municipio
-    description: IBGE municipalities, standardized identifiers.
+    description: Municípios IBGE com identificadores normalizados.
     columns:
       - name: municipio_id
-        description: 7-digit IBGE code (join key with RAIS and SIM). Primary key.
-        tests:
-          - unique
-          - not_null
+        description: Código IBGE de 7 dígitos (com dígito verificador). Chave primária.
+        tests: [unique, not_null]
       - name: municipio_id_6
-        description: 6-digit IBGE code (without check digit).
-        tests:
-          - not_null
+        description: Código IBGE de 6 dígitos (sem dígito verificador). Usado na CAT.
+        tests: [not_null]
       - name: sigla_uf
-        description: 2-letter UF code, uppercased.
-        tests:
-          - not_null
+        description: Sigla da UF (2 letras, maiúsculo).
+        tests: [not_null]
 
   - name: stg_dim_grau_risco
-    description: Occupational risk level per CNAE class per NR-04 Annex I.
+    description: >
+      Grau de Risco por CNAE conforme Anexo I da NR-04 (Ministério do Trabalho).
+      Determina a obrigatoriedade de SESMT nas empresas.
+      Grau 1 = Leve | 2 = Médio | 3 = Alto | 4 = Crítico.
     columns:
       - name: cnae_classe
-        description: 5-digit CNAE class code. Primary key.
-        tests:
-          - unique
-          - not_null
+        description: Código CNAE de 5 dígitos. Chave primária.
+        tests: [unique, not_null]
       - name: grau_risco
-        description: Risk level 1-4.
+        description: Nível de risco de 1 a 4.
         tests:
           - not_null
           - accepted_values:
               values: [1, 2, 3, 4]
       - name: grau_risco_descricao
-        description: "Human-readable label: Leve, Medio, Alto, Critico."
-        tests:
-          - not_null
+        description: "Rótulo legível: Leve, Médio, Alto, Crítico."
+        tests: [not_null]
+
+  - name: stg_dim_cid
+    description: >
+      CID-10 — códigos e descrições derivados da base CAT (INSS).
+      Formato: código com ponto (ex: "B34.2"). Cobre subcategorias e categorias.
+    columns:
+      - name: cid_codigo
+        description: Código CID-10 com ponto. Chave primária.
+        tests: [unique, not_null]
+      - name: cid_descricao
+        description: Descrição curta do diagnóstico.
 
   - name: stg_fact_rais
-    description: RAIS active employment bonds aggregated by CNAE x CBO x municipality x year.
+    description: >
+      Vínculos empregatícios ativos (RAIS) agregados por CNAE × CBO × município × ano.
+      Fonte: basedosdados.br_me_rais.microdados_vinculos (vinculo_ativo_3112 = 1).
+      Granularidade: subclasse CNAE (7 dígitos) — classe derivada como left(subclasse,5).
+      Uso principal: mapear CBO → CNAE dominante para atribuição de setor ao SIM.
     columns:
       - name: cnae_subclasse
-        description: 7-digit CNAE subclass code — joins with stg_dim_cnae.cnae_subclasse.
+        description: Código CNAE de 7 dígitos.
         tests:
           - not_null
           - relationships:
               to: ref('stg_dim_cnae')
               field: cnae_subclasse
-              config:
-                severity: warn
+              config: {severity: warn}
       - name: cnae_classe
-        description: 5-digit class code (left 5 of subclasse) — joins with stg_dim_grau_risco.
-        tests:
-          - not_null
+        description: Código CNAE de 5 dígitos (derivado).
+        tests: [not_null]
       - name: cbo_codigo
-        description: 6-digit CBO occupation code.
-        tests:
-          - not_null
+        description: Código CBO de 6 dígitos.
+        tests: [not_null]
       - name: quantidade_vinculos
-        description: Count of active bonds as of Dec 31 (vinculo_ativo_3112 = 1).
-        tests:
-          - not_null
-
-  - name: stg_fact_sim
-    description: SIM mortality records with occupation code.
-    columns:
-      - name: cbo_codigo
-        description: 6-digit CBO occupation code.
-        tests:
-          - not_null
-      - name: sigla_uf
-        description: 2-letter UF code.
-        tests:
-          - not_null
-      - name: cid_10_causa
-        description: ICD-10 underlying cause of death.
-      - name: acidente_trabalho
-        description: Work accident flag from SIM source.
-      - name: total_obitos
-        description: Count of deaths in this group.
-        tests:
-          - not_null
-
-  - name: stg_dim_cid
-    description: >
-      CID-10 codes and descriptions derived from CAT data.
-      Format: dotted code (e.g. "B34.2"). SIM stores codes without dots ("B342")
-      — cross-source join requires normalization and is not in scope here.
-    columns:
-      - name: cid_codigo
-        description: CID-10 code in dotted format.
-        tests:
-          - unique
-          - not_null
-      - name: cid_descricao
-        description: Short description from the INSS CAT source.
+        description: Contagem de vínculos ativos em 31/12.
+        tests: [not_null]
 
   - name: stg_fact_cat
-    description: |
-      CAT work accident communications from INSS portal.
-      Known data quality issue: raw fields cbo and cid_10 contain the value
-      '{ñ class}' (approx. 5% of records) meaning 'not classified' in the source.
-      These are mapped to NULL in this model. See docs/data-quality.md.
+    description: >
+      Comunicações de Acidente de Trabalho (CAT) do portal INSS.
+      VANTAGEM: o campo cnae_cod_4 vem DIRETAMENTE do empregador — sem inferência.
+      Granularidade: 1 linha por comunicação (acidente ou doença profissional).
+      Problema de qualidade conhecido: ~5% dos campos CBO e CID têm '{ñ class}'
+      (não classificado) → mapeados para NULL.
     columns:
       - name: cbo_codigo
-        description: |
-          6-digit CBO code. NULL when source value is '{ñ class}' (unclassified)
-          or '000000' (placeholder for missing occupation).
+        description: >
+          Código CBO de 6 dígitos. NULL quando fonte tem '{ñ class}' ou '000000'.
       - name: cnae_cod_4
-        description: 4-digit CNAE class code (zero-padded) — joins via left(cnae_classe, 4).
-        tests:
-          - not_null
-      - name: municipio_id_6
-        description: 6-digit IBGE municipality code extracted from raw text field.
-        tests:
-          - not_null
-      - name: cid_10
-        description: |
-          CID-10 code only, extracted from 'CODE Description' raw field.
-          NULL when source value is '{ñ class}' (unclassified diagnosis).
+        description: >
+          Código CNAE de 4 dígitos do empregador (zero-padded).
+          Join com stg_dim_cnae via left(cnae_classe, 4) = cnae_cod_4.
+        tests: [not_null]
+      - name: tipo_acidente
+        description: "Típico (ocorreu no trabalho) | Trajeto | Doença Profissional"
+      - name: natureza_lesao
+        description: Tipo da lesão (fratura, contusão, amputação, etc.)
+      - name: parte_corpo
+        description: Localização anatômica da lesão (mão, coluna, olho, etc.)
+      - name: agente_causador
+        description: O que causou o acidente (máquina, queda, esforço, etc.)
       - name: obito
-        description: True if indica_obito = 'Sim'.
+        description: true se o acidente resultou em óbito (indica_obito = 'Sim').
+      - name: sexo
+        description: "M (Masculino) | F (Feminino) | NULL"
+      - name: faixa_etaria
+        description: Faixa etária calculada de data_nascimento e data_acidente.
+
+  - name: stg_fact_sim
+    description: >
+      Declarações de Óbito (SIM) com ocupação (CBO), normalizadas.
+      Fonte: basedosdados.br_ms_sim.microdados, filtrado por UF e ano configurados.
+
+      ESTRUTURA DA DECLARAÇÃO DE ÓBITO (DO):
+        Parte I — cadeia causal (linhas a → d):
+          O médico descreve a sequência de condições que levou ao óbito.
+          linha_a: causa imediata — o que produziu a morte no momento final.
+          linha_b: condição que gerou a linha_a.
+          linha_c: condição que gerou a linha_b.
+          linha_d: condição originária mais remota (raramente preenchida).
+          causa_basica: resultado do algoritmo DATASUS/OMS sobre a Parte I.
+                        Geralmente o CID mais primário da cadeia.
+
+        Parte II — outras condições significativas (linha_ii):
+          Doenças ou condições que CONTRIBUÍRAM para a morte mas NÃO fazem parte
+          da cadeia causal. Exemplos: diabetes, HAS, IRC, histórico de neoplasia.
+          É o campo de comorbidades/multimorbidade.
+
+      LIMITAÇÃO DE ATRIBUIÇÃO CNAE:
+        O SIM NÃO registra o CNAE do empregador — apenas o CBO.
+        O CNAE é inferido por: CBO → CNAE com mais vínculos na RAIS (nacional).
+        Isso é uma aproximação. Usar CAT para análises que exigem CNAE exato.
+
+      Todas as linhas são armazenadas raw (_raw) para uso em stg_sim_linhas.
+
+    columns:
+      - name: cbo_codigo
+        description: Código CBO de 6 dígitos. Chave de atribuição da ocupação.
+        tests: [not_null]
+      - name: cid_10_causa
+        description: >
+          Causa básica do óbito (resultado do algoritmo DATASUS sobre a Parte I).
+          Formato com ponto (ex: B34.2). Todos os capítulos A–Z presentes.
+      - name: acidente_trabalho
+        description: "'Sim' | 'Não' | 'Ignorado' | NULL — normalizados de DATASUS 1/2/9."
+      - name: total_obitos
+        description: Contagem de óbitos no grupo (agrupado na ingestão BigQuery).
+        tests: [not_null]
+      - name: sexo
+        description: "'M' | 'F' | NULL — normalizado de DATASUS 1/2."
+      - name: faixa_etaria
+        description: Faixa etária calculada do campo idade (anos, float).
+      - name: linha_a_raw
+        description: >
+          Parte I – Linha A: causa imediata da morte.
+          Formato bruto: '*CID' (ex: '*R570'). NULL se não preenchida.
+          Ver stg_sim_linhas para versão normalizada e unnestada.
+      - name: linha_b_raw
+        description: >
+          Parte I – Linha B: causa que originou a linha A.
+          Formato bruto: '*CID'. NULL se a cadeia terminar na linha A.
+      - name: linha_c_raw
+        description: >
+          Parte I – Linha C: causa que originou a linha B.
+          NULL na maioria dos registros.
+      - name: linha_d_raw
+        description: >
+          Parte I – Linha D: causa originária mais remota. Raramente preenchida.
+      - name: linha_ii_raw
+        description: >
+          Parte II: comorbidades / outras condições significativas.
+          Múltiplos CIDs concatenados: '*I10X*E149' = I10 + E14.9.
+          'X' é filler DATASUS para códigos de 3 chars.
+          Ver stg_sim_linhas para versão normalizada, unnestada e com capítulo.
+
+  - name: stg_sim_linhas
+    description: >
+      Visão expandida (unnested) de todos os CIDs da Declaração de Óbito.
+      Transforma stg_fact_sim de formato wide (uma linha por óbito com 5 campos
+      de CID) para formato longo (uma linha por CID por óbito).
+
+      QUANDO USAR stg_fact_sim vs stg_sim_linhas:
+        stg_fact_sim    → análise de causa básica + demographics por óbito.
+        stg_sim_linhas  → análise de condições clínicas (comorbidades, cadeia causal).
+
+      COLUNA CHAVE: fonte_linha
+        'a'  → Parte I, Linha A (causa imediata)
+        'b'  → Parte I, Linha B (causa que gerou A)
+        'c'  → Parte I, Linha C (causa que gerou B)
+        'd'  → Parte I, Linha D (causa originária)
+        'ii' → Parte II (comorbidades — NÃO é causa, é condição contribuinte)
+
+      Todos os capítulos CID presentes, sem filtro.
+      Usar tipo_condicao para triagem semântica rápida.
+
+    columns:
+      - name: fonte_linha
+        description: >
+          Indica de qual linha da DO veio o CID.
+          'a'/'b'/'c'/'d' = cadeia causal (Parte I).
+          'ii' = comorbidades (Parte II).
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['a', 'b', 'c', 'd', 'ii']
+      - name: cid_raw
+        description: CID no formato bruto da fonte ('*I10X', '*B342').
+      - name: cid_normalizado
+        description: >
+          CID normalizado para formato com ponto (ex: B34.2, I10, J69.0).
+          I10X → I10 | B342 → B34.2 | J690 → J69.0
+      - name: cid_categoria
+        description: Primeiros 3 chars do cid_normalizado (categoria CID-10).
+      - name: capitulo_cid
+        description: >
+          Capítulo CID-10 por nome completo.
+          Ex: 'IX – Doenças do aparelho circulatório', 'XX – Causas externas'.
+      - name: tipo_condicao
+        description: >
+          Classificação semântica para triagem rápida por cobertura.
+          Ex: 'Doença crônica/cardiovascular', 'Neoplasia', 'Traumatismo/Lesão',
+          'Histórico clínico/situacional', 'Causa externa intencional/indeterminada'.
+      - name: causa_basica
+        description: CID da causa básica do óbito (campo cid_10_causa de stg_fact_sim).
+      - name: total_obitos
+        description: Total de óbitos no grupo de origem (de stg_fact_sim.total_obitos).
+

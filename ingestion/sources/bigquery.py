@@ -59,10 +59,21 @@ def fetch_sim_obitos() -> pd.DataFrame:
     # Use id_municipio_residencia for residence-based risk attribution
     # sexo: '1'=Masculino, '2'=Feminino, '9'=Ignorado (DATASUS encoding)
     # idade: already in years as float64 in the BigQuery dataset
-    # linha_ii: "other significant conditions" from the death certificate (Part II).
-    #   Format: '*I10X*E149' — multiple CID codes separated by '*', each prefixed with '*'.
-    #   This is the comorbidity field: diabetes, hypertension, cancer, etc.
-    #   Parsed/unnested in the mart layer, stored raw here.
+    #
+    # Parte I — cadeia causal (linhas a → d):
+    #   linha_a: causa imediata da morte (o que matou no momento)
+    #   linha_b: causa que originou a linha_a
+    #   linha_c: causa que originou a linha_b
+    #   linha_d: causa mais remota (raramente preenchida)
+    #   Formato: '*CID' — um único CID por linha (ex: '*I219', '*J690')
+    #   causa_basica é o resultado do algoritmo DATASUS sobre essa cadeia.
+    #
+    # Parte II — outras condições significativas (linha_ii):
+    #   Comorbidades que contribuíram para a morte mas não fazem parte da cadeia causal.
+    #   Formato: '*I10X*E149' — múltiplos CIDs concatenados com '*'.
+    #   O 'X' é filler DATASUS para códigos de 3 caracteres sem subdivisão.
+    #
+    # Todas as linhas são armazenadas raw; normalização e unnesting ocorrem no staging/mart.
     return _query(f"""
         SELECT
             ano,
@@ -73,13 +84,17 @@ def fetch_sim_obitos() -> pd.DataFrame:
             acidente_trabalho,
             sexo,
             idade,
+            linha_a,
+            linha_b,
+            linha_c,
+            linha_d,
             linha_ii,
             COUNT(*)                 AS total_obitos
         FROM `basedosdados.br_ms_sim.microdados`
         WHERE sigla_uf = '{uf}'
           AND ano BETWEEN {ano_ini} AND {ano_fim}
           AND ocupacao IS NOT NULL
-        GROUP BY 1, 2, 3, 4, 5, 6, 7, 8, 9
+        GROUP BY 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
     """)
 
 
