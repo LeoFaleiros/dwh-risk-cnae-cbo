@@ -57,6 +57,8 @@ def fetch_sim_obitos() -> pd.DataFrame:
 
     # CBO column in SIM is 'ocupacao', not 'cbo_2002'
     # Use id_municipio_residencia for residence-based risk attribution
+    # sexo: '1'=Masculino, '2'=Feminino, '9'=Ignorado (DATASUS encoding)
+    # idade: DATASUS encoding — 4XX = years (e.g. 440 = 40 yrs), 5XX = 100+ yrs
     return _query(f"""
         SELECT
             ano,
@@ -65,12 +67,14 @@ def fetch_sim_obitos() -> pd.DataFrame:
             ocupacao                 AS cbo_2002,
             causa_basica             AS cid_10_causa,
             acidente_trabalho,
+            sexo,
+            idade,
             COUNT(*)                 AS total_obitos
         FROM `basedosdados.br_ms_sim.microdados`
         WHERE sigla_uf = '{uf}'
           AND ano BETWEEN {ano_ini} AND {ano_fim}
           AND ocupacao IS NOT NULL
-        GROUP BY 1, 2, 3, 4, 5, 6
+        GROUP BY 1, 2, 3, 4, 5, 6, 7, 8
     """)
 
 

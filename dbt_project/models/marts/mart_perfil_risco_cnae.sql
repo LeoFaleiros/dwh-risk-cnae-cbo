@@ -1,7 +1,8 @@
 -- Perfil de risco por CNAE: top CBOs por acidente x top CIDs por acidente dentro do CBO.
 --
 -- Um WHERE em cnae_classe retorna o perfil completo de risco de um setor:
--- quais ocupações mais se acidentam, com quais diagnósticos, qual a exposição.
+-- quais ocupações mais se acidentam, com quais diagnósticos, qual a exposição,
+-- e qual é o perfil demográfico (sexo, faixa etária) dos acidentados.
 --
 -- Granularidade: (cnae_classe, rank_cbo, rank_cid)
 --   Top 10 CBOs por CNAE (por volume de acidentes no CAT)
@@ -37,6 +38,32 @@ acidentes_brutos as (
     from {{ ref('stg_fact_cat') }} as cat
     where cat.cbo_codigo is not null
       and cat.cid_10     is not null
+    group by 1, 2, 3
+),
+
+-- sexo breakdown por CNAE × CBO (pivot: M / F count)
+sexo_cbo as (
+    select
+        cnae_cod_4,
+        cbo_codigo,
+        count(*) filter (where sexo = 'M')              as acidentes_cbo_m,
+        count(*) filter (where sexo = 'F')              as acidentes_cbo_f
+    from {{ ref('stg_fact_cat') }}
+    where cbo_codigo is not null
+    group by 1, 2
+),
+
+-- sexo breakdown por CNAE × CBO × CID
+sexo_cid as (
+    select
+        cnae_cod_4,
+        cbo_codigo,
+        cid_10,
+        count(*) filter (where sexo = 'M')              as acidentes_cid_m,
+        count(*) filter (where sexo = 'F')              as acidentes_cid_f
+    from {{ ref('stg_fact_cat') }}
+    where cbo_codigo is not null
+      and cid_10     is not null
     group by 1, 2, 3
 ),
 
@@ -115,6 +142,14 @@ select
         then round(ar.acidentes_cbo::numeric / v.total_vinculos * 1000, 2)
     end                                                 as taxa_acidentes_por_mil,
 
+    -- sexo breakdown no nível CBO
+    coalesce(sc.acidentes_cbo_m, 0)                     as acidentes_cbo_m,
+    coalesce(sc.acidentes_cbo_f, 0)                     as acidentes_cbo_f,
+    round(
+        coalesce(sc.acidentes_cbo_m, 0)::numeric
+        / nullif(ar.acidentes_cbo, 0) * 100, 1
+    )                                                   as pct_masculino_cbo,
+
     -- diagnóstico (CID) e sua posição dentro do CBO
     ar.rank_cid,
     ar.cid_10,
@@ -123,7 +158,11 @@ select
     ar.obitos_cid,
     round(
         ar.acidentes_cid::numeric / nullif(ar.acidentes_cbo, 0) * 100, 1
-    )                                                   as pct_acidentes_no_cbo
+    )                                                   as pct_acidentes_no_cbo,
+
+    -- sexo breakdown no nível CID
+    coalesce(sd.acidentes_cid_m, 0)                     as acidentes_cid_m,
+    coalesce(sd.acidentes_cid_f, 0)                     as acidentes_cid_f
 
 from acidentes_rankeados as ar
 inner join cnae_info as cnae
@@ -137,6 +176,13 @@ left join {{ ref('stg_dim_cid') }} as cid
 left join vinculos_cbo as v
     on  cnae.cnae_classe = v.cnae_classe
     and ar.cbo_codigo    = v.cbo_codigo
+left join sexo_cbo as sc
+    on  ar.cnae_cod_4  = sc.cnae_cod_4
+    and ar.cbo_codigo  = sc.cbo_codigo
+left join sexo_cid as sd
+    on  ar.cnae_cod_4  = sd.cnae_cod_4
+    and ar.cbo_codigo  = sd.cbo_codigo
+    and ar.cid_10      = sd.cid_10
 where ar.rank_cid <= 5
 
 order by gr.grau_risco desc, cnae.cnae_classe, ar.rank_cbo, ar.rank_cid
