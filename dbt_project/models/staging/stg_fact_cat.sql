@@ -1,48 +1,47 @@
 -- CAT (work accident communications) from INSS portal
--- cbo column: "515105-Agente Comunitário de Saúde" -> extract 6-digit code
--- cnae_empregador_cod: 4-digit integer stored as text -> left-pad to 5 for cnae_classe
--- data_competencia: "YYYY/MM" -> extract year and month
+-- Python ingestion now normalizes across 3 source schemas (A/B/C):
+--   cbo: always 6-digit code (e.g. "515105")
+--   cid_10: always code only (e.g. "B34.2", "S681")
+--   data_competencia: always "YYYY/MM"
+--   data_acidente: always "DD/MM/YYYY"
+--   indica_obito: "Sim"/"Não"
+-- cnae_empregador_cod: 4-digit integer stored as text -> left-pad to 4 for cnae_cod_4
 -- munic_empregador: "354780-Santo André-Sp" -> extract 6-digit IBGE code
--- indica_obito: "Sim"/"Não" -> boolean
--- data_nascimento / data_acidente: "DD/MM/YYYY" -> used to compute faixa_etaria
--- sexo: "Masculino"/"Feminino"/"Não Informado" -> "M"/"F"/NULL
 
 with base as (
     select
-        split_part(data_competencia, '/', 1)::integer       as ano,
-        split_part(data_competencia, '/', 2)::integer       as mes,
-        -- CBO: first 6 chars before the dash-separated description.
-        -- Raw value '{ñ class}' means 'not classified' in the source — mapped to NULL.
-        -- Code '000000' is a placeholder used for missing occupation — also NULL.
+        -- Guard against '*****' or non-numeric values in data_competencia
+        case when data_competencia ~ '^\d{4}/\d{2}$'
+            then split_part(data_competencia, '/', 1)::integer end  as ano,
+        case when data_competencia ~ '^\d{4}/\d{2}$'
+            then split_part(data_competencia, '/', 2)::integer end  as mes,
         case
             when left(trim(cbo), 1) = '{'       then null
             when left(trim(cbo), 6) = '000000'  then null
             else left(trim(cbo), 6)
-        end                                                  as cbo_codigo,
-        -- CNAE: raw field is a 4-digit integer without check digit (e.g. 8630)
-        -- dim_grau_risco and dim_cnae store 5-digit codes with check digit (e.g. 86305)
-        -- join downstream using left(cnae_classe, 4) = cnae_cod_4
-        lpad(trim(cnae_empregador_cod), 4, '0')              as cnae_cod_4,
-        -- Municipality: first 6 digits of "NNNNNN-Nome-UF"
-        left(trim(munic_empregador), 6)                      as municipio_id_6,
-        lower(trim(tipo_acidente))                           as tipo_acidente,
-        -- CID-10 in CAT is "B34.2 Infecc p/Coronavirus Ne" — extract code only.
-        -- Raw value '{ñ class}' means 'not classified' in the source — mapped to NULL.
-        -- Note: SIM stores CID without dot ("B342"); join with stg_dim_cid uses CAT format.
+        end                                                          as cbo_codigo,
+        lpad(trim(cnae_empregador_cod), 4, '0')                      as cnae_cod_4,
+        left(trim(munic_empregador), 6)                              as municipio_id_6,
+        -- Normalize tipo_acidente: handle double-encoded UTF-8 variants
+        case
+            when lower(trim(tipo_acidente)) ilike '%pico%'   then 'típico'
+            when lower(trim(tipo_acidente)) ilike '%trajeto%' then 'trajeto'
+            when lower(trim(tipo_acidente)) ilike '%doen%'   then 'doença'
+            when lower(trim(tipo_acidente)) ilike '%ignora%' then 'ignorado'
+            else lower(trim(tipo_acidente))
+        end                                                          as tipo_acidente,
         case
             when left(trim(cid_10), 1) = '{' then null
-            else split_part(trim(cid_10), ' ', 1)
+            else trim(cid_10)
         end                                                  as cid_10,
         (indica_obito ilike 'Sim')                          as obito,
         trim(uf_empregador)                                  as uf_empregador,
         trim(_source_file)                                   as source_file,
-        -- Demographics
         case sexo
             when 'Masculino' then 'M'
             when 'Feminino'  then 'F'
             else null
         end                                                  as sexo,
-        -- natureza_lesao, parte_corpo, agente_causador: '{ñ class}' → NULL
         case
             when left(trim(natureza_lesao), 1) = '{' then null
             else trim(natureza_lesao)
@@ -55,8 +54,6 @@ with base as (
             when left(trim(agente_causador), 1) = '{' then null
             else trim(agente_causador)
         end                                                  as agente_causador,
-        -- Age at time of accident (years). Dates format: DD/MM/YYYY.
-        -- Guard against '{ñ class}' placeholders and blank values.
         case
             when data_nascimento is not null
              and data_acidente   is not null
@@ -72,6 +69,7 @@ with base as (
 
     from {{ source('raw', 'cat_microdados') }}
     where cnae_empregador_cod is not null
+      and lpad(trim(cnae_empregador_cod), 4, '0') != '0000'
       and data_competencia    is not null
 )
 

@@ -37,7 +37,7 @@ def load_table(
 
     load_id = register_start(engine, table, source_id, checksum)
     try:
-        df.to_sql(table, engine, schema="raw", if_exists="replace", index=False)
+        df.to_sql(table, engine, schema="raw", if_exists="replace", index=False, chunksize=10_000)
         register_finish(engine, load_id, len(df))
         log.info("Loaded %s: %d rows", table, len(df))
     except Exception as exc:
@@ -59,17 +59,17 @@ def main(force: bool = False) -> None:
         (
             "rais_vinculos",
             fetch_rais_vinculos,
-            f"bq:rais.{config.ingest_uf}.{config.ingest_ano_inicio}-{config.ingest_ano_fim}",
+            f"bq:rais.BR.{config.rais_ano_inicio}-{config.rais_ano_fim}",
         ),
         (
             "fact_sim",
             fetch_sim_obitos,
-            f"bq:sim.{config.ingest_uf}.{config.ingest_ano_inicio}-{config.ingest_ano_fim}",
+            f"bq:sim.{config.ingest_uf}.{config.sim_ano_inicio}-{config.sim_ano_fim}",
         ),
         (
             "cat_microdados",
             fetch_cat_microdados,
-            f"csv:cat.{config.ingest_uf}.{config.ingest_ano_inicio}-{config.ingest_ano_fim}",
+            f"csv:cat.BR.{config.cat_ano_inicio}-{config.cat_ano_fim}",
         ),
     ]
 

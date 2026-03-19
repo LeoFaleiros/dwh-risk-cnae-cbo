@@ -1,0 +1,679 @@
+cnae_classe,cnae_descricao_classe,ano_inicio,ano_fim,acidentes_trabalho,acidentes_trajeto,obitos,obitos_trabalho,total_vinculos,taxa_acidente,taxa_obito,score_base,agravante_obito,score_risco
+86101,Atividades de atendimento hospitalar,2018,2024,261104,49235,126,38,9736282,0.026818,0.000146,5,0,5
+10121,"Abate de suínos, aves e outros pequenos animais",2018,2024,57964,6418,101,31,2464068,0.023524,0.000535,5,0,5
+38114,Coleta de resíduos não perigosos,2018,2024,34298,4137,100,54,1110675,0.030880,0.001574,5,0,5
+10112,"Abate de reses, exceto suínos",2018,2024,30715,2878,84,31,998072,0.030774,0.001009,5,0,5
+53105,Atividades de Correio,2018,2024,23213,2666,14,9,772414,0.030053,0.000388,5,0,5
+86607,Atividades de apoio à gestão de saúde,2018,2024,20491,3608,10,5,1313732,0.015598,0.000244,5,0,5
+24512,Fundição de ferro e aço,2018,2024,14867,875,16,6,307500,0.048348,0.000404,5,0,5
+22226,Fabricação de embalagens de material plástico,2018,2024,14607,2705,33,21,922732,0.015830,0.001438,5,0,5
+28330,"Fabricação de máquinas e equipamentos para a agricultura e pecuária, exceto para irrigação",2018,2024,13397,1621,31,17,535866,0.025001,0.001269,5,0,5
+25993,Fabricação de produtos de metal não especificados anteriormente,2018,2024,11764,1972,25,8,665346,0.017681,0.000680,5,0,5
+42111,Construção de rodovias e ferrovias,2018,2024,11701,1450,162,131,1084040,0.010794,0.011196,4,1,5
+86909,Atividades de atenção à saúde humana não especificadas anteriormente,2018,2024,11400,2150,6,4,644180,0.017697,0.000351,5,0,5
+10139,Fabricação de produtos de carne,2018,2024,11325,1540,29,11,523074,0.021651,0.000971,5,0,5
+29301,"Fabricação de cabines, carrocerias e reboques para veículos automotores",2018,2024,11066,1077,17,9,336649,0.032871,0.000813,5,0,5
+16102,Desdobramento de madeira,2018,2024,9292,664,104,87,468989,0.019813,0.009363,5,0,5
+10660,Fabricação de alimentos para animais,2018,2024,7236,1441,51,28,470178,0.015390,0.003870,5,0,5
+01415,Produção de sementes certificadas,2018,2024,7216,747,76,53,141344,0.051053,0.007345,5,0,5
+25110,Fabricação de estruturas metálicas,2018,2024,7090,842,44,40,375373,0.018888,0.005642,5,0,5
+08100,"Extração de pedra, areia e argila",2018,2024,6107,873,91,76,465075,0.013131,0.012445,4,1,5
+46877,Comércio atacadista de resíduos e sucatas,2018,2024,5506,687,35,26,334079,0.016481,0.004722,5,0,5
+28691,Fabricação de máquinas e equipamentos para uso industrial específico não especificados anteriormente,2018,2024,4497,821,10,5,294379,0.015276,0.001112,5,0,5
+49124,Transporte metroferroviário de passageiros,2018,2024,4150,1198,13,12,243317,0.017056,0.002892,5,0,5
+38211,Tratamento e disposição de resíduos não perigosos,2018,2024,3613,541,15,9,153505,0.023537,0.002491,5,0,5
+16226,Fabricação de estruturas de madeira e de artigos de carpintaria para construção,2018,2024,3206,276,9,5,177910,0.018020,0.001560,5,0,5
+16234,Fabricação de artefatos de tanoaria e de embalagens de madeira,2018,2024,3172,257,11,10,108021,0.029365,0.003153,5,0,5
+25322,Produção de artefatos estampados de metal; metalurgia do pó,2018,2024,3137,473,6,3,178502,0.017574,0.000956,5,0,5
+23117,Fabricação de vidro plano e de segurança,2018,2024,3109,384,10,7,132805,0.023410,0.002252,5,0,5
+16293,"Fabricação de artefatos de madeira, palha, cortiça, vime e material trançado não especificados anteriormente, exceto
+móveis",2018,2024,2838,307,11,10,171017,0.016595,0.003524,5,0,5
+01393,Cultivo de plantas de lavoura permanente não especificadas anteriormente,2018,2024,2643,171,7,3,166969,0.015829,0.001135,5,0,5
+43916,Obras de fundações,2018,2024,2545,172,9,7,149658,0.017005,0.002750,5,0,5
+28224,"Fabricação de máquinas, equipamentos e aparelhos para transporte e elevação de cargas e pessoas",2018,2024,2266,422,4,2,143967,0.015740,0.000883,5,0,5
+23192,Fabricação de artigos de vidro,2018,2024,2210,312,1,1,123443,0.017903,0.000452,5,0,5
+28232,Fabricação de máquinas e aparelhos de refrigeração e ventilação para uso industrial e comercial,2018,2024,2204,388,7,3,145905,0.015106,0.001361,5,0,5
+46851,"Comércio atacadista de produtos siderúrgicos e metalúrgicos, exceto para construção",2018,2024,2170,330,6,2,112274,0.019328,0.000922,5,0,5
+46826,Comércio atacadista de gás liquefeito de petróleo (GLP),2018,2024,2107,580,5,3,127336,0.016547,0.001424,5,0,5
+28623,"Fabricação de máquinas e equipamentos para as indústrias de alimentos, bebidas e fumo",2018,2024,2092,395,8,1,127232,0.016442,0.000478,5,0,5
+24113,Produção de ferro-gusa,2018,2024,2064,159,12,8,88622,0.023290,0.003876,5,0,5
+25918,Fabricação de embalagens metálicas,2018,2024,2013,334,3,0,131181,0.015345,0.000000,5,0,5
+22218,Fabricação de laminados planos e tubulares de material plástico,2018,2024,1965,371,4,1,125526,0.015654,0.000509,5,0,5
+10619,Beneficiamento de arroz e fabricação de produtos do arroz,2018,2024,1843,328,32,21,156842,0.011751,0.011394,4,1,5
+29433,Fabricação de peças e acessórios para o sistema de freios de veículos automotores,2018,2024,1843,257,5,0,107777,0.017100,0.000000,5,0,5
+38327,Recuperação de materiais plásticos,2018,2024,1767,251,19,11,92753,0.019051,0.006225,5,0,5
+24521,Fundição de metais não ferrosos e suas ligas,2018,2024,1742,244,5,0,87725,0.019858,0.000000,5,0,5
+25136,Fabricação de obras de caldeiraria pesada,2018,2024,1685,212,7,4,110107,0.015303,0.002374,5,0,5
+38394,Recuperação de materiais não especificados anteriormente,2018,2024,1662,252,10,7,92144,0.018037,0.004212,5,0,5
+38220,Tratamento e disposição de resíduos perigosos,2018,2024,1617,156,4,2,43874,0.036856,0.001237,5,0,5
+29441,Fabricação de peças e acessórios para o sistema de direção e suspensão de veículos automotores,2018,2024,1586,271,0,0,104185,0.015223,0.000000,5,0,5
+28143,Fabricação de compressores,2018,2024,1554,317,2,0,81333,0.019107,0.000000,5,0,5
+24245,"Produção de relaminados, trefilados e perfilados de aço",2018,2024,1428,238,4,0,83511,0.017100,0.000000,5,0,5
+28127,"Fabricação de equipamentos hidráulicos e pneumáticos, exceto válvulas",2018,2024,1377,335,4,1,90561,0.015205,0.000726,5,0,5
+24318,Produção de tubos de aço com costura,2018,2024,1376,261,8,4,74805,0.018394,0.002907,5,0,5
+38122,Coleta de resíduos perigosos,2018,2024,1351,169,7,5,63529,0.021266,0.003701,5,0,5
+28151,Fabricação de equipamentos de transmissão para fins industriais,2018,2024,1332,311,1,0,74629,0.017848,0.000000,5,0,5
+29425,Fabricação de peças e acessórios para os sistemas de marcha e transmissão de veículos automotores,2018,2024,1309,252,1,0,74471,0.017577,0.000000,5,0,5
+38319,Recuperação de materiais metálicos,2018,2024,1240,214,5,3,76518,0.016205,0.002419,5,0,5
+25217,"Fabricação de tanques, reservatórios metálicos e caldeiras para aquecimento central",2018,2024,1139,124,2,1,50427,0.022587,0.000878,5,0,5
+25411,Fabricação de artigos de cutelaria,2018,2024,934,180,1,1,57630,0.016207,0.001071,5,0,5
+28542,"Fabricação de máquinas e equipamentos para terraplenagem, pavimentação e construção, exceto tratores",2018,2024,896,138,3,3,49797,0.017993,0.003348,5,0,5
+28526,"Fabricação de outras máquinas e equipamentos para uso na extração mineral, exceto na extração de petróleo",2018,2024,839,111,5,3,42747,0.019627,0.003576,5,0,5
+37029,"Atividades relacionadas a esgoto, exceto a gestão de redes",2018,2024,822,149,5,1,51442,0.015979,0.001217,5,0,5
+25314,Produção de forjados de aço e de metais não ferrosos e suas ligas,2018,2024,815,103,3,2,31906,0.025544,0.002454,5,0,5
+08991,Extração de minerais não metálicos não especificados anteriormente,2018,2024,762,118,13,11,68131,0.011184,0.014436,4,1,5
+28615,"Fabricação de máquinas para a indústria metalúrgica, exceto máquinas-ferramenta",2018,2024,759,142,0,0,45265,0.016768,0.000000,5,0,5
+37011,Gestão de redes de esgoto,2018,2024,736,272,2,1,47611,0.015459,0.001359,5,0,5
+28216,Fabricação de aparelhos e equipamentos para instalações térmicas,2018,2024,722,96,0,0,33384,0.021627,0.000000,5,0,5
+12107,Processamento industrial do fumo,2018,2024,686,240,2,0,35491,0.019329,0.000000,5,0,5
+05003,Extração de carvão mineral,2018,2024,598,42,6,6,24242,0.024668,0.010033,5,1,5
+24431,Metalurgia do cobre,2018,2024,570,78,1,0,35469,0.016070,0.000000,5,0,5
+13120,"Preparação e fiação de fibras têxteis naturais, exceto algodão",2018,2024,567,134,0,0,36913,0.015360,0.000000,5,0,5
+19322,"Fabricação de biocombustíveis, exceto álcool",2018,2024,543,113,6,2,27630,0.019653,0.003683,5,0,5
+10821,Fabricação de produtos à base de café,2018,2024,500,111,0,0,18701,0.026737,0.000000,5,0,5
+20924,Fabricação de explosivos,2018,2024,492,70,11,10,46033,0.010688,0.020325,4,1,5
+13537,Fabricação de artefatos de cordoaria,2018,2024,444,97,0,0,28410,0.015628,0.000000,5,0,5
+20401,Fabricação de fibras artificiais e sintéticas,2018,2024,439,53,0,0,22493,0.019517,0.000000,5,0,5
+10431,Fabricação de margarina e outras gorduras vegetais e de óleos não comestíveis de animais,2018,2024,424,160,1,1,24521,0.017291,0.002358,5,0,5
+02209,Produção florestal - florestas nativas,2018,2024,420,41,12,10,41094,0.010220,0.023810,4,1,5
+30121,Construção de embarcações para esporte e lazer,2018,2024,414,71,2,1,24281,0.017050,0.002415,5,0,5
+28640,"Fabricação de máquinas e equipamentos para as indústrias do vestuário, do couro e de calçados",2018,2024,405,30,0,0,17827,0.022718,0.000000,5,0,5
+25225,"Fabricação de caldeiras geradoras de vapor, exceto para aquecimento central e para veículos",2018,2024,393,81,1,1,22651,0.017350,0.002545,5,0,5
+28119,"Fabricação de motores e turbinas, exceto para aviões e veículos rodoviários",2018,2024,362,55,5,4,35836,0.010102,0.011050,4,1,5
+24393,Produção de outros tubos de ferro e aço,2018,2024,308,28,1,0,16080,0.019154,0.000000,5,0,5
+28666,Fabricação de máquinas e equipamentos para a indústria do plástico,2018,2024,232,64,3,3,16585,0.013989,0.012931,4,1,5
+33155,Manutenção e reparação de veículos ferroviários,2018,2024,208,47,1,1,12239,0.016995,0.004808,5,0,5
+30326,Fabricação de peças e acessórios para veículos ferroviários,2018,2024,149,31,1,1,8667,0.017192,0.006711,5,0,5
+08932,Extração de gemas (pedras preciosas e semipreciosas),2018,2024,124,8,1,1,7901,0.015694,0.008065,5,0,5
+35301,"Produção e distribuição de vapor, água quente e ar
+condicionado",2018,2024,97,27,2,2,6773,0.014322,0.020619,4,1,5
+19101,Coquerias,2018,2024,62,7,2,2,3053,0.020308,0.032258,5,1,5
+07251,Extração de minerais radioativos,2018,2024,46,6,0,0,2544,0.018082,0.000000,5,0,5
+30504,Fabricação de veículos militares de combate,2018,2024,2,0,0,0,72,0.027778,0.000000,5,0,5
+49302,Transporte rodoviário de carga,2018,2024,60965,17934,1395,975,7644243,0.007975,0.015993,3,1,4
+56201,"Serviços de catering, bufê e outros serviços de comida preparada",2018,2024,23815,5163,55,23,2247228,0.010598,0.000966,4,0,4
+86402,Atividades de serviços de complementação diagnóstica e terapêutica,2018,2024,23537,8344,15,3,1975595,0.011914,0.000127,4,0,4
+10716,Fabricação de açúcar em bruto,2018,2024,22600,1624,106,74,1812919,0.012466,0.003274,4,0,4
+22293,Fabricação de artefatos de material plástico não especificados anteriormente,2018,2024,16215,3332,19,9,1243145,0.013044,0.000555,4,0,4
+31012,Fabricação de móveis com predominância de madeira,2018,2024,15769,2983,45,14,1302480,0.012107,0.000888,4,0,4
+42219,Obras para geração e distribuição de energia elétrica e para telecomunicações,2018,2024,15354,2277,148,119,1310266,0.011718,0.007750,4,0,4
+29492,Fabricação de peças e acessórios para veículos automotores não especificados anteriormente,2018,2024,14440,3161,38,5,1093806,0.013202,0.000346,4,0,4
+43991,Serviços especializados para construção não especificados anteriormente,2018,2024,13407,2032,107,77,1338621,0.010016,0.005743,4,0,4
+19314,Fabricação de álcool,2018,2024,12677,828,69,48,845801,0.014988,0.003786,4,0,4
+23303,"Fabricação de artefatos de concreto, cimento, fibrocimento, gesso e materiais semelhantes",2018,2024,11696,1600,88,66,793519,0.014739,0.005643,4,0,4
+41107,Incorporação de empreendimentos imobiliários,2018,2024,10259,2298,68,48,1007003,0.010188,0.004679,4,0,4
+36006,"Captação, tratamento e distribuição de água",2018,2024,9577,2508,42,27,930140,0.010296,0.002819,4,0,4
+81290,Atividades de limpeza não especificadas anteriormente,2018,2024,8846,1914,45,25,700798,0.012623,0.002826,4,0,4
+33147,Manutenção e reparação de máquinas e equipamentos da indústria mecânica,2018,2024,8009,1464,58,37,764217,0.010480,0.004620,4,0,4
+23427,Fabricação de produtos cerâmicos não refratários para uso estrutural na construção,2018,2024,7556,1197,63,34,731892,0.010324,0.004500,4,0,4
+10520,Fabricação de laticínios,2018,2024,7107,1582,42,17,619452,0.011473,0.002392,4,0,4
+10996,Fabricação de produtos alimentícios não especificados anteriormente,2018,2024,7067,1750,26,17,695629,0.010159,0.002406,4,0,4
+25390,"Serviços de usinagem, solda, tratamento e revestimento em metais",2018,2024,6507,1133,18,8,437032,0.014889,0.001229,4,0,4
+25128,Fabricação de esquadrias de metal,2018,2024,5254,935,30,17,377957,0.013901,0.003236,4,0,4
+28291,Fabricação de máquinas e equipamentos de uso geral não especificados anteriormente,2018,2024,4868,1049,11,9,353698,0.013763,0.001849,4,0,4
+23915,Aparelhamento e outros trabalhos em pedras,2018,2024,4348,897,26,17,351281,0.012378,0.003910,4,0,4
+77322,Aluguel de máquinas e equipamentos para construção sem operador,2018,2024,4251,893,43,30,419308,0.010138,0.007057,4,0,4
+22196,Fabricação de artefatos de borracha não especificados anteriormente,2018,2024,3939,903,14,5,324514,0.012138,0.001269,4,0,4
+42138,"Obras de urbanização - ruas, praças e calçadas",2018,2024,3704,546,28,18,367402,0.010082,0.004860,4,0,4
+43134,Obras de terraplenagem,2018,2024,3703,833,69,42,491041,0.007541,0.011342,3,1,4
+13596,Fabricação de outros produtos têxteis não especificados anteriormente,2018,2024,3589,852,1,1,304660,0.011780,0.000279,4,0,4
+17338,Fabricação de chapas e de embalagens de papelão ondulado,2018,2024,3414,563,10,8,247175,0.013812,0.002343,4,0,4
+16218,"Fabricação de madeira laminada e de chapas de madeira compensada, prensada e aglomerada",2018,2024,3398,361,24,19,250022,0.013591,0.005592,4,0,4
+20134,Fabricação de adubos e fertilizantes,2018,2024,3378,679,22,15,265879,0.012705,0.004440,4,0,4
+17214,Fabricação de papel,2018,2024,3376,612,10,8,272969,0.012368,0.002370,4,0,4
+10945,Fabricação de massas alimentícias,2018,2024,3302,736,5,1,274832,0.012015,0.000303,4,0,4
+42227,"Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas",2018,2024,3285,582,25,14,290356,0.011314,0.004262,4,0,4
+29417,Fabricação de peças e acessórios para o sistema motor de veículos automotores,2018,2024,3118,709,10,0,252300,0.012358,0.000000,4,0,4
+25420,"Fabricação de artigos de serralheria, exceto esquadrias",2018,2024,3074,480,13,9,229187,0.013413,0.002928,4,0,4
+15106,Curtimento e outras preparações de couro,2018,2024,2998,423,10,4,214241,0.013994,0.001334,4,0,4
+29204,Fabricação de caminhões e ônibus,2018,2024,2987,310,5,2,226893,0.013165,0.000670,4,0,4
+33210,Instalação de máquinas e equipamentos industriais,2018,2024,2826,380,29,23,276048,0.010237,0.008139,4,0,4
+02306,Atividades de apoio à produção florestal,2018,2024,2809,324,34,24,257740,0.010899,0.008544,4,0,4
+31021,Fabricação de móveis com predominância de metal,2018,2024,2779,495,9,4,201119,0.013818,0.001439,4,0,4
+10414,"Fabricação de óleos vegetais em bruto, exceto óleo de milho",2018,2024,2683,498,17,12,186239,0.014406,0.004473,4,0,4
+01326,Cultivo de uva,2018,2024,2678,232,15,12,196987,0.013595,0.004481,4,0,4
+52214,"Concessionárias de rodovias, pontes, túneis e serviços relacionados",2018,2024,2665,575,21,15,217795,0.012236,0.005629,4,0,4
+25926,Fabricação de produtos de trefilados de metal,2018,2024,2645,515,8,2,186175,0.014207,0.000756,4,0,4
+22111,Fabricação de pneumáticos e de câmaras-de-ar,2018,2024,2623,479,1,0,207540,0.012639,0.000000,4,0,4
+23991,Fabricação de produtos de minerais não metálicos não especificados anteriormente,2018,2024,2469,444,13,10,170660,0.014467,0.004050,4,0,4
+13219,Tecelagem de fios de algodão,2018,2024,2390,582,10,1,198368,0.012048,0.000418,4,0,4
+10201,Preservação do pescado e fabricação de produtos do pescado,2018,2024,2389,496,6,2,171240,0.013951,0.000837,4,0,4
+25438,Fabricação de ferramentas,2018,2024,2336,481,8,3,157078,0.014872,0.001284,4,0,4
+27333,"Fabricação de fios, cabos e condutores elétricos isolados",2018,2024,2203,532,1,0,165037,0.013349,0.000000,4,0,4
+10627,Moagem de trigo e fabricação de derivados,2018,2024,2103,463,4,2,176675,0.011903,0.000951,4,0,4
+10694,Moagem e fabricação de produtos de origem vegetal não especificados anteriormente,2018,2024,2095,376,13,12,142912,0.014659,0.005728,4,0,4
+17311,Fabricação de embalagens de papel,2018,2024,2011,359,6,2,168226,0.011954,0.000995,4,0,4
+31047,Fabricação de colchões,2018,2024,1881,434,7,4,179179,0.010498,0.002127,4,0,4
+46320,"Comércio atacadista de cereais e leguminosas beneficiados, farinhas, amidos e féculas",2018,2024,1795,416,28,21,237040,0.007573,0.011699,3,1,4
+13235,Tecelagem de fios de fibras artificiais e sintéticas,2018,2024,1785,341,4,0,119061,0.014992,0.000000,4,0,4
+20622,Fabricação de produtos de limpeza e polimento,2018,2024,1785,541,11,4,163961,0.010887,0.002241,4,0,4
+27317,Fabricação de aparelhos e equipamentos para distribuição e controle de energia elétrica,2018,2024,1770,543,6,2,156833,0.011286,0.001130,4,0,4
+24415,Metalurgia do alumínio e suas ligas,2018,2024,1725,354,10,2,165966,0.010394,0.001159,4,0,4
+25934,Fabricação de artigos de metal para uso doméstico e pessoal,2018,2024,1706,326,5,2,147505,0.011566,0.001172,4,0,4
+22129,Reforma de pneumáticos usados,2018,2024,1700,273,9,3,121441,0.013999,0.001765,4,0,4
+17427,Fabricação de produtos de papel para usos doméstico e higiênico-sanitário,2018,2024,1681,287,5,3,143864,0.011685,0.001785,4,0,4
+13111,Preparação e fiação de fibras de algodão,2018,2024,1653,401,3,3,143598,0.011511,0.001815,4,0,4
+10333,"Fabricação de sucos de frutas, hortaliças e legumes",2018,2024,1602,343,11,9,142821,0.011217,0.005618,4,0,4
+28402,Fabricação de máquinas-ferramenta,2018,2024,1556,316,2,1,122152,0.012738,0.000643,4,0,4
+46711,Comércio atacadista de madeira e produtos derivados,2018,2024,1509,192,5,5,119539,0.012623,0.003313,4,0,4
+10511,Preparação do leite,2018,2024,1400,197,3,2,100589,0.013918,0.001429,4,0,4
+13545,"Fabricação de tecidos especiais, inclusive artefatos",2018,2024,1342,268,3,1,111600,0.012025,0.000745,4,0,4
+22234,Fabricação de tubos e acessórios de material plástico para uso na construção,2018,2024,1289,298,7,3,92604,0.013919,0.002327,4,0,4
+46222,Comércio atacadista de soja,2018,2024,1216,247,12,11,118648,0.010249,0.009046,4,0,4
+52290,Atividades auxiliares dos transportes terrestres não especificadas anteriormente,2018,2024,1190,445,20,15,176902,0.006727,0.012605,3,1,4
+24121,Produção de ferroligas,2018,2024,1190,102,5,2,87979,0.013526,0.001681,4,0,4
+87204,"Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência
+química",2018,2024,1180,226,0,0,110742,0.010655,0.000000,4,0,4
+17494,"Fabricação de produtos de pastas celulósicas, papel, cartolina, papel-cartão e papelão ondulado não especificados anteriormente",2018,2024,1173,229,6,0,78249,0.014991,0.000000,4,0,4
+32400,Fabricação de brinquedos e jogos recreativos,2018,2024,1007,252,3,0,91528,0.011002,0.000000,4,0,4
+07243,Extração de minério de metais preciosos,2018,2024,945,183,16,10,123524,0.007650,0.010582,3,1,4
+33198,Manutenção e reparação de equipamentos e produtos não especificados anteriormente,2018,2024,936,222,7,3,82038,0.011409,0.003205,4,0,4
+33112,"Manutenção e reparação de tanques, reservatórios metálicos e caldeiras, exceto para veículos",2018,2024,871,90,9,7,69278,0.012573,0.008037,4,0,4
+10325,Fabricação de conservas de legumes e outros vegetais,2018,2024,850,116,0,0,68709,0.012371,0.000000,4,0,4
+50211,Transporte por navegação interior de carga,2018,2024,806,200,7,7,65566,0.012293,0.008685,4,0,4
+13138,Fiação de fibras artificiais e sintéticas,2018,2024,790,122,1,0,69850,0.011310,0.000000,4,0,4
+10651,Fabricação de amidos e féculas de vegetais e de óleos de milho,2018,2024,786,230,2,2,61605,0.012759,0.002545,4,0,4
+24491,Metalurgia dos metais não ferrosos e suas ligas não especificados anteriormente,2018,2024,720,111,3,1,63255,0.011382,0.001389,4,0,4
+23923,Fabricação de cal e gesso,2018,2024,692,57,4,3,53337,0.012974,0.004335,4,0,4
+20193,Fabricação de produtos químicos inorgânicos não especificados anteriormente,2018,2024,681,151,1,1,62850,0.010835,0.001468,4,0,4
+30920,Fabricação de bicicletas e triciclos não motorizados,2018,2024,643,200,2,2,62649,0.010264,0.003110,4,0,4
+28313,Fabricação de tratores agrícolas,2018,2024,633,147,4,1,50637,0.012501,0.001580,4,0,4
+46214,Comércio atacadista de café em grão,2018,2024,625,136,7,5,61363,0.010185,0.008000,4,0,4
+27325,Fabricação de material elétrico para instalações em circuito de consumo,2018,2024,612,223,0,0,57596,0.010626,0.000000,4,0,4
+27228,Fabricação de baterias e acumuladores para veículos automotores,2018,2024,609,130,1,0,58936,0.010333,0.000000,4,0,4
+46621,"Comércio atacadista de máquinas, equipamentos para terraplenagem, mineração e construção; partes e peças",2018,2024,572,160,9,7,80470,0.007108,0.012238,3,1,4
+23125,Fabricação de embalagens de vidro,2018,2024,566,125,2,2,51332,0.011026,0.003534,4,0,4
+28534,"Fabricação de tratores, exceto agrícolas",2018,2024,510,164,1,0,45577,0.011190,0.000000,4,0,4
+11127,Fabricação de vinho,2018,2024,508,73,2,1,44328,0.011460,0.001969,4,0,4
+08916,"Extração de minerais para fabricação de adubos, fertilizantes e outros produtos químicos",2018,2024,504,80,3,2,41098,0.012263,0.003968,4,0,4
+20916,Fabricação de adesivos e selantes,2018,2024,488,119,4,3,40814,0.011957,0.006148,4,0,4
+77195,"Locação de meios de transporte, exceto automóveis, sem condutor",2018,2024,459,116,10,5,70875,0.006476,0.010893,3,1,4
+10724,Fabricação de açúcar refinado,2018,2024,426,69,9,3,32971,0.012920,0.007042,4,0,4
+08924,Extração e refino de sal marinho e sal-gema,2018,2024,421,86,3,3,34532,0.012192,0.007126,4,0,4
+10635,Fabricação de farinha de mandioca e derivados,2018,2024,404,47,5,2,29419,0.013733,0.004950,4,0,4
+13146,Fabricação de linhas para costurar e bordar,2018,2024,370,134,2,1,36524,0.010130,0.002703,4,0,4
+43118,Demolição e preparação de canteiros de obras,2018,2024,353,45,8,7,36255,0.009737,0.019830,3,1,4
+46745,Comércio atacadista de cimento,2018,2024,331,68,0,0,30771,0.010757,0.000000,4,0,4
+28259,Fabricação de máquinas e equipamentos para saneamento básico e ambiental,2018,2024,329,73,4,0,26411,0.012457,0.000000,4,0,4
+32302,Fabricação de artefatos para pesca e esporte,2018,2024,328,78,1,1,32068,0.010228,0.003049,4,0,4
+30997,Fabricação de equipamentos de transporte não especificados anteriormente,2018,2024,316,59,0,0,21259,0.014864,0.000000,4,0,4
+17222,Fabricação de cartolina e papel-cartão,2018,2024,306,43,1,1,22248,0.013754,0.003268,4,0,4
+28658,"Fabricação de máquinas e equipamentos para as indústrias de celulose, papel e papelão e artefatos",2018,2024,304,44,1,1,24579,0.012368,0.003289,4,0,4
+42910,"Obras portuárias, marítimas e fluviais",2018,2024,298,35,1,1,29574,0.010076,0.003356,4,0,4
+09904,"Atividades de apoio à extração de minerais, exceto petróleo e gás natural",2018,2024,254,38,0,0,24889,0.010205,0.000000,4,0,4
+20738,"Fabricação de impermeabilizantes, solventes e produtos afins",2018,2024,249,69,1,1,23849,0.010441,0.004016,4,0,4
+28321,Fabricação de equipamentos para irrigação agrícola,2018,2024,240,56,0,0,23109,0.010386,0.000000,4,0,4
+91031,"Atividades de jardins botânicos, zoológicos, parques nacionais, reservas ecológicas e áreas de proteção ambiental",2018,2024,200,36,1,1,18790,0.010644,0.005000,4,0,4
+27210,"Fabricação de pilhas, baterias e acumuladores elétricos, exceto para veículos automotores",2018,2024,190,43,0,0,17845,0.010647,0.000000,4,0,4
+46117,Representantes comerciais e agentes do comércio de matérias-primas agrícolas e animais vivos,2018,2024,170,22,2,2,21968,0.007739,0.011765,3,1,4
+39005,Descontaminação e outros serviços de gestão de resíduos,2018,2024,162,45,0,0,12394,0.013071,0.000000,4,0,4
+13227,"Tecelagem de fios de fibras têxteis naturais, exceto algodão",2018,2024,160,19,0,0,10888,0.014695,0.000000,4,0,4
+01148,Cultivo de fumo,2018,2024,128,55,3,2,14774,0.008664,0.015625,3,1,4
+50998,Transportes aquaviários não especificados anteriormente,2018,2024,93,15,0,0,8971,0.010367,0.000000,4,0,4
+07235,Extração de minério de manganês,2018,2024,65,10,1,1,9773,0.006651,0.015385,3,1,4
+01709,Caça e serviços relacionados,2018,2024,3,0,0,0,212,0.014151,0.000000,4,0,4
+61426,Operadoras de televisão por assinatura por micro-ondas,2018,2024,1,0,0,0,75,0.013333,0.000000,4,0,4
+47113,"Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados e supermercados",2018,2024,87488,25261,182,69,10158964,0.008612,0.000789,3,0,3
+41204,Construção de edifícios,2018,2024,46571,7713,344,252,5550621,0.008390,0.005411,3,0,3
+78205,Locação de mão de obra temporária,2018,2024,25901,7595,69,26,3015712,0.008589,0.001004,3,0,3
+86305,Atividades de atenção ambulatorial executadas por médicos e odontólogos,2018,2024,23669,8629,23,8,3263193,0.007253,0.000338,3,0,3
+71120,Serviços de engenharia,2018,2024,14767,3252,133,102,1743563,0.008469,0.006907,3,0,3
+64221,"Bancos múltiplos, com carteira comercial",2018,2024,14010,1930,27,15,2225882,0.006294,0.001071,3,0,3
+43215,Instalações elétricas,2018,2024,12713,3284,118,97,1380024,0.009212,0.007630,3,0,3
+10911,Fabricação de produtos de panificação,2018,2024,9818,2954,36,17,1419620,0.006916,0.001732,3,0,3
+42928,Montagem de instalações industriais e de estruturas metálicas,2018,2024,8215,844,89,76,849477,0.009671,0.009251,3,0,3
+46397,Comércio atacadista de produtos alimentícios em geral,2018,2024,7982,3505,45,24,1275666,0.006257,0.003007,3,0,3
+43304,Obras de acabamento,2018,2024,6922,1263,61,48,922635,0.007502,0.006934,3,0,3
+88006,Serviços de assistência social sem alojamento,2018,2024,6856,3072,6,1,1088207,0.006300,0.000146,3,0,3
+46354,Comércio atacadista de bebidas,2018,2024,6447,3160,58,26,807281,0.007986,0.004033,3,0,3
+42995,Obras de engenharia civil não especificadas anteriormente,2018,2024,6381,1073,45,27,670270,0.009520,0.004231,3,0,3
+46915,"Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios",2018,2024,6348,2374,33,10,875035,0.007255,0.001575,3,0,3
+01130,Cultivo de cana-de-açúcar,2018,2024,6103,390,36,26,784605,0.007778,0.004260,3,0,3
+52117,Armazenamento,2018,2024,5997,2312,61,28,697395,0.008599,0.004669,3,0,3
+01610,Atividades de apoio à agricultura,2018,2024,5370,737,53,42,883127,0.006081,0.007821,3,0,3
+65502,Planos de saúde,2018,2024,5126,3025,4,1,815528,0.006285,0.000195,3,0,3
+01555,Criação de aves,2018,2024,4919,663,22,10,767128,0.006412,0.002033,3,0,3
+43223,"Instalações hidráulicas, de sistemas de ventilação e
+refrigeração",2018,2024,4894,1338,34,22,627264,0.007802,0.004495,3,0,3
+47229,Comércio varejista de carnes e pescados - açougues e peixarias,2018,2024,4758,1035,17,10,594763,0.008000,0.002102,3,0,3
+02101,Produção florestal - florestas plantadas,2018,2024,4671,475,52,43,521240,0.008961,0.009206,3,0,3
+94995,Atividades associativas não especificadas anteriormente,2018,2024,4507,1581,10,3,629512,0.007160,0.000666,3,0,3
+52125,Carga e descarga,2018,2024,4434,1019,35,23,453564,0.009776,0.005187,3,0,3
+29107,"Fabricação de automóveis, camionetas e utilitários",2018,2024,4063,1064,7,2,528501,0.007688,0.000492,3,0,3
+43291,Obras de instalações em construções não especificadas anteriormente,2018,2024,3738,1118,43,31,411557,0.009083,0.008293,3,0,3
+77390,Aluguel de máquinas e equipamentos não especificados anteriormente,2018,2024,3708,963,30,23,425111,0.008722,0.006203,3,0,3
+01334,"Cultivo de frutas de lavoura permanente, exceto laranja e uva",2018,2024,3700,393,10,6,543673,0.006806,0.001622,3,0,3
+01318,Cultivo de laranja,2018,2024,3525,221,12,10,402493,0.008758,0.002837,3,0,3
+61906,Outras atividades de telecomunicações,2018,2024,3434,977,30,22,475910,0.007216,0.006407,3,0,3
+35140,Distribuição de energia elétrica,2018,2024,3380,1718,29,19,508164,0.006651,0.005621,3,0,3
+11224,Fabricação de refrigerantes e de outras bebidas não alcoólicas,2018,2024,3261,1402,20,8,338431,0.009636,0.002453,3,0,3
+53202,Atividades de malote e de entrega,2018,2024,3238,1865,32,23,330698,0.009791,0.007103,3,0,3
+87115,"Atividades de assistência a idosos, deficientes físicos, imunodeprimidos e convalescentes prestadas em residências coletivas e particulares",2018,2024,3205,970,0,0,521535,0.006145,0.000000,3,0,3
+46796,Comércio atacadista especializado de materiais de construção não especificados anteriormente e de materiais de construção em geral,2018,2024,3134,944,22,8,420645,0.007450,0.002553,3,0,3
+32507,Fabricação de instrumentos e materiais para uso médico e odontológico e de artigos ópticos,2018,2024,2974,1589,10,5,477963,0.006222,0.001681,3,0,3
+20631,"Fabricação de cosméticos, produtos de perfumaria e de higiene pessoal",2018,2024,2803,907,6,0,350323,0.008001,0.000000,3,0,3
+46231,"Comércio atacadista de animais vivos, alimentos para animais e matérias-primas agrícolas, exceto café e soja",2018,2024,2765,834,34,23,424838,0.006508,0.008318,3,0,3
+52311,Gestão de portos e terminais,2018,2024,2640,1456,17,7,305277,0.008648,0.002652,3,0,3
+46613,"Comércio atacadista de máquinas, aparelhos e equipamentos para uso agropecuário; partes e peças",2018,2024,2627,821,26,5,297418,0.008833,0.001903,3,0,3
+27104,"Fabricação de geradores, transformadores e motores elétricos",2018,2024,2602,961,9,5,299042,0.008701,0.001922,3,0,3
+46346,"Comércio atacadista de carnes, produtos da carne e pescado",2018,2024,2568,775,15,9,314418,0.008167,0.003505,3,0,3
+80129,Atividades de transporte de valores,2018,2024,2548,2344,29,11,341393,0.007464,0.004317,3,0,3
+15394,Fabricação de calçados de materiais não especificados anteriormente,2018,2024,2513,966,8,0,287911,0.008728,0.000000,3,0,3
+13405,"Acabamentos em fios, tecidos e artefatos têxteis",2018,2024,2391,711,8,4,251236,0.009517,0.001673,3,0,3
+20991,Fabricação de produtos químicos não especificados anteriormente,2018,2024,2389,661,12,6,245266,0.009740,0.002512,3,0,3
+49221,"Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal, interestadual e internacional",2018,2024,2373,852,62,45,646369,0.003671,0.018963,2,1,3
+96017,"Lavanderias, tinturarias e toalheiros",2018,2024,2370,639,5,2,373066,0.006353,0.000844,3,0,3
+11135,"Fabricação de malte, cervejas e chopes",2018,2024,2348,570,6,3,287312,0.008172,0.001278,3,0,3
+10937,"Fabricação de produtos derivados do cacau, de chocolates e confeitos",2018,2024,2347,469,6,3,251468,0.009333,0.001278,3,0,3
+32990,Fabricação de produtos diversos não especificados anteriormente,2018,2024,2266,585,14,5,259379,0.008736,0.002207,3,0,3
+10929,Fabricação de biscoitos e bolachas,2018,2024,2262,716,8,2,324654,0.006967,0.000884,3,0,3
+47431,Comércio varejista de vidros,2018,2024,2242,426,10,5,246633,0.009090,0.002230,3,0,3
+01113,Cultivo de cereais,2018,2024,2205,233,30,25,508007,0.004340,0.011338,2,1,3
+47849,Comércio varejista de gás liqüefeito de petróleo (GLP),2018,2024,2188,827,22,13,337498,0.006483,0.005941,3,0,3
+85503,Atividades de apoio à educação,2018,2024,2157,528,2,1,356818,0.006045,0.000464,3,0,3
+81303,Atividades paisagísticas,2018,2024,2150,391,15,10,229427,0.009371,0.004651,3,0,3
+46893,Comércio atacadista especializado de outros produtos intermediários não especificados anteriormente,2018,2024,1993,617,13,5,303153,0.006574,0.002509,3,0,3
+52401,Atividades auxiliares dos transportes aéreos,2018,2024,1941,701,11,6,319131,0.006082,0.003091,3,0,3
+27511,"Fabricação de fogões, refrigeradores e máquinas de lavar e secar para uso doméstico",2018,2024,1922,706,7,1,213758,0.008991,0.000520,3,0,3
+46729,Comércio atacadista de ferragens e ferramentas,2018,2024,1794,608,9,3,229656,0.007812,0.001672,3,0,3
+46630,Comércio atacadista de máquinas e equipamentos para uso industrial; partes e peças,2018,2024,1759,627,14,9,278343,0.006320,0.005117,3,0,3
+20711,"Fabricação de tintas, vernizes, esmaltes e lacas",2018,2024,1747,543,3,1,186660,0.009359,0.000572,3,0,3
+46869,Comércio atacadista de papel e papelão em bruto e de embalagens,2018,2024,1708,401,4,3,194427,0.008785,0.001756,3,0,3
+07103,Extração de minério de ferro,2018,2024,1684,288,118,112,414320,0.004064,0.066508,2,1,3
+42120,Construção de obras de arte especiais,2018,2024,1680,137,15,13,177035,0.009490,0.007738,3,0,3
+87301,Atividades de assistência social prestadas em residências coletivas e particulares,2018,2024,1675,430,3,2,210960,0.007940,0.001194,3,0,3
+09106,Atividades de apoio à extração de petróleo e gás natural,2018,2024,1585,190,2,2,194900,0.008132,0.001262,3,0,3
+24237,Produção de laminados longos de aço,2018,2024,1575,393,2,1,211928,0.007432,0.000635,3,0,3
+01547,Criação de suínos,2018,2024,1449,130,6,5,226414,0.006400,0.003451,3,0,3
+27902,Fabricação de equipamentos e aparelhos elétricos não especificados anteriormente,2018,2024,1441,482,7,2,205177,0.007023,0.001388,3,0,3
+81222,Imunização e controle de pragas urbanas,2018,2024,1386,643,9,5,161798,0.008566,0.003608,3,0,3
+30113,Construção de embarcações e estruturas flutuantes,2018,2024,1382,266,5,4,145012,0.009530,0.002894,3,0,3
+17419,"Fabricação de produtos de papel, cartolina, papel-cartão e papelão ondulado para uso comercial e de escritório",2018,2024,1372,350,10,1,144615,0.009487,0.000729,3,0,3
+35115,Geração de energia elétrica,2018,2024,1332,470,21,14,249138,0.005346,0.010511,2,1,3
+64212,Bancos comerciais,2018,2024,1311,169,4,4,138060,0.009496,0.003051,3,0,3
+10317,Fabricação de conservas de frutas,2018,2024,1291,357,11,1,185328,0.006966,0.000775,3,0,3
+10538,Fabricação de sorvetes e outros gelados comestíveis,2018,2024,1289,420,7,4,193440,0.006664,0.003103,3,0,3
+50301,Navegação de apoio,2018,2024,1222,172,6,6,153485,0.007962,0.004910,3,0,3
+13308,Fabricação de tecidos de malha,2018,2024,1207,440,3,0,164048,0.007358,0.000000,3,0,3
+20614,Fabricação de sabões e detergentes sintéticos,2018,2024,1194,438,4,3,160920,0.007420,0.002513,3,0,3
+23494,Fabricação de produtos cerâmicos não refratários não especificados anteriormente,2018,2024,1162,310,3,1,150509,0.007720,0.000861,3,0,3
+33139,Manutenção e reparação de máquinas e equipamentos elétricos,2018,2024,1149,377,7,5,138279,0.008309,0.004352,3,0,3
+17109,Fabricação de celulose e outras pastas para a fabricação de papel,2018,2024,1132,163,9,5,145863,0.007761,0.004417,3,0,3
+11216,Fabricação de águas envasadas,2018,2024,1098,300,9,5,150401,0.007300,0.004554,3,0,3
+06000,Extração de petróleo e gás natural,2018,2024,1093,161,0,0,160589,0.006806,0.000000,3,0,3
+86216,Serviços móveis de atendimento a urgências,2018,2024,1078,471,13,4,112957,0.009543,0.003711,3,0,3
+28135,"Fabricação de válvulas, registros e dispositivos semelhantes",2018,2024,1025,251,0,0,112508,0.009110,0.000000,3,0,3
+47415,Comércio varejista de tintas e materiais para pintura,2018,2024,1004,815,18,13,292409,0.003434,0.012948,2,1,3
+82920,Envasamento e empacotamento sob contrato,2018,2024,993,225,4,2,107529,0.009235,0.002014,3,0,3
+27597,Fabricação de aparelhos eletrodomésticos não especificados anteriormente,2018,2024,983,302,0,0,147572,0.006661,0.000000,3,0,3
+33295,Instalação de equipamentos não especificados anteriormente,2018,2024,977,265,8,5,111489,0.008763,0.005118,3,0,3
+15408,"Fabricação de partes para calçados, de qualquer material",2018,2024,975,277,2,1,146604,0.006651,0.001026,3,0,3
+93212,Parques de diversão e parques temáticos,2018,2024,898,209,3,1,102413,0.008768,0.001114,3,0,3
+20291,Fabricação de produtos químicos orgânicos não especificados anteriormente,2018,2024,882,190,4,4,100681,0.008760,0.004535,3,0,3
+10953,"Fabricação de especiarias, molhos, temperos e condimentos",2018,2024,839,300,2,0,99052,0.008470,0.000000,3,0,3
+32922,Fabricação de equipamentos e acessórios para segurança e proteção pessoal e profissional,2018,2024,803,236,0,0,100450,0.007994,0.000000,3,0,3
+10961,Fabricação de alimentos e pratos prontos,2018,2024,798,180,0,0,105216,0.007584,0.000000,3,0,3
+01636,Atividades de pós-colheita,2018,2024,790,253,7,6,85991,0.009187,0.007595,3,0,3
+20932,Fabricação de aditivos de uso industrial,2018,2024,781,223,1,0,84447,0.009248,0.000000,3,0,3
+18113,"Impressão de jornais, livros, revistas e outras publicações periódicas",2018,2024,780,235,0,0,111426,0.007000,0.000000,3,0,3
+14215,Fabricação de meias,2018,2024,779,323,1,0,86010,0.009057,0.000000,3,0,3
+23206,Fabricação de cimento,2018,2024,776,186,4,2,107520,0.007217,0.002577,3,0,3
+43126,Perfurações e sondagens,2018,2024,726,62,1,1,73042,0.009939,0.001377,3,0,3
+46842,"Comércio atacadista de produtos químicos e petroquímicos, exceto agroquímicos",2018,2024,718,211,5,3,110730,0.006484,0.004178,3,0,3
+26400,"Fabricação de aparelhos de recepção, reprodução, gravação e amplificação de áudio e vídeo",2018,2024,675,237,2,0,103923,0.006495,0.000000,3,0,3
+17320,Fabricação de embalagens de cartolina e papel-cartão,2018,2024,674,170,3,1,71568,0.009418,0.001484,3,0,3
+33171,Manutenção e reparação de embarcações,2018,2024,666,103,5,3,78683,0.008464,0.004505,3,0,3
+20312,Fabricação de resinas termoplásticas,2018,2024,603,132,0,0,62483,0.009651,0.000000,3,0,3
+27406,Fabricação de lâmpadas e outros equipamentos de iluminação,2018,2024,586,169,1,0,69019,0.008490,0.000000,3,0,3
+29506,Recondicionamento e recuperação de motores para veículos automotores,2018,2024,581,158,3,1,78320,0.007418,0.001721,3,0,3
+23419,Fabricação de produtos cerâmicos refratários,2018,2024,574,118,1,0,61799,0.009288,0.000000,3,0,3
+25501,"Fabricação de equipamento bélico pesado, armas de fogo e munições",2018,2024,539,186,3,0,56186,0.009593,0.000000,3,0,3
+11119,Fabricação de aguardentes e outras bebidas destiladas,2018,2024,526,130,1,0,65967,0.007974,0.000000,3,0,3
+21220,Fabricação de medicamentos para uso veterinário,2018,2024,526,194,0,0,75259,0.006989,0.000000,3,0,3
+10422,"Fabricação de óleos vegetais refinados, exceto óleo de milho",2018,2024,511,135,3,2,67522,0.007568,0.003914,3,0,3
+31039,"Fabricação de móveis de outros materiais, exceto madeira e metal",2018,2024,493,88,2,1,51862,0.009506,0.002028,3,0,3
+46362,Comércio atacadista de produtos do fumo,2018,2024,457,121,3,0,49845,0.009168,0.000000,3,0,3
+32914,"Fabricação de escovas, pincéis e vassouras",2018,2024,439,98,2,2,54847,0.008004,0.004556,3,0,3
+10643,"Fabricação de farinha de milho e derivados, exceto óleos de milho",2018,2024,393,117,5,1,62092,0.006329,0.002545,3,0,3
+13529,Fabricação de artefatos de tapeçaria,2018,2024,387,84,1,1,48618,0.007960,0.002584,3,0,3
+19225,"Fabricação de produtos derivados do petróleo, exceto produtos do refino",2018,2024,379,89,3,2,48794,0.007767,0.005277,3,0,3
+18229,Serviços de acabamentos gráficos,2018,2024,364,85,0,0,56929,0.006394,0.000000,3,0,3
+28241,Fabricação de aparelhos e equipamentos de ar condicionado,2018,2024,338,112,1,0,43407,0.007787,0.000000,3,0,3
+52222,Terminais rodoviários e ferroviários,2018,2024,320,133,0,0,50164,0.006379,0.000000,3,0,3
+03213,Aquicultura em água salgada e salobra,2018,2024,318,132,3,3,49282,0.006453,0.009434,3,0,3
+21106,Fabricação de produtos farmoquímicos,2018,2024,317,95,2,2,33116,0.009572,0.006309,3,0,3
+73122,"Agenciamento de espaços para publicidade, exceto em veículos de comunicação",2018,2024,312,116,2,2,46232,0.006749,0.006410,3,0,3
+77314,Aluguel de máquinas e equipamentos agrícolas sem operador,2018,2024,265,40,4,4,46069,0.005752,0.015094,2,1,3
+12204,Fabricação de produtos do fumo,2018,2024,249,124,3,0,37833,0.006582,0.000000,3,0,3
+03221,Aquicultura em água doce,2018,2024,248,44,5,5,46598,0.005322,0.020161,2,1,3
+24211,Produção de semiacabados de aço,2018,2024,209,31,3,3,46858,0.004460,0.014354,2,1,3
+20126,Fabricação de intermediários para fertilizantes,2018,2024,182,35,0,0,28191,0.006456,0.000000,3,0,3
+50114,Transporte marítimo de cabotagem,2018,2024,174,11,0,0,28883,0.006024,0.000000,3,0,3
+61418,Operadoras de televisão por assinatura por cabo,2018,2024,173,93,0,0,20713,0.008352,0.000000,3,0,3
+20321,Fabricação de resinas termofixas,2018,2024,167,64,2,0,17993,0.009281,0.000000,3,0,3
+51129,Transporte aéreo de passageiros não regular,2018,2024,164,127,10,5,46555,0.003523,0.030488,2,1,3
+42235,"Construção de redes de transportes por dutos, exceto para água e esgoto",2018,2024,158,19,1,0,22864,0.006910,0.000000,3,0,3
+30318,"Fabricação de locomotivas, vagões e outros materiais rodantes",2018,2024,148,50,1,0,16764,0.008828,0.000000,3,0,3
+52397,Atividades auxiliares dos transportes aquaviários não especificadas anteriormente,2018,2024,147,37,0,0,19710,0.007458,0.000000,3,0,3
+30423,"Fabricação de turbinas, motores e outros componentes e peças para aeronaves",2018,2024,137,43,0,0,19660,0.006968,0.000000,3,0,3
+20720,Fabricação de tintas de impressão,2018,2024,116,31,0,0,14788,0.007844,0.000000,3,0,3
+21238,Fabricação de preparações farmacêuticas,2018,2024,110,38,0,0,16573,0.006637,0.000000,3,0,3
+50220,Transporte por navegação interior de passageiros em linhas regulares,2018,2024,108,6,0,0,16992,0.006356,0.000000,3,0,3
+20525,Fabricação de desinfestantes domissanitários,2018,2024,100,49,0,0,16484,0.006066,0.000000,3,0,3
+46141,"Representantes comerciais e agentes do comércio de máquinas, equipamentos, embarcações e aeronaves",2018,2024,98,53,1,1,25327,0.003869,0.010204,2,1,3
+32205,Fabricação de instrumentos musicais,2018,2024,96,27,0,0,10642,0.009021,0.000000,3,0,3
+28631,Fabricação de máquinas e equipamentos para a indústria têxtil,2018,2024,90,25,0,0,11035,0.008156,0.000000,3,0,3
+20223,"Fabricação de intermediários para plastificantes, resinas e fibras",2018,2024,81,22,0,0,9675,0.008372,0.000000,3,0,3
+51200,Transporte aéreo de carga,2018,2024,76,26,1,0,12367,0.006145,0.000000,3,0,3
+24423,Metalurgia dos metais preciosos,2018,2024,73,19,0,0,7550,0.009669,0.000000,3,0,3
+20118,Fabricação de cloro e álcalis,2018,2024,71,13,0,0,9201,0.007717,0.000000,3,0,3
+07227,Extração de minério de estanho,2018,2024,63,7,0,0,8408,0.007493,0.000000,3,0,3
+50122,Transporte marítimo de longo curso,2018,2024,40,1,0,0,5174,0.007731,0.000000,3,0,3
+20941,Fabricação de catalisadores,2018,2024,23,14,0,0,3779,0.006086,0.000000,3,0,3
+80307,Atividades de investigação particular,2018,2024,10,4,0,0,1064,0.009398,0.000000,3,0,3
+56112,Restaurantes e outros estabelecimentos de serviços de alimentação e bebidas,2018,2024,36910,13636,182,64,8934354,0.004131,0.001734,2,0,2
+47440,"Comércio varejista de ferragens, madeira e materiais de construção",2018,2024,24237,6693,203,138,4346058,0.005577,0.005694,2,0,2
+81214,Limpeza em prédios e em domicílios,2018,2024,23223,8063,85,34,4338008,0.005353,0.001464,2,0,2
+45307,Comércio de peças e acessórios para veículos automotores,2018,2024,15815,7389,98,51,3200069,0.004942,0.003225,2,0,2
+82113,Serviços combinados de escritório e apoio administrativo,2018,2024,14944,7328,88,42,4243295,0.003522,0.002810,2,0,2
+94308,Atividades de associações de defesa de direitos sociais,2018,2024,14074,4364,38,18,2662164,0.005287,0.001279,2,0,2
+82997,Atividades de serviços prestados principalmente às empresas não especificadas anteriormente,2018,2024,11438,5142,68,32,2550417,0.004485,0.002798,2,0,2
+49213,"Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal e em região metropolitana",2018,2024,10983,5036,97,38,2816713,0.003899,0.003460,2,0,2
+55108,Hotéis e similares,2018,2024,10700,3463,39,16,2210692,0.004840,0.001495,2,0,2
+45200,Manutenção e reparação de veículos automotores,2018,2024,8902,3028,71,37,1578974,0.005638,0.004156,2,0,2
+47890,Comércio varejista de outros produtos novos não especificados anteriormente,2018,2024,8789,4094,70,34,2648222,0.003319,0.003868,2,0,2
+81117,"Serviços combinados para apoio a edifícios, exceto condomínios prediais",2018,2024,7460,4300,41,16,2057461,0.003626,0.002145,2,0,2
+01156,Cultivo de soja,2018,2024,5922,660,62,48,1192896,0.004964,0.008105,2,0,2
+61108,Telecomunicações por fio,2018,2024,5497,2056,52,38,996094,0.005519,0.006913,2,0,2
+45111,Comércio a varejo e por atacado de veículos automotores,2018,2024,5340,3753,28,6,1568963,0.003404,0.001124,2,0,2
+78302,Fornecimento e gestão de recursos humanos para terceiros,2018,2024,5179,2195,28,7,1680985,0.003081,0.001352,2,0,2
+85112,Educação infantil - creche,2018,2024,4670,1580,6,3,1187554,0.003932,0.000642,2,0,2
+47539,Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo,2018,2024,4134,2606,23,8,1175595,0.003517,0.001935,2,0,2
+21211,Fabricação de medicamentos para uso humano,2018,2024,3750,1439,13,3,646648,0.005799,0.000800,2,0,2
+47296,Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente; produtos do fumo,2018,2024,3665,1919,30,6,1161086,0.003157,0.001637,2,0,2
+15319,Fabricação de calçados de couro,2018,2024,3663,1974,14,0,929858,0.003939,0.000000,2,0,2
+82199,"Fotocópias, preparação de documentos e outros serviços especializados de apoio administrativo",2018,2024,3321,1822,22,10,921949,0.003602,0.003011,2,0,2
+46338,Comércio atacadista de hortifrutigranjeiros,2018,2024,3262,1053,53,29,557032,0.005856,0.008890,2,0,2
+78108,Seleção e agenciamento de mão de obra,2018,2024,3130,1288,26,12,717107,0.004365,0.003834,2,0,2
+93123,"Clubes sociais, esportivos e similares",2018,2024,3105,982,11,6,577964,0.005372,0.001932,2,0,2
+94910,Atividades de organizações religiosas,2018,2024,2852,829,11,5,864133,0.003300,0.001753,2,0,2
+80200,Atividades de monitoramento de sistemas de segurança,2018,2024,2703,1771,30,17,498870,0.005418,0.006289,2,0,2
+46371,Comércio atacadista especializado em produtos alimentícios não especificados anteriormente,2018,2024,2527,1213,10,7,431375,0.005858,0.002770,2,0,2
+86500,"Atividades de profissionais da área de saúde, exceto médicos e odontólogos",2018,2024,2515,1035,4,1,588278,0.004275,0.000398,2,0,2
+46931,"Comércio atacadista de mercadorias em geral, sem predominância de alimentos ou de insumos agropecuários",2018,2024,2501,1069,11,4,452952,0.005522,0.001599,2,0,2
+52508,Atividades relacionadas à organização do transporte de carga,2018,2024,2370,1106,18,2,469170,0.005051,0.000844,2,0,2
+47245,Comércio varejista de hortifrutigranjeiros,2018,2024,2335,740,21,6,538904,0.004333,0.002570,2,0,2
+15335,Fabricação de calçados de material sintético,2018,2024,2316,1427,16,2,439974,0.005264,0.000864,2,0,2
+73190,Atividades de publicidade não especificadas anteriormente,2018,2024,2287,2075,15,3,700013,0.003267,0.001312,2,0,2
+47598,Comércio varejista de artigos de uso doméstico não especificados anteriormente,2018,2024,2259,1082,12,4,602782,0.003748,0.001771,2,0,2
+46443,Comércio atacadista de produtos farmacêuticos para uso humano e veterinário,2018,2024,2161,1649,6,2,591267,0.003655,0.000925,2,0,2
+18130,Impressão de materiais para outros usos,2018,2024,2130,705,8,3,359608,0.005923,0.001408,2,0,2
+46494,Comércio atacadista de equipamentos e artigos de uso pessoal e doméstico não especificados anteriormente,2018,2024,2070,1254,13,4,589414,0.003512,0.001932,2,0,2
+47423,Comércio varejista de material elétrico,2018,2024,1993,825,21,15,412539,0.004831,0.007526,2,0,2
+13511,Fabricação de artefatos têxteis para uso doméstico,2018,2024,1716,568,7,1,289685,0.005924,0.000583,2,0,2
+68102,Atividades imobiliárias de imóveis próprios,2018,2024,1698,542,15,7,362454,0.004685,0.004122,2,0,2
+96033,Atividades funerárias e serviços relacionados,2018,2024,1624,905,17,9,347580,0.004672,0.005542,2,0,2
+49299,"Transporte rodoviário coletivo de passageiros, sob regime de fretamento, e outros transportes rodoviários não especificados anteriormente",2018,2024,1613,734,56,33,548406,0.002941,0.020459,1,1,2
+51111,Transporte aéreo de passageiros regular,2018,2024,1393,898,8,4,327439,0.004254,0.002872,2,0,2
+01199,Cultivo de plantas de lavoura temporária não especificadas anteriormente,2018,2024,1390,261,11,10,370657,0.003750,0.007194,2,0,2
+52231,Estacionamento de veículos,2018,2024,1378,1326,16,4,451478,0.003052,0.002903,2,0,2
+46699,"Comércio atacadista de máquinas, aparelhos e equipamentos não especificados anteriormente; partes e peças",2018,2024,1375,509,8,7,234926,0.005853,0.005091,2,0,2
+47237,Comércio varejista de bebidas,2018,2024,1369,805,14,6,402391,0.003402,0.004383,2,0,2
+71201,Testes e análises técnicas,2018,2024,1327,733,7,0,255695,0.005190,0.000000,2,0,2
+71197,Atividades técnicas relacionadas à arquitetura e engenharia,2018,2024,1232,467,14,7,254739,0.004836,0.005682,2,0,2
+46834,"Comércio atacadista de defensivos agrícolas, adubos, fertilizantes e corretivos do solo",2018,2024,1229,506,13,9,325083,0.003781,0.007323,2,0,2
+60217,Atividades de televisão aberta,2018,2024,1225,773,5,1,324649,0.003773,0.000816,2,0,2
+94120,Atividades de organizações associativas profissionais,2018,2024,1177,451,7,3,291886,0.004032,0.002549,2,0,2
+72100,Pesquisa e desenvolvimento experimental em ciências físicas e naturais,2018,2024,1117,410,4,2,329811,0.003387,0.001791,2,0,2
+26108,Fabricação de componentes eletrônicos,2018,2024,1007,506,0,0,206558,0.004875,0.000000,2,0,2
+94111,Atividades de organizações associativas patronais e empresariais,2018,2024,971,449,2,0,218913,0.004436,0.000000,2,0,2
+46818,"Comércio atacadista de combustíveis sólidos, líquidos e gasosos, exceto gás natural e GLP",2018,2024,915,473,16,9,227949,0.004014,0.009836,2,0,2
+24229,Produção de laminados planos de aço,2018,2024,904,462,3,3,236300,0.003826,0.003319,2,0,2
+29450,"Fabricação de material elétrico e eletrônico para veículos automotores, exceto baterias",2018,2024,855,511,9,0,237340,0.003602,0.000000,2,0,2
+49116,Transporte ferroviário de carga,2018,2024,835,386,4,2,236978,0.003524,0.002395,2,0,2
+01628,Atividades de apoio à pecuária,2018,2024,831,70,9,7,176900,0.004698,0.008424,2,0,2
+96092,Atividades de serviços pessoais não especificadas anteriormente,2018,2024,814,364,2,2,240446,0.003385,0.002457,2,0,2
+61205,Telecomunicações sem fio,2018,2024,797,573,2,1,258498,0.003083,0.001255,2,0,2
+46311,Comércio atacadista de leite e laticínios,2018,2024,787,545,5,4,132751,0.005928,0.005083,2,0,2
+75001,Atividades veterinárias,2018,2024,780,374,3,2,180272,0.004327,0.002564,2,0,2
+87123,Atividades de fornecimento de infraestrutura de apoio e assistência a paciente no domicílio,2018,2024,752,451,2,1,135726,0.005541,0.001330,2,0,2
+26515,"Fabricação de aparelhos e equipamentos de medida, teste e
+controle",2018,2024,725,344,2,0,136733,0.005302,0.000000,2,0,2
+14134,Confecção de roupas profissionais,2018,2024,682,333,0,0,178173,0.003828,0.000000,2,0,2
+93298,"Atividades de recreação e lazer não especificadas
+anteriormente",2018,2024,678,278,8,2,164637,0.004118,0.002950,2,0,2
+30911,Fabricação de motocicletas,2018,2024,674,363,7,0,116112,0.005805,0.000000,2,0,2
+10813,Torrefação e moagem de café,2018,2024,658,331,4,1,118939,0.005532,0.001520,2,0,2
+19217,Fabricação de produtos do refino de petróleo,2018,2024,641,333,3,2,172418,0.003718,0.003120,2,0,2
+46478,"Comércio atacadista de artigos de escritório e de papelaria; livros, jornais e outras publicações",2018,2024,593,324,5,3,163202,0.003634,0.005059,2,0,2
+26221,Fabricação de periféricos para equipamentos de informática,2018,2024,584,287,0,0,142219,0.004106,0.000000,2,0,2
+07294,Extração de minerais metálicos não ferrosos não especificados anteriormente,2018,2024,570,108,4,4,100707,0.005660,0.007018,2,0,2
+95215,Reparação e manutenção de equipamentos eletroeletrônicos de uso pessoal e doméstico,2018,2024,552,248,6,5,138466,0.003987,0.009058,2,0,2
+46737,Comércio atacadista de material elétrico,2018,2024,516,279,2,0,133121,0.003876,0.000000,2,0,2
+35123,Transmissão de energia elétrica,2018,2024,514,252,4,3,103620,0.004960,0.005837,2,0,2
+33121,Manutenção e reparação de equipamentos eletrônicos e ópticos,2018,2024,503,185,4,1,97772,0.005145,0.001988,2,0,2
+01121,Cultivo de algodão herbáceo e de outras fibras de lavoura temporária,2018,2024,500,35,3,2,84217,0.005937,0.004000,2,0,2
+95126,Reparação e manutenção de equipamentos de comunicação,2018,2024,477,161,6,2,85441,0.005583,0.004193,2,0,2
+46923,"Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários",2018,2024,470,158,5,3,104194,0.004511,0.006383,2,0,2
+95291,Reparação e manutenção de objetos e equipamentos pessoais e domésticos não especificados anteriormente,2018,2024,455,200,4,2,141415,0.003217,0.004396,2,0,2
+58298,"Edição integrada à impressão de cadastros, listas e outros produtos gráficos",2018,2024,441,140,7,3,77477,0.005692,0.006803,2,0,2
+63992,Outras atividades de prestação de serviços de informação não especificadas anteriormente,2018,2024,413,162,4,0,88490,0.004667,0.000000,2,0,2
+46656,Comércio atacadista de máquinas e equipamentos para uso comercial; partes e peças,2018,2024,400,163,4,1,68081,0.005875,0.002500,2,0,2
+20517,Fabricação de defensivos agrícolas,2018,2024,396,128,1,0,73179,0.005411,0.000000,2,0,2
+18211,Serviços de pré-impressão,2018,2024,382,160,1,0,76083,0.005021,0.000000,2,0,2
+26329,Fabricação de aparelhos telefônicos e de outros equipamentos de comunicação,2018,2024,362,268,1,0,75562,0.004791,0.000000,2,0,2
+30415,Fabricação de aeronaves,2018,2024,360,110,2,0,97014,0.003711,0.000000,2,0,2
+15297,Fabricação de artefatos de couro não especificados anteriormente,2018,2024,347,58,0,0,62911,0.005516,0.000000,2,0,2
+46176,"Representantes comerciais e agentes do comércio de produtos alimentícios, bebidas e fumo",2018,2024,338,307,4,3,78588,0.004301,0.008876,2,0,2
+33163,Manutenção e reparação de aeronaves,2018,2024,338,221,2,0,72563,0.004658,0.000000,2,0,2
+58212,Edição integrada à impressão de livros,2018,2024,326,156,2,0,57483,0.005671,0.000000,2,0,2
+18121,Impressão de material de segurança,2018,2024,309,226,1,0,61289,0.005042,0.000000,2,0,2
+46192,Representantes comerciais e agentes do comércio de mercadorias em geral não especializado,2018,2024,302,190,6,5,127531,0.002368,0.016556,1,1,2
+15211,"Fabricação de artigos para viagem, bolsas e semelhantes de qualquer material",2018,2024,287,120,2,1,76946,0.003730,0.003484,2,0,2
+14142,"Fabricação de acessórios do vestuário, exceto para segurança e proteção",2018,2024,285,97,0,0,77796,0.003663,0.000000,2,0,2
+79112,Agências de viagens,2018,2024,283,322,8,4,365729,0.000774,0.014134,1,1,2
+93191,Atividades esportivas não especificadas anteriormente,2018,2024,280,88,0,0,81882,0.003420,0.000000,2,0,2
+77292,Aluguel de objetos pessoais e domésticos não especificados anteriormente,2018,2024,275,100,1,1,66911,0.004110,0.003636,2,0,2
+47857,Comércio varejista de artigos usados,2018,2024,274,55,1,0,51446,0.005326,0.000000,2,0,2
+43193,Serviços de preparação do terreno não especificados anteriormente,2018,2024,266,39,3,2,64189,0.004144,0.007519,2,0,2
+71111,Serviços de arquitetura,2018,2024,265,63,2,1,68317,0.003879,0.003774,2,0,2
+28518,Fabricação de máquinas e equipamentos para a prospecção e extração de petróleo,2018,2024,261,117,0,0,47914,0.005447,0.000000,2,0,2
+49248,Transporte escolar,2018,2024,247,119,7,4,160949,0.001535,0.016194,1,1,2
+49230,Transporte rodoviário de táxi,2018,2024,243,210,7,7,125828,0.001931,0.028807,1,1,2
+26311,Fabricação de equipamentos transmissores de comunicação,2018,2024,242,124,0,0,45684,0.005297,0.000000,2,0,2
+49400,Transporte dutoviário,2018,2024,218,79,0,0,43840,0.004973,0.000000,2,0,2
+26213,Fabricação de equipamentos de informática,2018,2024,217,137,1,1,66695,0.003254,0.004608,2,0,2
+01423,"Produção de mudas e outras formas de propagação vegetal, certificadas",2018,2024,211,43,2,1,45148,0.004674,0.004739,2,0,2
+26604,Fabricação de aparelhos eletromédicos e eletroterapêuticos e equipamentos de irradiação,2018,2024,210,160,0,0,41554,0.005054,0.000000,2,0,2
+84248,Segurança e ordem pública,2018,2024,194,123,7,2,3049755,0.000064,0.010309,1,1,2
+84302,Seguridade social obrigatória,2018,2024,179,41,2,2,303127,0.000591,0.011173,1,1,2
+46648,"Comércio atacadista de máquinas, aparelhos e equipamentos para uso odonto-médico-hospitalar; partes e peças",2018,2024,165,129,4,3,74712,0.002208,0.018182,1,1,2
+73203,Pesquisas de mercado e de opinião pública,2018,2024,162,141,3,3,58117,0.002787,0.018519,1,1,2
+56121,Serviços ambulantes de alimentação,2018,2024,154,68,1,0,51104,0.003013,0.000000,2,0,2
+50912,Transporte por navegação de travessia,2018,2024,151,50,1,0,27835,0.005425,0.000000,2,0,2
+20215,Fabricação de produtos petroquímicos básicos,2018,2024,150,52,0,0,31233,0.004803,0.000000,2,0,2
+20142,Fabricação de gases industriais,2018,2024,141,68,5,1,34721,0.004061,0.007092,2,0,2
+74102,Design e decoração de interiores,2018,2024,116,39,0,0,26009,0.004460,0.000000,2,0,2
+03116,Pesca em água salgada,2018,2024,94,13,6,4,40463,0.002323,0.042553,1,1,2
+69125,Cartórios,2018,2024,84,131,3,3,614949,0.000137,0.035714,1,1,2
+86224,"Serviços de remoção de pacientes, exceto os serviços móveis de atendimento a urgências",2018,2024,79,64,0,0,18565,0.004255,0.000000,2,0,2
+46125,"Representantes comerciais e agentes do comércio de combustíveis, minerais, produtos siderúrgicos e químicos",2018,2024,73,12,0,0,15722,0.004643,0.000000,2,0,2
+79902,Serviços de reservas e outros serviços de turismo não especificados anteriormente,2018,2024,72,28,2,1,40537,0.001776,0.013889,1,1,2
+46133,"Representantes comerciais e agentes do comércio de madeira, material de construção e ferragens",2018,2024,65,24,1,1,29100,0.002234,0.015385,1,1,2
+45129,Representantes comerciais e agentes do comércio de veículos automotores,2018,2024,61,31,1,1,38578,0.001581,0.016393,1,1,2
+99008,Organismos internacionais e outras instituições extraterritoriais,2018,2024,55,28,1,1,22884,0.002403,0.018182,1,1,2
+58191,"Edição de cadastros, listas e outros produtos gráficos",2018,2024,53,12,0,0,15268,0.003471,0.000000,2,0,2
+20339,Fabricação de elastômeros,2018,2024,52,21,0,0,8954,0.005807,0.000000,2,0,2
+97005,Serviços domésticos,2018,2024,41,21,0,0,11077,0.003701,0.000000,2,0,2
+58239,Edição integrada à impressão de revistas,2018,2024,40,13,0,0,8883,0.004503,0.000000,2,0,2
+92003,Atividades de exploração de jogos de azar e apostas,2018,2024,38,17,0,0,6890,0.005515,0.000000,2,0,2
+90035,"Gestão de espaços para artes cênicas, espetáculos e outras atividades artísticas",2018,2024,28,17,1,1,13626,0.002055,0.035714,1,1,2
+26701,"Fabricação de equipamentos e instrumentos ópticos, fotográficos e cinematográficos",2018,2024,22,7,0,0,6288,0.003499,0.000000,2,0,2
+61434,Operadoras de televisão por assinatura por satélite,2018,2024,14,4,0,0,2376,0.005892,0.000000,2,0,2
+49507,"Trens turísticos, teleféricos e similares",2018,2024,9,2,0,0,1577,0.005707,0.000000,2,0,2
+64611,Holdings de instituições financeiras,2018,2024,6,4,1,1,6336,0.000947,0.166667,1,1,2
+84116,Administração pública em geral,2018,2024,58378,14404,265,145,54797169,0.001065,0.002484,1,0,1
+47717,Comércio varejista de produtos farmacêuticos para uso humano e veterinário,2018,2024,9321,6594,60,28,3760129,0.002479,0.003004,1,0,1
+81125,Condomínios prediais,2018,2024,8871,5578,67,22,3866247,0.002294,0.002480,1,0,1
+47121,"Comércio varejista de mercadorias em geral, com
+predominância de produtos alimentícios - minimercados,
+mercearias e armazéns",2018,2024,8006,2491,45,20,2760234,0.002900,0.002498,1,0,1
+14126,"Confecção de peças do vestuário, exceto roupas íntimas",2018,2024,7371,4176,21,3,2781120,0.002650,0.000407,1,0,1
+80111,Atividades de vigilância e segurança privada,2018,2024,7181,10090,163,71,3760330,0.001910,0.009887,1,0,1
+85139,Ensino fundamental,2018,2024,7099,2677,27,7,4506422,0.001575,0.000986,1,0,1
+01512,Criação de bovinos,2018,2024,6138,469,48,37,2599783,0.002361,0.006028,1,0,1
+47814,Comércio varejista de artigos do vestuário e acessórios,2018,2024,5665,4667,23,3,4363057,0.001298,0.000530,1,0,1
+47318,Comércio varejista de combustíveis para veículos automotores,2018,2024,5611,5292,93,32,2554408,0.002197,0.005703,1,0,1
+47211,"Comércio varejista de produtos de padaria, laticínio, doces, balas e semelhantes",2018,2024,5436,1994,18,7,1943729,0.002797,0.001288,1,0,1
+85996,Atividades de ensino não especificadas anteriormente,2018,2024,5378,3500,20,11,2125337,0.002530,0.002045,1,0,1
+85325,Educação superior - graduação e pós-graduação,2018,2024,5177,1910,10,3,2412222,0.002146,0.000579,1,0,1
+82202,Atividades de teleatendimento,2018,2024,4228,7162,34,11,3316132,0.001275,0.002602,1,0,1
+85317,Educação superior - graduação,2018,2024,3886,1389,7,3,2162550,0.001797,0.000772,1,0,1
+47547,"Comércio varejista especializado de móveis, colchoaria e artigos de iluminação",2018,2024,3748,1963,26,12,1477792,0.002536,0.003202,1,0,1
+85201,Ensino médio,2018,2024,3141,1182,6,5,1723531,0.001822,0.001592,1,0,1
+47130,"Comércio varejista de mercadorias em geral, sem predominância de produtos alimentícios",2018,2024,2842,1813,12,4,1112394,0.002555,0.001407,1,0,1
+84124,"Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais",2018,2024,2755,651,13,10,1534907,0.001795,0.003630,1,0,1
+85121,Educação infantil - pré-escola,2018,2024,2735,1074,5,2,1502222,0.001821,0.000731,1,0,1
+74901,"Atividades profissionais, científicas e técnicas não especificadas anteriormente",2018,2024,2263,1351,20,13,848302,0.002668,0.005745,1,0,1
+47822,Comércio varejista de calçados e artigos de viagem,2018,2024,2013,1534,5,1,1241327,0.001622,0.000497,1,0,1
+70204,Atividades de consultoria em gestão empresarial,2018,2024,1999,1416,9,4,1001352,0.001996,0.002001,1,0,1
+94201,Atividades de organizações sindicais,2018,2024,1783,487,26,16,797773,0.002235,0.008974,1,0,1
+62091,"Suporte técnico, manutenção e outros serviços em tecnologia da informação",2018,2024,1682,1184,12,4,852760,0.001972,0.002378,1,0,1
+69206,"Atividades de contabilidade, consultoria e auditoria contábil e tributária",2018,2024,1636,3663,24,7,2149396,0.000761,0.004279,1,0,1
+01342,Cultivo de café,2018,2024,1473,87,5,4,579132,0.002543,0.002716,1,0,1
+47512,Comércio varejista especializado de equipamentos e suprimentos de informática,2018,2024,1466,1333,13,6,693197,0.002115,0.004093,1,0,1
+77110,Locação de automóveis sem condutor,2018,2024,1425,792,15,3,489019,0.002914,0.002105,1,0,1
+47610,"Comércio varejista de livros, jornais, revistas e papelaria",2018,2024,1310,776,2,2,706161,0.001855,0.001527,1,0,1
+46460,"Comércio atacadista de cosméticos, produtos de perfumaria e de higiene pessoal",2018,2024,1276,1008,6,3,517803,0.002464,0.002351,1,0,1
+47725,"Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal",2018,2024,1271,1243,3,1,821461,0.001547,0.000787,1,0,1
+45412,"Comércio por atacado e a varejo de motocicletas, peças e acessórios",2018,2024,1242,1878,20,5,546959,0.002271,0.004026,1,0,1
+82300,"Atividades de organização de eventos, exceto culturais e esportivos",2018,2024,1203,488,6,1,406914,0.002956,0.000831,1,0,1
+14118,Confecção de roupas íntimas,2018,2024,1108,567,3,2,477528,0.002320,0.001805,1,0,1
+68226,Gestão e administração da propriedade imobiliária,2018,2024,1074,897,3,3,442655,0.002426,0.002793,1,0,1
+47636,Comércio varejista de artigos recreativos e esportivos,2018,2024,1031,922,11,7,591495,0.001743,0.006790,1,0,1
+47555,"Comércio varejista especializado de tecidos e artigos de cama, mesa e banho",2018,2024,1023,665,6,4,766115,0.001335,0.003910,1,0,1
+47521,Comércio varejista especializado de equipamentos de telefonia e comunicação,2018,2024,963,882,10,4,546251,0.001763,0.004154,1,0,1
+64239,Caixas econômicas,2018,2024,954,213,8,5,617915,0.001544,0.005241,1,0,1
+46451,"Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, ortopédico e odontológico",2018,2024,952,664,6,2,361762,0.002632,0.002101,1,0,1
+96025,Cabeleireiros e outras atividades de tratamento de beleza,2018,2024,835,637,2,0,567337,0.001472,0.000000,1,0,1
+64620,Holdings de instituições não financeiras,2018,2024,824,661,9,5,399864,0.002061,0.006068,1,0,1
+82911,Atividades de cobrança e informações cadastrais,2018,2024,763,864,7,2,647737,0.001178,0.002621,1,0,1
+93131,Atividades de condicionamento físico,2018,2024,750,609,3,0,771839,0.000972,0.000000,1,0,1
+01211,Horticultura,2018,2024,716,168,12,7,245448,0.002917,0.009777,1,0,1
+95118,Reparação e manutenção de computadores e de equipamentos periféricos,2018,2024,652,421,5,1,230388,0.002830,0.001534,1,0,1
+47571,"Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação",2018,2024,631,414,7,2,213827,0.002951,0.003170,1,0,1
+63119,"Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na Internet",2018,2024,557,642,3,2,388078,0.001435,0.003591,1,0,1
+46427,Comércio atacadista de artigos do vestuário e acessórios,2018,2024,543,377,7,2,258414,0.002101,0.003683,1,0,1
+85333,Educação superior - pós-graduação e extensão,2018,2024,540,223,1,1,205232,0.002631,0.001852,1,0,1
+68218,"Intermediação na compra, venda e aluguel de imóveis",2018,2024,486,624,6,4,425478,0.001142,0.008230,1,0,1
+85414,Educação profissional de nível técnico,2018,2024,471,286,3,0,456445,0.001032,0.000000,1,0,1
+63194,"Portais, provedores de conteúdo e outros serviços de informação na Internet",2018,2024,459,383,6,1,317545,0.001445,0.002179,1,0,1
+64247,Crédito cooperativo,2018,2024,458,625,4,0,657419,0.000697,0.000000,1,0,1
+62040,Consultoria em tecnologia da informação,2018,2024,457,567,10,3,730034,0.000626,0.006565,1,0,1
+62015,Desenvolvimento de programas de computador sob encomenda,2018,2024,424,864,3,0,1005001,0.000422,0.000000,1,0,1
+46419,"Comércio atacadista de tecidos, artefatos de tecidos e de armarinho",2018,2024,393,295,4,2,167820,0.002342,0.005089,1,0,1
+47741,Comércio varejista de artigos de óptica,2018,2024,371,644,9,3,578701,0.000641,0.008086,1,0,1
+84230,Justiça,2018,2024,358,162,4,0,1921014,0.000186,0.000000,1,0,1
+55906,Outros tipos de alojamento não especificados anteriormente,2018,2024,352,122,1,1,122957,0.002863,0.002841,1,0,1
+69117,"Atividades jurídicas, exceto cartórios",2018,2024,344,655,3,1,703583,0.000489,0.002907,1,0,1
+47733,Comércio varejista de artigos médicos e ortopédicos,2018,2024,299,248,0,0,138717,0.002155,0.000000,1,0,1
+62023,Desenvolvimento e licenciamento de programas de computador customizáveis,2018,2024,287,473,4,0,541706,0.000530,0.000000,1,0,1
+46516,"Comércio atacadista de computadores, periféricos e suprimentos de informática",2018,2024,278,275,3,0,159486,0.001743,0.000000,1,0,1
+62031,Desenvolvimento e licenciamento de programas de computador não customizáveis,2018,2024,277,460,4,1,474178,0.000584,0.003610,1,0,1
+15327,Fabricação de tênis de qualquer material,2018,2024,274,205,3,0,103432,0.002649,0.000000,1,0,1
+66193,Atividades auxiliares dos serviços financeiros não especificadas anteriormente,2018,2024,264,303,5,1,289979,0.000910,0.003788,1,0,1
+14223,"Fabricação de artigos do vestuário, produzidos em malharias e tricotagens, exceto meias",2018,2024,264,126,1,0,93581,0.002821,0.000000,1,0,1
+01229,Cultivo de flores e plantas ornamentais,2018,2024,256,60,1,0,130532,0.001961,0.000000,1,0,1
+47831,Comércio varejista de jóias e relógios,2018,2024,255,232,1,1,267739,0.000952,0.003922,1,0,1
+85937,Ensino de idiomas,2018,2024,244,284,5,0,396638,0.000615,0.000000,1,0,1
+77331,Aluguel de máquinas e equipamentos para escritório,2018,2024,243,253,1,0,112178,0.002166,0.000000,1,0,1
+59146,Atividades de exibição cinematográfica,2018,2024,241,98,1,0,93403,0.002580,0.000000,1,0,1
+90019,"Artes cênicas, espetáculos e atividades complementares",2018,2024,232,52,3,2,88200,0.002630,0.008621,1,0,1
+94936,"Atividades de organizações associativas ligadas à cultura
+e à arte",2018,2024,215,107,0,0,104946,0.002049,0.000000,1,0,1
+46184,Representantes comerciais e agentes do comércio especializado em produtos não especificados anteriormente,2018,2024,211,85,4,1,74923,0.002816,0.004739,1,0,1
+47326,Comércio varejista de lubrificantes,2018,2024,195,137,0,0,74625,0.002613,0.000000,1,0,1
+58221,Edição integrada à impressão de jornais,2018,2024,189,153,2,1,88371,0.002139,0.005291,1,0,1
+66223,"Corretores e agentes de seguros, de planos de previdência complementar e de saúde",2018,2024,186,399,0,0,451955,0.000412,0.000000,1,0,1
+64638,"Outras sociedades de participação, exceto holdings",2018,2024,185,100,1,0,76845,0.002407,0.000000,1,0,1
+77233,"Aluguel de objetos do vestuário, jóias e acessórios",2018,2024,180,76,0,0,76522,0.002352,0.000000,1,0,1
+66134,Administração de cartões de crédito,2018,2024,178,159,0,0,130824,0.001361,0.000000,1,0,1
+74200,Atividades fotográficas e similares,2018,2024,178,124,1,1,84008,0.002119,0.005618,1,0,1
+65111,Seguros de vida,2018,2024,175,195,0,0,101038,0.001732,0.000000,1,0,1
+32116,Lapidação de gemas e fabricação de artefatos de ourivesaria e joalheria,2018,2024,174,132,1,1,73891,0.002355,0.005747,1,0,1
+46524,Comércio atacadista de componentes eletrônicos e equipamentos de telefonia e comunicação,2018,2024,168,148,0,0,99697,0.001685,0.000000,1,0,1
+84132,Regulação das atividades econômicas,2018,2024,159,91,0,0,142173,0.001118,0.000000,1,0,1
+73114,Agências de publicidade,2018,2024,150,122,0,0,218118,0.000688,0.000000,1,0,1
+64999,Outras atividades de serviços financeiros não especificadas anteriormente,2018,2024,149,200,1,0,167028,0.000892,0.000000,1,0,1
+77403,Gestão de ativos intangíveis não financeiros,2018,2024,149,159,1,0,115237,0.001293,0.000000,1,0,1
+52320,Atividades de agenciamento marítimo,2018,2024,145,139,0,0,71448,0.002029,0.000000,1,0,1
+32124,Fabricação de bijuterias e artefatos semelhantes,2018,2024,138,116,0,0,51268,0.002692,0.000000,1,0,1
+58115,Edição de livros,2018,2024,138,114,1,1,107072,0.001289,0.007246,1,0,1
+01351,Cultivo de cacau,2018,2024,132,21,0,0,52851,0.002498,0.000000,1,0,1
+01521,Criação de outros animais de grande porte,2018,2024,118,16,3,1,60088,0.001964,0.008475,1,0,1
+65120,Seguros não vida,2018,2024,116,235,0,0,225163,0.000515,0.000000,1,0,1
+60101,Atividades de rádio,2018,2024,101,124,4,1,207488,0.000487,0.009901,1,0,1
+85911,Ensino de esportes,2018,2024,101,71,1,0,69618,0.001451,0.000000,1,0,1
+35204,Produção de gás; processamento de gás natural; distribuição de combustíveis gasosos por redes urbanas,2018,2024,97,77,1,0,32549,0.002980,0.000000,1,0,1
+64930,Administração de consórcios para aquisição de bens e direitos,2018,2024,95,161,0,0,89726,0.001059,0.000000,1,0,1
+46435,Comércio atacadista de calçados e artigos de viagem,2018,2024,94,87,0,0,54508,0.001725,0.000000,1,0,1
+07219,Extração de minério de alumínio,2018,2024,91,14,0,0,32755,0.002778,0.000000,1,0,1
+45439,Manutenção e reparação de motocicletas,2018,2024,88,133,0,0,46628,0.001887,0.000000,1,0,1
+72207,Pesquisa e desenvolvimento experimental em ciências sociais e humanas,2018,2024,85,36,0,0,31607,0.002689,0.000000,1,0,1
+93115,Gestão de instalações de esportes,2018,2024,81,43,0,0,28325,0.002860,0.000000,1,0,1
+01164,"Cultivo de oleaginosas de lavoura temporária, exceto soja",2018,2024,77,5,0,0,34772,0.002214,0.000000,1,0,1
+85929,Ensino de arte e cultura,2018,2024,76,76,0,0,63847,0.001190,0.000000,1,0,1
+01598,Criação de animais não especificados anteriormente,2018,2024,71,29,0,0,40268,0.001763,0.000000,1,0,1
+77217,Aluguel de equipamentos recreativos e esportivos,2018,2024,70,30,0,0,25912,0.002701,0.000000,1,0,1
+59111,"Atividades de produção cinematográfica, de vídeos e de programas de televisão",2018,2024,64,80,0,0,69228,0.000924,0.000000,1,0,1
+58123,Edição de jornais,2018,2024,62,34,0,0,33311,0.001861,0.000000,1,0,1
+91023,"Atividades de museus e de exploração, restauração artística
+e conservação de lugares e prédios históricos e atrações
+similares",2018,2024,57,21,0,0,23280,0.002448,0.000000,1,0,1
+65413,Previdência complementar fechada,2018,2024,56,68,0,0,52236,0.001072,0.000000,1,0,1
+66291,"Atividades auxiliares dos seguros, da previdência complementar e dos planos de saúde não especificadas anteriormente",2018,2024,50,33,1,0,36823,0.001358,0.000000,1,0,1
+84221,Defesa,2018,2024,46,16,0,0,1872469,0.000025,0.000000,1,0,1
+64361,"Sociedades de crédito, financiamento e investimento - financeiras",2018,2024,41,49,0,0,49361,0.000831,0.000000,1,0,1
+85422,Educação profissional de nível tecnológico,2018,2024,41,42,0,0,280935,0.000146,0.000000,1,0,1
+60225,Programadoras e atividades relacionadas à televisão por assinatura,2018,2024,38,24,0,0,21717,0.001750,0.000000,1,0,1
+47563,Comércio varejista especializado de instrumentos musicais e acessórios,2018,2024,38,32,0,0,33668,0.001129,0.000000,1,0,1
+66126,"Atividades de intermediários em transações de títulos, valores mobiliários e mercadorias",2018,2024,37,72,2,0,126012,0.000294,0.000000,1,0,1
+64310,"Bancos múltiplos, sem carteira comercial",2018,2024,35,22,0,0,32657,0.001072,0.000000,1,0,1
+26523,Fabricação de cronômetros e relógios,2018,2024,34,21,0,0,14301,0.002377,0.000000,1,0,1
+35131,Comércio atacadista de energia elétrica,2018,2024,33,19,0,0,20971,0.001574,0.000000,1,0,1
+64336,Bancos de desenvolvimento,2018,2024,31,65,0,0,24088,0.001287,0.000000,1,0,1
+46150,"Representantes comerciais e agentes do comércio de eletrodomésticos, móveis e artigos de uso doméstico",2018,2024,27,18,0,0,18495,0.001460,0.000000,1,0,1
+01539,Criação de caprinos e ovinos,2018,2024,26,2,0,0,13598,0.001912,0.000000,1,0,1
+79121,Operadores turísticos,2018,2024,24,12,0,0,23172,0.001036,0.000000,1,0,1
+66215,Avaliação de riscos e perdas,2018,2024,24,23,0,0,26710,0.000899,0.000000,1,0,1
+66304,"Atividades de administração de fundos por contrato ou
+comissão",2018,2024,21,34,0,0,47837,0.000439,0.000000,1,0,1
+59138,"Distribuição cinematográfica, de vídeo e de programas de televisão",2018,2024,16,9,0,0,8656,0.001848,0.000000,1,0,1
+18300,Reprodução de materiais gravados em qualquer suporte,2018,2024,16,13,0,0,9852,0.001624,0.000000,1,0,1
+64913,Sociedades de fomento mercantil - factoring,2018,2024,16,19,0,0,26542,0.000603,0.000000,1,0,1
+77225,"Aluguel de fitas de vídeo, DVDs e similares",2018,2024,15,10,0,0,6086,0.002465,0.000000,1,0,1
+61302,Telecomunicações por satélite,2018,2024,15,13,0,0,10112,0.001483,0.000000,1,0,1
+65201,Seguros-saúde,2018,2024,14,49,0,0,37218,0.000376,0.000000,1,0,1
+58131,Edição de revistas,2018,2024,14,21,0,0,19487,0.000718,0.000000,1,0,1
+90027,Criação artística,2018,2024,13,8,0,0,5152,0.002523,0.000000,1,0,1
+46168,"Representantes comerciais e agentes do comércio de têxteis, vestuário, calçados e artigos de viagem",2018,2024,13,10,0,0,22691,0.000573,0.000000,1,0,1
+59120,"Atividades de pós-produção cinematográfica, de vídeos e de programas de televisão",2018,2024,12,5,0,0,9124,0.001315,0.000000,1,0,1
+64352,Crédito imobiliário,2018,2024,11,3,0,0,13214,0.000832,0.000000,1,0,1
+84256,Defesa Civil,2018,2024,11,7,0,0,171335,0.000064,0.000000,1,0,1
+65421,Previdência complementar aberta,2018,2024,9,27,0,0,19080,0.000472,0.000000,1,0,1
+64344,Agências de fomento,2018,2024,8,9,0,0,11224,0.000713,0.000000,1,0,1
+66118,Administração de bolsas e mercados de balcão organizados,2018,2024,8,29,2,0,15867,0.000504,0.000000,1,0,1
+91015,Atividades de bibliotecas e arquivos,2018,2024,8,16,0,0,13045,0.000613,0.000000,1,0,1
+64921,Securitização de créditos,2018,2024,7,13,0,0,15344,0.000456,0.000000,1,0,1
+59201,Atividades de gravação de som e de edição de música,2018,2024,6,11,0,0,11849,0.000506,0.000000,1,0,1
+64506,Sociedades de capitalização,2018,2024,6,17,0,0,11150,0.000538,0.000000,1,0,1
+64328,Bancos de investimento,2018,2024,5,3,0,0,4674,0.001070,0.000000,1,0,1
+47628,"Comércio varejista de discos, CDs, DVDs e fitas",2018,2024,5,6,0,0,11062,0.000452,0.000000,1,0,1
+63917,Agências de notícias,2018,2024,5,2,0,0,8135,0.000615,0.000000,1,0,1
+03124,Pesca em água doce,2018,2024,5,1,0,0,3523,0.001419,0.000000,1,0,1
+45421,"Representantes comerciais e agentes do comércio de motocicletas, peças e acessórios",2018,2024,3,8,2,0,3530,0.000850,0.000000,1,0,1
+64107,Banco Central,2018,2024,3,0,0,0,24240,0.000124,0.000000,1,0,1
+64379,Sociedades de crédito ao microempreendedor,2018,2024,3,8,0,0,3667,0.000818,0.000000,1,0,1
+64409,Arrendamento mercantil,2018,2024,3,4,0,0,1892,0.001586,0.000000,1,0,1
+94928,Atividades de organizações políticas,2018,2024,3,4,0,0,24296,0.000123,0.000000,1,0,1
+64387,Bancos de câmbio e outras instituições de intermediação não monetária,2018,2024,1,3,0,0,3409,0.000293,0.000000,1,0,1

@@ -52,8 +52,8 @@ def fetch_dim_municipio() -> pd.DataFrame:
 
 def fetch_sim_obitos() -> pd.DataFrame:
     uf = config.ingest_uf
-    ano_ini = config.ingest_ano_inicio
-    ano_fim = config.ingest_ano_fim
+    ano_ini = config.sim_ano_inicio
+    ano_fim = config.sim_ano_fim
 
     # CBO column in SIM is 'ocupacao', not 'cbo_2002'
     # Use id_municipio_residencia for residence-based risk attribution
@@ -99,23 +99,23 @@ def fetch_sim_obitos() -> pd.DataFrame:
 
 
 def fetch_rais_vinculos() -> pd.DataFrame:
-    uf = config.ingest_uf
-    ano_ini = config.ingest_ano_inicio
-    ano_fim = config.ingest_ano_fim
+    ano_ini = config.rais_ano_inicio
+    ano_fim = config.rais_ano_fim
 
+    # Agrupado por UF (sem município) para reduzir volume de ~41M para ~500K linhas.
+    # Município foi removido pois o denominador de risco é calculado por CNAE×CBO nacional.
+    # sigla_uf mantido para validação de cobertura e eventual análise regional futura.
     return _query(f"""
         SELECT
             ano,
             sigla_uf,
-            id_municipio,
             cnae_2_subclasse,
             cbo_2002,
             COUNT(*) AS quantidade_vinculos
         FROM `basedosdados.br_me_rais.microdados_vinculos`
-        WHERE sigla_uf = '{uf}'
-          AND ano BETWEEN {ano_ini} AND {ano_fim}
+        WHERE ano BETWEEN {ano_ini} AND {ano_fim}
           AND vinculo_ativo_3112 = '1'
           AND cnae_2_subclasse IS NOT NULL
           AND cbo_2002 IS NOT NULL
-        GROUP BY 1, 2, 3, 4, 5
+        GROUP BY 1, 2, 3, 4
     """)
